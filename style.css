@@ -1,0 +1,646 @@
+/*CSS*/
+body{margin: 0px;
+padding:0px;}
+h1{
+text-align: center;
+}
+
+
+.imgBox {
+  padding: 25px;
+        width: 300px; 
+    }
+
+button {
+  border: none;
+  background-color: black;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+}
+
+/* The popup form - hidden by default */
+.video-popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 80px;
+  overflow: auto;
+  z-index: 9;
+}
+
+/* Modal Content */
+.mix-content{
+  background-color: black;
+  margin: auto;
+  padding: 40px;
+  padding-bottom: 30px;
+  border: none;
+  width: 60%;
+  color: #ffffff;
+}
+
+.mix-content .btn {
+  color: #adadad;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  float: right;
+  top: 0;
+  font-size: 37px;
+}
+
+/* Add some hover effects to buttons */
+.mix-content .btn:hover{
+  color: #fff;
+}
+
+.mix-content h1{
+  margin: 10px;
+  text-align: center;
+}
+
+.mix-content p{
+  text-align: center;
+
+}
+
+video {
+  width: 100%;
+  height: auto;
+
+}
+
+#mmkyMix
+{}
+
+.gifbox {
+}
+
+
+
+
+.nav{
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  z-index: 99;
+  position: fixed;
+  border-radius: 100px;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 18px;
+  line-height: 40px;
+  color: black;
+}
+
+/* unvisited link */
+.nav:link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* selected link */
+.nav:active {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav:visited {
+  color: black;
+  text-decoration: none;
+
+}
+
+
+#nav1{
+  background: #4DB4FF;
+  top: 0px;
+  left: 0px;
+}
+      #nav1:hover {
+        background-color: white;
+        color: #4DB4FF;
+        cursor: pointer;
+
+      }
+
+      #nav1:active {
+        background-color: white;
+        color: #4DB4FF;
+        font-weight: bold;
+      }
+
+
+#nav2{
+  right: 0px;
+  top: 0px;
+  background: #e364c8;
+
+}
+
+      #nav2:hover {
+        background-color: white;
+        color: #e364c8;
+        }
+
+#nav3{
+  left: 0px;
+  bottom: 0px;
+ background: yellow;
+ width: 40px;
+ font-size: 37px;
+ text-align: center;
+}
+
+#nav4{
+  right: 0px;
+  bottom: 0px;
+  background: #43E082;
+}
+      #nav4:hover {
+        background-color: white;
+        color: #43E082;
+        }
+
+      #nav4:active {
+        background-color: white;
+        color: #43E082;
+        font-weight: bold;
+      }
+
+
+.marquee {
+  z-index: 9;
+}
+
+.flex{
+	display: flex;
+  z-index: 9;
+
+	}
+
+.flex_item {
+  margin: 12px 12px;
+  padding: 5px 10px;
+  line-height: 10px;
+  width: auto;
+  height: 10px;
+  text-align: center;
+  font-size: 15px; 
+}
+
+.flex_item:hover {
+  color: red;
+  text-decoration: none; text-shadow: 0 0 24px;
+  /*text-decoration: underline overline;*/
+}
+
+#flex1 {
+margin:0px;
+}
+
+#flex2 {
+}
+
+.container1{
+  position: absolute;
+  height: 50px;
+  top:0px;
+}
+
+.container2{
+  position: absolute;
+  bottom: 50px;
+  height: 10px;
+}
+
+
+/*GREEN*/
+
+.column {
+  line-height: 1.6;
+}
+
+ol{
+  margin-top: 6%;
+  left: 2em;
+  display: block;
+  position: absolute;
+  list-style-type:decimal;
+  text-align: left;
+  float: left;
+  height: 160px;
+  width: auto;
+  z-index: 999;
+  background-color: red;
+
+  column-count: auto;
+  column-gap: 50px;
+  column-rule: 2px;
+  column-rule-color: black solid; 
+  column-width: 200px;
+
+}
+
+.group1 {
+  list-style-type: disc;
+  margin-right: 2%;
+}
+
+li {
+}
+
+
+/*타임라인*/
+
+.timeline {
+  width: auto;
+  height: auto;
+  float: left;
+  position: relative;
+  display: inline;
+  margin-top: 270px;
+  overflow:auto;
+  background-image: url('bg_black_1.png');
+         background-color: #161616;
+         background-repeat: repeat;
+         background-size: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+.timeline1 {
+  position: static;
+  display: inline;
+  width: 200%;
+  float: left;
+  margin-top: 5px;
+}
+
+.timeline12 {
+  position: static;
+  display: inline;
+  width: 200%;
+  float: left;
+  margin-top: 5px;
+}
+
+.timeline2 {
+  position: static;
+  display: inline;
+  width: 200%;
+  margin-top: 5px;
+  float: left;
+}
+
+.timeline3 {
+  position: static;
+  display: inline;
+  width: 200%;
+  margin-top: 5px;
+  float: left;
+}
+
+.timeline4 {
+  position: static;
+  display: inline;
+  width: 200%;
+  margin-top: 5px;
+  float: left;
+}
+
+.timeline5 {
+  position: static;
+  display: inline;
+  width: 200%;
+  margin-top: 5px;
+  float: left;
+}
+
+.timeline6 {
+  position: static;
+  display: inline;
+  width: 200%;
+  margin-top: 5px;
+  float: left;
+}
+
+.timeline7 {
+  position: static;
+  display: inline;
+  width: 200%;
+  margin-top: 5px;
+  float: left;
+}
+
+.timeline8 {
+  position: static;
+  display: inline;
+  width: 200%;
+  margin-top: 5px;
+  float: left;
+}
+
+/*타임라인1*/
+
+#mmkyA {
+  width: 250px;
+  float: left;
+  margin-left: 100px;
+  background-color: #90FF39;
+}
+
+#mmkyA:hover {
+  background-image: url(mmkyhover/mmkyAhover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mmkyB {
+  width: 100px;
+  float: left;
+  background-color: #FF9839;
+}
+
+#mmkyI {
+  width: 250px;
+  float: left;
+  margin-left: 100px;
+  background-color: #FDB4FF;
+}
+
+#mmkyC {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #D2D2D2;
+}
+
+#mmkyT1 {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #2A3BD7;
+}
+
+#mmkyH {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FF6A6A;
+}
+
+#mmkyN {
+  width: 180px;
+  float: left;
+  margin-left: 10px;
+  background-color: #00F3B9;
+}
+
+#mmkyN2 {
+  width: 130px;
+  float: left;
+  margin-left: 130px;
+  background-color: #00F3B9;
+}
+
+#mmkyN3 {
+  width: 300px;
+  float: left;
+  margin-left: 130px;
+  background-color: #00F3B9;
+}
+
+/*타임라인1.2*/
+#mmkyT2 {
+  width: 100px;
+  float: left;
+  margin-left: 1900px;
+  background-color: #2A3BD7;
+}
+
+
+/*타임라인2*/
+
+#mmkyE {
+  width: 700px;
+  float: left;
+  margin-left: 300px;
+  background-color: #A36BFF;
+}
+
+#mmkyF {
+  width: 300px;
+  float: left;
+  margin-left: 20px;
+  background-color: #FFF06A;
+}
+
+#mmkyT3 {
+  width: 100px;
+  float: left;
+  margin-left: 660px;
+  background-color: #2A3BD7;
+}
+
+#mmkyW {
+  width: 80px;
+  float: left;
+  margin-left: 380px;
+  background-color: #522A2A;
+}
+
+/*타임라인3*/
+
+#mmkyM {
+  width: 470px;
+  float: left;
+  margin-left: 700px;
+  background-color: #FF5CB4;
+}
+
+#mmkyH2 {
+  width: 100px;
+  float: left;
+  margin-left: 100px;
+  background-color: #FF6A6A;
+}
+
+#mmkyL {
+  width: 170px;
+  float: left;
+  margin-left: 30px;
+  background-color: #A36BFF;
+}
+
+#mmkyU {
+  width: 70px;
+  float: left;
+  margin-left: 0px;
+  background-color: #00FFF0;
+}
+
+#mmkyR {
+  width: 260px;
+  float: left;
+  margin-left: 30px;
+  background-color: #E0C741;
+}
+
+#mmkyV {
+  width: 200px;
+  float: left;
+  margin-left: 220px;
+  background-color: #FF8515;
+}
+
+
+#mmkyD {
+  width: 100px;
+  float: left;
+  margin-left: 30px;
+  background-color: #E21919;
+}
+
+#mmkyJ {
+  width: 100px;
+  float: left;
+  margin-left: 0px;
+  background-color: #43A84D;
+}
+
+#mmkyJ2 {
+  width: 230px;
+  float: left;
+  margin-left: 80px;
+  background-color: #43A84D;
+}
+
+
+/*타임라인4*/
+
+#mmkyS {
+  width: 130px;
+  float: left;
+  margin-left: 30px;
+  background-color: #B6A99E;
+}
+
+#mmkyO {
+  width: 1000px;
+  float: left;
+  margin-left: 50px;
+  background-color: #60BCFF;
+}
+
+#mmkyT4 {
+  width: 500px;
+  float: left;
+  margin-left: 400px;
+  background-color: #2A3BD7;
+}
+
+#mmkyG {
+  width: 200px;
+  float: left;
+  margin-left: 30px;
+  background-color: #FAFF00;
+}
+
+#mmkyQ {
+  width: 300px;
+  float: left;
+  margin-left: 0px;
+  background-color: #4292BF;
+}
+
+
+
+/*타임라인5*/
+
+#mmkyM2 {
+  width: 130px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FF5CB4;
+}
+
+#mmkyO2 {
+  width: 500px;
+  float: left;
+  margin-left: 50px;
+  background-color: #60BCFF;
+}
+
+#mmkyP {
+  width: 250px;
+  float: left;
+  margin-left: 20px;
+  background-color: #00BF64;
+}
+
+/*타임라인6*/
+
+#mmkyK {
+  width: 800px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FFFFFF;
+}
+
+/*타임라인7*/
+#mmkyK2 {
+  width: 2000px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FFFFFF;
+}
+
+/*타임라인8*/
+#mmkyY {
+  width: 80px;
+  float: left;
+  margin-left: 200px;
+  background-color: #FF6B00;
+}
+
+#mmkyY2 {
+  width: 200px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FF6B00;
+}
+
+#mmkyY3 {
+  width: 220px;
+  float: left;
+  margin-left: 550px;
+  background-color: #FF6B00;
+}
+
+#mmkyZ {
+  width: 220px;
+  float: left;
+  margin-left: 100px;
+  background-color: #56605B;
+}
+
+
+
+/*
+flex-grow 플렉스 아이템이 컨테이너 안에서 차지하는 크기의 정도. 기본값이 0 1로 설정하면 컨테이너 크기만큼 꽉찬 아이템을 그릴 수 있음
+flex-basis 플렉스 아이템 크기 지정값
+flex-grow, flex-shrik 늘어나는 정도 0을 주면 변동x
+https://velog.io/@mokyoungg/CSS-Flex-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC
+*/

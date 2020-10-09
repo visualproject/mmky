@@ -1,0 +1,274 @@
+
+<!doctype html> <!--문서타입 -->
+<html lang="ko"> <!--휴먼랭귀지 -->
+	<head>
+		<!--주석-->
+		<meta charset="utf-8"> <!--문자셋-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<!--width=device-width :페이지의 너비를 기기의 스크린 너비로 설정
+				initial-scale=1.0 : 원래의 크기로 사용한다는 의미이다.
+				minimum-scale :축소했을때의 최소로 축소 가능한 수치
+				maximum-scale : 확대했을때의 최대로 확대가능한 수치
+				user-scalable : 사용자의 확대/축소 기능을 설정, 기본값은 yes이다.-->
+		<title>Meme-key Archiving</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href=""><!--파비콘-->
+		<link rel="apple-touch-icon=precomposed" href="">
+
+		<style type="text/css">
+			body {
+				 background-image: url('bg_black_1.png');
+				 background-color: #161616;
+				 background-repeat: repeat;
+				 background-size: 100% 100%;
+				 background-attachment: fixed;s
+        		width: 100%;
+        		background-size: cover;
+			}
+
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!--제이쿼리 최신버전 사용-->
+		<script>
+		/*팝업*/
+		function openForm() {
+		  document.getElementById("blue-popup").style.display = "block";
+		}
+		function closeForm() {
+		  document.getElementById("blue-popup").style.display = "none";
+		
+        }
+        /*이미지구역*/
+        function randomBH(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function randImg(){
+        var ry = randomBH(0,24);
+        if(ry < 24) ry = '0' + ry;
+        else ry = '' + ry;
+        
+        console.log(ry);
+        return '<img src="mmky/' + fileArr[ry] + 'border="0" width="100%">';
+    }
+
+    var fileArr = [     
+    					"A_1.gif",
+    					"A_2.gif",
+    					"A_3.gif",
+    					"E_1.gif",
+    					"G_1.gif",
+    					"I_1.gif",
+    					"I_2.gif",
+    					"I_3.gif",
+    					"I_4.gif",
+    					"I_5.gif",
+    					"L_1.gif",
+    					"M_1.gif",
+    					"M_2.gif",
+    					"M_3.gif",
+    					"Q_1.gif",
+    					"01.jpg",
+    					"02.jpg",
+    					"03.jpg",
+    					"04.jpg",
+    					"05.jpg",
+    					"06.jpg",
+    					"07.jpg",
+    					"08.jpg",
+    					"09.jpg",
+    					"010.jpg",
+    					"011.jpg",
+    					"012.jpg",
+    					"013.jpg",
+    					"014.jpg",
+    					"015.jpg",
+    					"016.jpg",
+    					"017.jpg",
+    					"018.jpg",
+    					"019.jpg",
+    					"020.jpg",
+    					"021.jpg",
+    					"022.jpg",
+    					"023.jpg",
+    					"024.jpg"
+
+
+    	]
+
+
+		</script>
+	</head>
+
+
+	<body style="overflow: auto;">
+		<header>
+		<div class="container1">
+				<button class="open-button" onclick="openForm()">
+					<div class="nav" id="nav1">
+					밈숭이 믹스(영상)</div>
+				</button>			
+					<div class="video-popup" id="blue-popup">
+							<div class="mix-content">
+								<button type="button" class="btn cancel" onclick="closeForm()">&times;</button>
+								<h1>Meme-key Mix</h1>
+								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
+									<video id="mmkyMix" controls>
+										<source src="video/mix.mp4" type="video/mp4">
+									</video>
+								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
+							</div>
+					</div>
+
+
+			<a href="test.html"><div class="nav" id="nav2">HOME</div></a>
+		</div>
+		<div style="margin: 10px; position: fixed; z-index: 9;">
+		<marquee scrollamount="10" bgcolor="#FFF">
+				<div class="flex" id="flex1">
+					<div class="flex_item">A는 청사과맛이다.</div>
+					<div class="flex_item">Y는 열정적이다.</div>
+					<div class="flex_item">D는 마스크 관련 이슈가 두개나 있다.</div>
+					<div class="flex_item">H는 신이 난다.</div>
+					<div class="flex_item">B는 락스타인가?</div>
+					<div class="flex_item">Z는 말을 더듬었다</div>
+					<div class="flex_item">W와 X는 공항과 관련있다.</div>
+					<div class="flex_item">E는 신이 난다.</div>
+					<div class="flex_item">Y는 3학년 2반이었다.</div>
+					<div class="flex_item">K는 춤을 춘다.</div>
+					<div class="flex_item">O는 중독성이 있다.</div>
+					<div class="flex_item">N은 가수다.</div>
+					<div class="flex_item">I는 신이 난다.</div>
+					<div class="flex_item">F는 멋쟁이다.</div>
+					<div class="flex_item">G는 챌린지를 유행시켰다.</div>
+					<div class="flex_item">V는 애드립이다.</div>
+					<div class="flex_item">R은 힙합대통령이라서 힙통령이다.</div>
+					<div class="flex_item">S는 충격받았다.</div>
+					<div class="flex_item">K는 광고를 찍었다.</div>
+					<div class="flex_item">M은 억울했다.</div>
+					<div class="flex_item">P는 퇴사짤로 유명하다.</div>
+					<div class="flex_item">D는 당 대표였다.</div>
+					<div class="flex_item">W는 욕을 한다.</div>
+					<div class="flex_item">J는 사실 현실성이 없다.</div>
+					<div class="flex_item">V는 음료수를 먹는다.</div>
+					<div class="flex_item">N은 알바몬 광고를 찍었다.</div>
+					<div class="flex_item">I는 중독성 있다.</div>
+					<div class="flex_item">B는 아버지다.</div>
+					<div class="flex_item">Q는 개그라고 한 것이었다.</div>
+					<div class="flex_item">H는 신통하다.</div>
+					<div class="flex_item">U는 화를 낸다.</div>
+					<div class="flex_item">L은 분위기를 띄운다.</div>
+					<div class="flex_item">G는 아무노래나 틀어보라는 이야기다.</div>
+					<div class="flex_item">T는 개구리와 관련있다.</div>
+					<div class="flex_item">U는 J와 같다.</div>
+				</div>
+			</marquee>
+		</div>
+		</header> <!--첫머리 -->	
+		<div class="container2">
+			<div class="nav" id="nav3">&#10140;</div>
+			<a href="green.html"><div class="nav" id="nav4">각주</div></a>
+			<div style="margin: 10px; position: fixed; z-index: 9;">
+			<marquee scrollamount="10" direction="right" bgcolor="#FFF" >
+				<div class="flex" id="flex2">
+					<div class="flex_item"><span>Y는 생일축하전문이다.</span></div>
+					<div class="flex_item">B는 사과했다.</div>
+					<div class="flex_item">V는 애드립이다.</div>
+					<div class="flex_item">Y는 축구를 했다.</div>
+					<div class="flex_item">S는 U,J와 관련있다.</div>
+					<div class="flex_item">O는 여름이다.</div>
+					<div class="flex_item">T는 중국을 싫어하나?</div>
+					<div class="flex_item">G는 참여한 사람이 많다.</div>
+					<div class="flex_item">C는 정보전달에 힘쓰고 있다.</div>
+					<div class="flex_item">H는 그 후 한번 더 인터뷰를 했다.</div>
+					<div class="flex_item">Y는 발명 중이다.</div>
+					<div class="flex_item">I는 어린이를 대상으로 만들어졌다.</div>
+					<div class="flex_item">K는 2020의 가장 대표적인 밈숭이다.</div>
+					<div class="flex_item">Y는 예고를 했다.</div>
+					<div class="flex_item">J는 정의롭다.</div>
+					<div class="flex_item">E는 멋진 무대매너를 가지고 있다.</div>
+					<div class="flex_item">Z는 또다른 Z로 화제가 되었다.</div>
+					<div class="flex_item">T는 미국인이다.</div>
+					<div class="flex_item">N은 진심이다.</div>
+					<div class="flex_item">Z는 강아지를 좋아한다.</div>
+					<div class="flex_item">X는 해외에서도 화제였다.</div>
+					<div class="flex_item">F는 광고로도 제작되었다.</div>
+					<div class="flex_item">I는 춤을 잘추는 어린이로 유명하다.</div>
+					<div class="flex_item">X는 축구와 관련있다.</div>
+					<div class="flex_item">R은 프로듀스 101도 나왔다.</div>
+					<div class="flex_item">K는 조명을 좋아한다.</div>
+					<div class="flex_item">M은 래퍼 매드클라운과 관련이 있을까?</div>
+					<div class="flex_item">S는 당시에는 화제가 되진 않았다.</div>
+					<div class="flex_item">Q는 일본인이다.</div>
+					<div class="flex_item">M은 춤을 춘다.</div>
+					<div class="flex_item">O는 후에 아나운서로 화제가 되었다.</div>
+					<div class="flex_item">P는 한국버전으로 화제였다.</div>
+				</div>
+			</marquee>
+		</div>	
+		</div>
+		<div id="gifbox" style="padding-top: 150px;">
+			<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+		    <div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+		    <div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+		    <div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+		    <div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+		    <div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+		    <div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+		    <div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+		    <div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    		<div style="float:left;" class="imgBox"><script>document.write(randImg());</script></div>
+    	</div>
+			
+		<!--	<script>	
+				var imgArry=new Array()
+
+					imgArry[0]="<a href='#' ><img src='images/1.jpg'></a>";
+					imgArry[1]="<a href='#' ><img src='images/2.jpg'></a>";
+					imgArry[3]="<a href='#' ><img src='images/3/jpg'></a>";
+					imgArry[4]="<a href='#' ><img src='images/0.jpg'></a>";
+
+					var whichquote=Math.floor(Math.random()*(imgArry.length))
+					document.write(imgArry[whichquote])
+				</script>
+-->
+	</div>
+
+		
+
+
+		<nav></nav> <!--메뉴-->
+		
+		<!--<div class="flex-wrap" id="news-flex0">
+			<div id="marquee-bubble">
+				<div class="marquee-wrap">
+					<div class="col">col</div>
+					<div class="col">col</div>
+					<div class="col">col</div>
+					<div class="col">col</div>
+					<div class="col">col</div>
+					<div class="col">col</div>
+				</div>
+			</div>
+		</div>
+		-->
+		<footer></footer> <!--끝머리-->
+ 
+	</body>
+</html>
