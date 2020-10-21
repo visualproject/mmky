@@ -5,10 +5,15 @@ h1{
 text-align: center;
 }
 
+/*진입 팝업~~~~*/
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
+
+/*진입 팝업끝~~~*/
 
 .imgBox {
   padding: 25px;
-        width: 300px; 
+        min-width: 100px; 
+        max-width: 400px;
     }
 
 button {
@@ -26,7 +31,7 @@ button {
   width: 100%;
   height: 100%;
   left: 0;
-  top: 80px;
+  top: 80px; d
   overflow: auto;
   z-index: 9;
 }
@@ -158,10 +163,19 @@ video {
   left: 0px;
   bottom: 0px;
  background: yellow;
- width: 40px;
- font-size: 37px;
- text-align: center;
+
 }
+
+      #nav3:hover {
+        background-color: white;
+        color: yellow;
+        }
+
+      #nav3:active {
+        background-color: white;
+        color: yellow;
+        font-weight: bold;
+      }
 
 #nav4{
   right: 0px;
@@ -230,36 +244,131 @@ margin:0px;
 
 .column {
   line-height: 1.6;
+
+}
+
+.marker:hover {
+  background-color: yellow;
 }
 
 ol{
-  margin-top: 6%;
-  left: 2em;
+  margin-top: 4.5%;
+  left: 1em;
+  right: 1em;
+
   display: block;
-  position: absolute;
-  list-style-type:decimal;
+  position: fixed;
+
   text-align: left;
   float: left;
-  height: 160px;
-  width: auto;
-  z-index: 999;
-  background-color: red;
+  height: 20%;
+  top: 0px;
+  padding: 1%;
 
   column-count: auto;
-  column-gap: 50px;
-  column-rule: 2px;
-  column-rule-color: black solid; 
-  column-width: 200px;
+  column-gap: 40px;
+  column-rule: 1px solid black;
+  column-span: all;
+  column-width: 240px;
+  overflow-x: scroll;
+  list-style-type:none;
 
 }
 
-.group1 {
-  list-style-type: disc;
-  margin-right: 2%;
+
+sub {
+     vertical-align: top; position: relative; bottom: -0.5em; 
+    font-size: smaller;
+}
+
+sup {
+     vertical-align: top; position: relative; top: -0.3em; 
+    font-size: smaller;
+    font-weight: bold;
+}
+
+ul {
+  font-size: 0.8em;
+  padding: 0px;
+  position: relative;
+
+}
+
+hr {
+  border: solid 0.1em black;
+
+}
+
+
+li.foot {
+  margin-left: 4%;
+  margin-right: 4%;
+    list-style-type: upper-alpha;
+    list-style-position: outside;
 }
 
 li {
+  font-size: 0.8em;
+
 }
+
+
+li p {
+  line-height: 160%;
+  position: relative;
+  margin-top: 0;
+  text-align: left;
+
+}
+
+
+.column li a:link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.column li a:visited {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.column li a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.column li a:active {
+  color: red;
+  text-decoration: none;
+}
+
+ul a:link {
+  color: yellow;
+  text-decoration: none;
+
+}
+
+ul a:visited {
+ color: white;
+  text-decoration: none; 
+}
+
+ul a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+ul a:active {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 
 /*타임라인*/
@@ -268,16 +377,18 @@ li {
   width: auto;
   height: auto;
   float: left;
-  position: relative;
+  position: absolute;
   display: inline;
-  margin-top: 270px;
-  overflow:auto;
+  margin-top: 300px;
+  overflow-x:scroll;
   background-image: url('bg_black_1.png');
          background-color: #161616;
          background-repeat: repeat;
          background-size: 40%;
   padding: 20px;
   text-align: center;
+
+
 }
 
 .timeline1 {
@@ -351,6 +462,33 @@ li {
   margin-top: 5px;
   float: left;
 }
+
+
+.timeline a:link{
+color: black;
+text-decoration: none;
+
+}
+
+.timeline a:hover{
+color: black;
+text-decoration: none;
+
+}
+
+.timeline a:active{
+color: black;
+text-decoration: none;
+
+}
+
+.timeline a:visited{
+color: black;
+text-decoration: none;
+
+}
+
+
 
 /*타임라인1*/
 
@@ -636,6 +774,13 @@ li {
   background-color: #56605B;
 }
 
+
+#pdf {
+  margin-top: 3.5%;
+  left: 25%;
+  position: absolute;
+  margin-bottom: 6%;
+}
 
 
 /*

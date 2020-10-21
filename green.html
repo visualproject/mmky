@@ -5,6 +5,7 @@
 		<!--주석-->
 		<meta charset="utf-8"> <!--문자셋-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
 				<!--width=device-width :페이지의 너비를 기기의 스크린 너비로 설정
 				initial-scale=1.0 : 원래의 크기로 사용한다는 의미이다.
 				minimum-scale :축소했을때의 최소로 축소 가능한 수치
@@ -23,44 +24,16 @@
 			}
 
 		</style>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<!--제이쿼리 최신버전 사용-->
-		<script>
-		/*팝업*/
-		function openForm() {
-		  document.getElementById("blue-popup").style.display = "block";
-		}
-		function closeForm() {
-		  document.getElementById("blue-popup").style.display = "none";
-		
-        }
-        /*이미지구역*/
-        function randomBH(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    function randImg(){
-        var ry = randomBH(1,24);
-        if(ry < 25) ry = '0' + ry;
-        else ry = '' + ry;
-        
-        console.log(ry);
-        return '<img src="gif/' + ry + '.gif" border="0" width="100%">';
-    }
-
-		</script>
 	</head>
 
 
-	<body>
+	<body style="overflow: hidden;">
 		<header>
 
 			<div class="container1">
 					<button class="open-button" onclick="openForm()">
 						<div class="nav" id="nav1">
-						밈숭이 믹스(영상)</div>
+						Meme-key Mix</div>
 					</button>			
 					<div class="video-popup" id="blue-popup">
 						<div class="mix-content">
@@ -79,7 +52,7 @@
 			<div class="marquee" style="margin: 10px; position: fixed;">
 				<marquee scrollamount="10" bgcolor="#FFF">
 					<div class="flex" id="flex1">
-							<div class="flex_item">A는 청사과맛이다.</div>
+							<div class="flex_item">A는 사과맛이다.</div>
 							<div class="flex_item">Y는 열정적이다.</div>
 							<div class="flex_item">D는 마스크 관련 이슈가 두개나 있다.</div>
 							<div class="flex_item">H는 신이 난다.</div>
@@ -120,9 +93,9 @@
 		</header> <!--첫머리 -->	
 
 		<div class="container2">
-			<div class="nav" id="nav3">&#10140;</div>
+			<a href="yellow.html"><div class="nav" id="nav3">Meme-key Report</div></a>
 			<a href="green.html">
-				<div class="nav" id="nav4">각주</div>
+				<div class="nav" id="nav4">Links</div>
 			</a>
 				<div class="marquee" style="margin: 10px; position: fixed;">
 					<marquee scrollamount="10" direction="right" bgcolor="#FFF" >
@@ -165,83 +138,536 @@
 		</div>	
 		<ol class="column">
 			<span class="group1">
-				<li>
-					<p>타임라인은 상단 밈숭이믹스를 영상을 기반으로 나열했다.</p>	
-				</li>
-				<li>
-					<p>제작 배경이된 원본을 우선으로, 제3자의 재업로드를 차선으로 링크가 등록되었다.</p>	
-				</li>
-				<li>
-					<p>트로피카나</p>
-				</li>
+				<ul>
+					<p style="margin-top: 0;">타임라인은 상단 &lt;Meme-key Mix&gt;를 영상을 기준으로 나열했다.
+					제작 배경이 된 필수요소의 원본을 우선으로, 제3자의 재업로드를 차선으로 링크가 등록되었다.</p>
+				</ul>
+				<hr>
+				<ul>
+					<p>
+					이 프로젝트는 현재 머무는 웹 <span class="marker">&lt;Mmky Online&gt;</span>, 좌측 상단의 <span class="marker">&lt;Meme-key mix&gt;</span>, 좌측 하단의 <span class="marker">&lt;Meme-key Report&gt;</span>까지 총 세가지의 메인 산출물을 가지고 있다. <span class="marker">가장 이상적인 관람 순서는 영상 &#10145; 웹 &#10145; 보고서 이다.</span><br> 보고서를 통해 마무리하며 프로젝트의 전체 맥락을 확인하기를 추천한다.</p>
+				</ul>
+				<ul>
+					<p>리스트 제목은 해당 링크의 원 제목을 가지고 왔다.</p>
+				</ul>
+				<hr>
 			</span>
+			<br><br>
 			<span class="group2">
-				<li>
-					<p>타임라인은 상단 밈숭이믹스를 영상을 기반으로 나열했다2.</p>	
+				<!--밈숭A 트로피카나-->
+				<li class="foot" id="foot 1">
+					<p>
+						<a href="https://www.youtube.com/watch?v=p0DE2mFp95Q" target="_blank">
+							[트로피카나 스파클링]<br>모모랜드 &#128053;_사과편
+							<sub>2017년</sub>
+						</a>
+					</p>
+					 <p>롯데 칠성음료에서 생산/판매하는 탄산음료의 광고. 사과맛, 오렌지맛, 포도맛, 복숭아맛, 자몽맛, 망고맛, 청포도맛, 파인애플맛까지 총 8종류가 있다.</p>
 				</li>
-				<li>
-					<p>제작 배경이된 원본을 우선으로, 제3자의 재업로드를 차선으로 링크가 등록되었다2.</p>	
+				<br><br>
+				<!--밈숭B 고승덕-->
+				<li class="foot" id="foot 2">
+					<p>
+						<a href="https://www.youtube.com/watch?v=RvcCmC22U2Q" target="_blank">
+						고승덕 딸아 미안하다<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						2014년 6월 3일 강남에서 열린 거리 유세에서 &#128053;는 &ldquo;못난 아버지를 둔 딸에게 정말 미안하다&rdquo;고 절규했다.
+						<a href="http://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=421&aid=0000857735" target="_blank">
+							<sup>&#91;1&#93;</sup>
+						</a>
+						&#128053;의 표정과 행동을 이용하여 맥도날드의 해피밀 품절과 관련한 일에 빗댄 패러디가 제작되었다.
+							<a href="http://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=001&oid=213&aid=0000495993" target="_blank">
+							<sup>&#91;2&#93;</sup>
+							</a>, 
+						개그콘서트에서도 패러디하였고
+							<a href="http://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=438&aid=0000002435" target="_blank">
+								<sup>&#91;3&#93;</sup>
+							</a>, 
+						해당 영상을 이용해 만든 메탈 음악이 유튜브에서 140만회 이상 시청되었다.
+							<a href="https://www.youtube.com/watch?v=cBBlrzw2Xts" target="_blank">
+								<sup>&#91;4&#93;</sup>
+							</a>
+					</p>
 				</li>
+				<!--밈숭C 이 차는 이제-->
+				<li class="foot" id="foot 3">
+					<p>
+						<a href="https://www.youtube.com/watch?v=FPEV7FmFwAM" target="_blank" >
+						[단독] 위험한 차량담보 대출‥<br>'감쪽같이 뺏겼다'.avi
+							<sub>2011년</sub>
+						</a>
+					</p>
+					<p>
+						2011년 9월 6일 《MBC 뉴스데스크》에서 차량 담보 대출이 어떻게 이루어지는지 정확한 보도를 위해 &#128053;이 동료 기자인 조씨의 차량을 알려진 방법대로 자신의 차량으로 바꾸는 시범 장면을 보이고 &ldquo;이 차는 이제 제 겁니다. 제 마음대로 팔 수 있는 겁니다.&rdquo;라고 보도하였다.이를 계기로 &lsquo;괴도 기자&rsquo;라는 별명을 갖게 되었고 2017년 10월 13일에는 MBC 노조의 유튜브 채널인 마봉춘세탁소가 &#128053;을 &lsquo;괴도 기자&rsquo;로 묘사한 동영상을 게재했다.
+						<a href="https://www.youtube.com/watch?v=71FEZ8v962Y" target="_blank">
+							<sup>[1]</sup>
+						</a>
+					</p>
+				</li>
+				<!--밈숭D 우한코로스-->
+				<li class="foot" id="foot 4">
+					<p>
+						<a href="https://www.youtube.com/watch?v=TSaFGrCLd5g" target="_blank">황교안 말실수...우한 코로스???
+							<sub>2020년</sub>
+						</a>
+					</p>
+					<p>
+						&#128053;는 대한민국 법조인 정치인이다. MBN의 코로나바이러스감영증-19 관련 인터뷰 중 &ldquo;우한 코로나바이러스&rdquo;를 &ldquo;우한 코로스&rdquo;라고 말했다가 정정하는 일이 있었고 이 외에도 마스크를 뒤집어 착용하는 사진이 있는 등의 모습을 보여 비웃음을 샀다.
+					</p>
+				</li>
+				<!--밈숭E 아모르파티-->
+				<li class="foot" id="foot 5">
+					<p>
+						<a href="https://www.youtube.com/watch?v=dw8k91kSz3U" target="_blank">김연자 - 아모르 파티 (Amor Fati)<sub>2016년</sub>
+						</a>
+					</p>
+					<p>
+						아모르 파티(라틴어: Amor fati) 또는 운명애(運命愛)는 &ldquo;운명의 사랑&rdquo;, &ldquo;운명에 대한 사랑&rdquo;으로 번역할 수 있는 라틴어 어구이다. 발매는 2013년도였으나 2016년 열린음악회를 계기로 서서히 알려지며 2018년, 부산대 학생회의 초청으로 중·장년층 트로트를 부르던 가수가 대학축제에서 공연을 하는 기념비적인 역사를 처음 쓰게 된다.
+					</p>
+				</li>
+				<!--밈숭F 조크든요-->
+				<li class="foot" id="foot 6">
+					<p>
+						<a href="https://www.youtube.com/watch?v=iMJpsjCy_oE" target="_blank">
+					이 세상 힙이 아닌 90s 패션, 옷 좀 입었던 90년대 스타일 대방출 / 14F
+							<sub>1994년</sub>
+						</a>
+					</p>
+
+					<p style="letter-spacing :-0.01em;">
+						1994년 MBC 뉴스데스크에서 X세대 젊은이들의 변화하는 옷차림에 대해서 보도한 내용이다. SNS상에서 인기를 끌며 뒤늦게 알려졌다. 2020년 정관장이 광고에서 패러디하여 다시 한번 화제가 되었다.
+						<a href="https://www.youtube.com/watch?v=Ygm5jxT5Tw4" target="_blank">
+							<sup>[1]</sup>
+						</a>
+					</p>
+				</li>
+				<!--밈숭G 지코 아무노래챌린지-->
+				<li class="foot" id="foot 7">
+					<p>
+						<a href="https://www.youtube.com/watch?v=dgw_023C_tg" target="_blank">지코(ZICO) 아무노래챌린지 연예인 모음
+							<sub>2020년</sub>
+						</a>
+					</p>
+					<p>
+						챌린지 열풍을 일으킨 &#128053;의 2020년 1월 13일 발매한 노래이다. 틱톡 마케팅의 파급력이 제대로 성공한 케이스. 청와대가 어린이날을 기념하여 게임 마인크래프트를 바탕으로 제작한 유튜브 동영상 도입부에서 국악 버전으로 연주되며 챌린지의 춤까지 재현되었다.
+						<a href="https://www.youtube.com/watch?v=Lk92k_k1HMA" target="_blank">
+							<sup>[1]</sup>
+						</a>
+					</p>
+				</li>
+				<!--밈숭H 빵상아줌마-->
+				<li class="foot" id="foot 8">
+					<p>
+						<a href="https://www.youtube.com/watch?v=Fq78xhH0swI&t=50s" target="_blank">빵상아줌마
+							<sub>2007년</sub>
+						</a>
+					</p>
+					<p>
+						&#128053;는 자동으로 우주신과 소통하고 있다고 주장하는 작가 겸 역술가이다. &ldquo;빵상&rdquo;, &ldquo;깨랑깨랑&rdquo;으로 유명하다. 현재 서울특별시 성북구 동소문로 237(길음동 541-80) 에서 &ldquo;예언가 &#128053; 철학관&rdquo; 이란 이름으로 철학관을 운영하고 있다.
+					</p>
+				</li>
+				<!--밈숭I 던질까말까-->
+				<li class="foot" id="foot 9">
+					<p>
+						<a href="https://www.youtube.com/watch?v=jLcXZpYdJkk&t=8s" target="_blank">[트니트니] 던질까 말까!? 찌리찌리 원곡! l 유튜브 핫 동영상! 오뚝이 다트
+							<sub>2015년</sub>
+						</a>
+					</p>
+
+					<p>
+						트니트니 율동체조에서 제작한 어린이 동요이다. &ldquo;던져!&rdquo;의 내용이 반복되는 특이한 가사 내용으러 인해 2018년부터 리그 오브 레전드를 플레이하는 사람들 사이에서 인터넷 밈처럼 소비되다가
+						<a href="https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=020&aid=0003256320&sid1=001" target="_blank">
+							<sup>[1]</sup>
+						</a>, 
+						2019년 10월에 가사 중 일부인 &ldquo;던져! 던져!&rdquo;를 반복하는 영상이 화제를 모으기도 했다.
+						<a href="https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=449&aid=0000182080&sid1=001" target="_blank">
+							<sup>[2]</sup>
+						</a>
+					</p>
+				</li>
+				<!--밈숭J 4달러-->
+				<li class="foot" id="foot 10">
+					<p>
+						<a href="https://www.youtube.com/watch?v=AfSqVShwB5A" target="_blank">
+							[야인시대 84회#5] 키보드 4번위치에 $표시가 있게된 썰 푼다. "4딸라"
+							<sub>2003년</sub>
+						</a>
+					</p>
+					<p style="letter-spacing :-0.01em;">
+						2013년 12월 24일에 &#128053;식 협상이라는 제목으로 올라왔다가 이후 갑작스럽게 유명세를 탄 야인시대 84화의 장면. 반복적으로 나오는 &ldquo;4딸라&rdquo; 대사가 패러디의 대상이다. 이 유행어들은 너무 잘 나가서 버거킹 CF 까지 촬영했다. 버거킹의 해당 햄버거는 실제로도 4달러에 해당되는 4900원에 판매되었다.
+						<a href="https://www.youtube.com/watch?v=sCptN9888p0" target="_blank">
+							<sup>[1]</sup>
+						</a>
+					</p>
+				</li>
+				<!--밈숭K 깡-->
+				<li class="foot" id="foot 11">
+					<p>
+						<a href="https://www.youtube.com/watch?v=xqFvYsy4wE4" target="_blank">
+							비 RAIN - 깡 GANG Official M/V
+							<sub>2017년</sub>
+						</a>
+					</p>
+					<p>
+						&lt;깡&gt;은 대한민국의 가수 &#128053;가 2017년에 발표한 노래로, &#128053;의 앨범 《MY LIFE愛》에 수록되어 있다. 이후 SNS에서 "1일 1깡"이라는 용어가 생길 정도로 인터넷 밈이 되었다.
+						<a href="http://www.artinsight.co.kr/news/view.php?no=44011" target="_blank">
+							<sup>[1]</sup>
+						</a>
+						
+						2020년 5월 통계청 유튜브 공식 계정은 이 곡의 유튜브 뮤직비디오 영상에 &ldquo;통계청에서 &ldquo;깡&rdquo; 조사 나왔다. 2020년 5월 1일 오전 10시 기준 Official M/V 조회수 6,859,592회다. 39.831 UBD다&rdquo;라는 댓글을 달았고, 조롱 논란이 일어나자 5일에 &ldquo;국민들과 스스럼없이 소통하고자 가수 &#128053; 뮤직비디오에 댓글을 쓰면서 세심한 주의를 기울이지 못한점 사과의 말씀을 드립니다&rdquo;라고 발표하였다.
+						<a href="https://news.joins.com/article/23769860" target="_blank">
+							<sup>[2]</sup>
+						</a>
+					</p>
+				</li>
+				<!--밈숭L 오르페우스-->
+				<li class="foot" id="foot 12">
+					<p>
+						<a href="https://www.youtube.com/watch?v=8rVD5aaeGEo" target="_blank">디오니소스 원본(편집x) 너 때문에 흥이 다 깨져버렸으니 책임져
+							<sub>2003년</sub>
+						</a>
+					</p>
+					<p>
+						2003년과 2004년에 SBS,투니버스에서 방영한 애니메이션 올림포스 가디언 21화의 영상. 2016년 6월 여름시기에 재조명되어 인기를 끌었다.
+					</p>
+				</li>
+				<!--밈숭M 마미손-->
+				<li class="foot" id="foot 13">
+					<p>
+						<a href="https://www.youtube.com/watch?v=D3ZFtSoWtRc" target="_blank">
+							<p>[Official MV] MOMMY SON (마미손) - 소년점프 (feat. 배기성)
+								<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						핑크색 복면을 쓰고 출연한 《쇼미더머니 777》의 참가자로, 프로그램에서 탈락한 뒤 2018년 9월 14일 유튜브에 발표한 음원 &lt;소년점프&gt;가 큰 인기를 끌면서, 쇼미더머니 777의 최대 수혜자라는 평가를 받고 있다.
+						<a href="http://isplus.live.joins.com/news/article/article.asp?total_id=23003288&cloc=" target="_blank">
+							<sup>[1]</sup>
+						</a>
+						사람들은 &#128053;과 매드 클라운이 동일인이라고 생각하지만 정작 &#128053;과 매드 클라운은 부인하고있는 상태이다. 
+					</p>
+				</li>
+
+					<!--밈숭N 백수단선배님-->
+				<li class="foot" id="foot 14">
+					<p>
+						<a href="https://www.youtube.com/watch?v=MvM9gk8Hwbs" target="_blank">박미경 국어책 리액션 레전드
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						2012년 나는 가수다 갤러리에서 시작된 유행어. MBC 나는 가수다2의 진행 구성상 공연이 끝날 때마다 다른 출연자들의 대기실 장면이 나가는데 이때 &#128053;이 리액션을 필요 이상으로 적극적으로 열심히 하는 바람에 화제가 되었다. 이 유행어는 인기를 끌어 광고까지 진출했다.
+						<a href="https://www.youtube.com/watch?v=48asnKJ2bcI&feature=emb_title" target="_blank">
+							<sup>[1]</sup>
+						</a>
+					</p>
+				</li>
+				<!--밈숭O 불쾌지수녀 혁형-->
+				<li class="foot" id="foot 15">
+					<p>
+						<a href="https://www.youtube.com/watch?v=wnwMQf0bRGg" target="_blank">
+							불쾌지수녀 고화질 원본
+							<sub>2010년</sub>
+						</a>
+					</p>
+					<p style="letter-spacing :-0.01em;"> 
+						2010년 8월 6일에 방송된 MBC 뉴스데스크 리포트에서의 인터뷰 장면이 웹상에서 화제가 되었다. 2016년 4월에는 인터뷰장면으로 &ldquo;혁형&rdquo;이라는 유튜버가 당사자 동의 하에 노래를 만들었는데 이게 더욱 유명하게 만들었다.
+						<a href="https://www.youtube.com/watch?v=8-UwbH4BUc4" target="_blank">
+							<sup>[1]</sup>
+						</a> 
+						2019년 1월에는 다이어트 건강보조식품 grn+의 광고에 리메이크되었다.
+						<a href="https://www.youtube.com/watch?v=D1RIhhhPyK0" target="_blank">
+							<sup>[2]</sup></a> 
+					</p>
+				</li>
+				<!--밈숭P 가영이퇴사짤-->
+				<li class="foot" id="foot 16">
+					<p>
+						<a href="https://www.youtube.com/watch?v=adqv-DLwuJ8&feature=emb_title" target="_blank">
+							안녕히 계세요. 저 퇴사합니다.
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						애니메이션 &lt;이누야샤&gt; TVA 5기 24화(128화)의 장면에 등장한 대사이다. &lt;이누야샤&gt;의 캐릭터 히구라시 &#128053;(한국명 &#128053;)의 대사로 &ldquo;퇴사할 때 단톡방에 올리는 영상&rdquo;이라는 제목으로 유행한 적이 있다. 이를 패러디하여 고양시가 광고를 만들기도 하고
+						<a href="https://www.youtube.com/watch?v=SoezL2WGTBQ&feature=emb_title" target="_blank">
+							<sup>[1]</sup>
+						</a> 
+						KBS 드라마 &lt;그놈이 그놈이다&gt;의 티저 영상에 쓰이기도 했다.
+						<a href="https://www.youtube.com/watch?v=w-NSeWIWDdI&feature=emb_title" target="_blank">
+							<sup>[2]</sup>
+						</a> 
+					</p>
+				</li>
+				<!--밈숭Q 펀쿨섹좌-->
+				<li class="foot" id="foot 17">
+					<p>
+						<a href="https://www.youtube.com/watch?v=N2_8gh-rkHU&t=46s" target="_blank">
+							"기후변화 문제, 섹시해야"…일 '포스트 아베' 발언 논란
+							<sub>2014년</sub>
+						</a>
+					</p>
+
+					<p>
+						일본의 정치인. 자유민주당 소속 중의원이자 현직 환경대신. 2019년 9월경 환경대신 취임 직후 유엔 기후행동 정상회의에 참석하여 회의 전날, &ldquo;기후변화 문제는 Fun하고 Cool하고 Sexy하게 대처해야 한다&rdquo;고 발언하여 논란이 있었다. 이 발언을 펀쿨섹으로, 조롱격으로 &ldquo;본좌&rdquo;를 첨가하여 &ldquo;펀쿨섹좌&rdquo;로 불린다.
+					</p>
+					
+					<br><br><br>
+				</li>
+				<!--밈숭R 궁예-->
+				<li class="foot" id="foot 18">
+					<p>
+						<a href="https://www.youtube.com/watch?v=hm6GS3A_C2M" target="_blank">
+							누구인가 지금 누가 기침소리를 내었소 누가 기침를 내었는가 말이아
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						KBS 대하드라마 태조 왕건의 등장인물 &#128053;의 대사. 2000년 12월 31일 방영된 80회에서 신하 한 명이 기침 소리를 낸 것에 &#128053;가 &ldquo;누구인가? 지금 누가 기침 소리를 내었어?&rdquo;라며 다그치는 장면이 유행이 되어 수많은 패러디를 만들어냈다.
+					</p>
+				</li>
+				<!--밈숭S 야인시대 고자라니-->
+				<li class="foot" id="foot 19">
+					<p>
+						<a href="https://www.youtube.com/watch?v=9H_SuFiC85k" target="_blank">
+							[야인시대] ★☆전설 of 레게노☆★ 심영, 고자라니! (3/4)│Ep.64
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						2003년 3월 4일에 방영된 SBS 드라마 야인시대 64화 에피소드에서 나온 장면. 이 장면 이후로 &ldquo;고자&rdquo;라는 단어의 용례가 확장되었고 수많은 패러디를 만들어냈다.
+					</p>
+					<br>
+				</li>
+				<!--밈숭T 트럼프 차이나-->
+				<li class="foot" id="foot 20">
+					<p>
+						<a href="https://www.youtube.com/watch?v=RbM2F-cfN0A&t=22s" target="_blank">
+							Donald Trump Says China Remix
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						미국의 기업인 출신 제45대 대통령이다. 밈 자체가 된 대표적 사례 중 하나이다. 해당 영상은 평소 너무 잦게 언급하는 &ldquo;중국&rdquo;을 모아 Mashup형태로 만들어낸 것이다.
+					</p>
+					<br><br>
+				</li>
+				<!--밈숭U 장문복-->
+				<li class="foot" id="foot 21">
+					<p>
+						<a href="https://www.youtube.com/watch?v=hrupNfU6dwI&t=19s" target="_blank">
+							[STAR ZOOM IN] Hip President of SuperstarK2 힙통령 장문복의 넘사벽 카피랩(슈퍼스타K2) 150819 EP.21
+							<sub>2010년</sub>
+						</a>
+					</p>
+					<p>
+						2010년 8월 6일 방영된 슈퍼스타K2 대구 예선에서 출연했다. 아웃사이더의 스피드 레이서를 속사포로 부리는 모습이 화제가 되었다. 
+					</p>
+					<br>
+				</li>
+				<!--밈숭V 오렌지주스-->
+				<li class="foot" id="foot 22">
+					<p>
+						<a href="https://www.youtube.com/watch?v=3v4Yf59gxWE&t=17s" target="_blank">
+							예나, 선정이 딸이에요
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						MBC 드라마 사랑했나봐에서 컬트적인 인기를 얻은 장면. 2013년 4월 1일 방영된 120화에서 등장했다. 원작에서는 &#128053;이 한윤진(박시은)을 통해 주예나가 최선정(김보경)의 딸이란 것을 알자 충격을 받는 심각한 장면이다.
+					</p>
+					<br>
+				</li>
+				<!--밈숭W 공항도둑-->
+				<li class="foot" id="foot 23">
+					<p>
+						<a href="https://www.youtube.com/watch?v=PjyvA6jaKtI&t=37s" target="_blank">
+							공항도둑 원본(K-meme)
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						2014년 4월 13일 페이스북에 올라와 인기를 탔던 동영상으로, 한 중년 남성이 인천국제공항 제1여객터미널 편의점에서 과자를 절도하려다 손님을 응대하던 청년에게 들켜 말싸움을 하는 내용이 담겨 있다.
+					</p>
+					<br>
+					<br>
+				</li>
+				<!--밈숭X 김무성-->
+				<li class="foot" id="foot 24">
+					<p>
+						<a href="https://www.youtube.com/watch?v=D86ySwLHiPY" target="_blank">김무성 의원 여행가방 '노룩패스' 논란 / SBS
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						2017년 5월 23일 오후 7일간 일본 외유뒤 귀국한 김무성 의원이 서울 김포공항 입국장에서 수행원에게 캐리어를 밀어주면서 눈도 안 마주치고 팔자걸음으로 가는 모습이 영상으로 찍히며 화제거리가 되었다. 이 장면이 농구기술인 &ldquo;노 룩 패스&rdquo;를 연상케해하여 붙여진 이름이다.
+						<a href="https://www.youtube.com/watch?v=l61hIfcLCv4" target="_blank">
+							<sup>[1]</sup>
+						</a> 
+						이 영상이 미국 최대 유머사이트 레딧(reddit)에서 &ldquo;한국 정치인의 멋(Korean politician swag)&rdquo;이라는 제목으로 인기글 2위에 올라 NBC 방송의 &ldquo;지미 팰런의 투나잇 쇼&rdquo;에서도 패러디 되었다.
+						<a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1004215463" target="_blank">
+							<sup>[2]</sup>
+						</a>
+					</p>
+				</li>
+
+
+
+				<!--밈숭Y 유노윤호-->
+				<li class="foot" id="foot 25">
+					<p>
+						<a href="https://www.youtube.com/watch?v=TZ8X6zZWBn0" target="_blank">유노윤호(U-know) 드라마 발연기-
+							<sub>2009년</sub>
+						</a>
+					</p>
+					<p>
+						2009년 방영된 &lt;맨땅에 헤딩&gt; 이라는 작품에서 나온 대사이다. 당시 발연기로 많은 비난을 받다가 결국 조기종영하였다.
+					</p>
+					<p>
+						<a href="https://www.youtube.com/watch?v=QEGtAr5tmPQ" target="_blank">살인 예고하는 유노윤호-
+							<sub>2008년</sub>
+						</a>
+					</p>
+					<p>
+						Mnet의 음악시상식이었던 2008년 MAMA에서 무대를 관람하는 모습이 카메라에 잡혔는데 카메라를 손가락질하며 목을 긋는 모습으로 &ldquo;난데없는 살인예고&rdquo;라는 이름으로 GIF가 화제가 되었다.   
+					</p>
+					<p>
+						<a href="https://www.youtube.com/watch?v=nRceUCRzKr4" target="_blank">
+							[TVXQ! 東方神起] 110218 KBS｢MUSIC BANK｣-왜 (Keep Your Head Down) Remix Ver.-
+							<sub>2011년</sub>
+						</a>
+					</p>
+					<p>
+						2011년 2월 18일 방송된 KBS 뮤직뱅크의 &ldquo;왜&rdquo; 무대이다. 같은 그룹 멤버인 최강창민의 생일을 축하해주는 모습에 화제가 되었다.
+					</p>
+				</li>
+				<!--밈숭Z 반복강조-->
+				<li class="foot" id="foot 26">
+					<p>
+						<a href="https://www.youtube.com/watch?v=erwI3Nx3cKk" target="_blank">강조되고 반복되는 소리
+							<sub>2014년</sub>
+						</a>
+					</p>
+					<p>
+						대한민국의 기업인이자 반려견 훈련사이다. 2016년 EBS 세상에 나쁜 개는 없다 시즌1 바닥을 무서워하는 개 미키편에서 나온 말이다.
+					</p>
+					<br>
+				</li>
+				<hr>
+				<span class="group3">
+				<ul>
+					<p style="margin-top: 0;">프로젝트 &lt;Monkey See, Meme-key Do&gt;는 본래 모방과 같은 비유전적 방법을 통해 전달되는 문화적 정보의 복제자를 뜻하는 단어인 &ldquo;밈&rdquo;이 미디어 환경의 변화로 조롱이나 유행정도로 남아버린 현대 시대에, 밈 소비의 즐거움이 모든 것을 밈화하고 있지는 않은지에 대해 숙어 &ldquo;Make a monkey out of somebdy ~를 조롱거리로 만들다&rdquo;에 빗대어&ldquo;누군가를 원숭이로 만들고 있지는 않은가&rdquo;에 대해 생각해보는 지점을 제안한다.</p>
+				</ul>
+				<hr>
+				<ul>
+					<p>
+					이 프로젝트는 현재 머무는 웹 <span class="marker">&lt;Mmky Online&gt;</span>, 좌측 상단의 <span class="marker">&lt;Meme-key mix&gt;</span>, 좌측 하단의 <span class="marker">&lt;Meme-key Report&gt;</span>까지 총 세가지의 메인 산출물을 가지고 있다. <span class="marker">가장 이상적인 관람 순서는 영상 &#10145; 웹 &#10145; 보고서 이다.</span><br> 보고서를 통해 마무리하며 프로젝트의 전체 맥락을 확인하기를 추천한다.</p>
+				</ul>
+				<hr>
+				<ul>
+					<p>국립 한경대학교 디자인건축융합학부 디자인 전공 2020, <a href="http://www.hknudesign.kr/show/2020/" target="_blank">제 24회 졸업전시 [택]</a><br> <시각 프로젝트> 지도교수 하주현<br>&#169;2020. 강혜린(<a href="http://instagram.com/___9ang" target="_blank">@___9ang)</a> All rights reserved.</p></ul>
+				</span>
 			</span>
+
 		</ol>
 		
-		<div class="timeline" style="overflow:auto;">
+		<div class="timeline">
 			<div class="timeline1">
-				<div id="mmkyA">
-					<p>트로피카나</p>
-				</div>
+				<a href="#foot 1">
+					<div id="mmkyA">
+						<p>트로피카나</p>
+					</div>
+				</a>
+				
 				<div id="mmkyB">
-					<p>미안하다</p>
+					<a href="#foot 2">
+						<p>미안하다</p>
+					</a>
 				</div>
+
 				<div id="mmkyA" style="width: 120px; margin-left: 0px;">
-					<p>트로피카나</p>
+					<a href="#foot 1">
+						<p>트로피카나</p>
+					</a>
 				</div>
 				<div id="mmkyI">
-					<p>던질까말까</p>
+					<a href="#foot 9">
+						<p>던질까말까</p>
+					</a>
 				</div>
 				<div id="mmkyC">
-					<p>이 차는 이제</p>
+					<a href="#foot 3">
+						<p>이 차는 이제</p>
+					</a>
 				</div>
 				<div id="mmkyH">
-					<p>빵상</p>
+					<a href="#foot 8">
+						<p>빵상</p>
+					</a>
 				</div>
 				<div id="mmkyH" style="margin-left: 150px;">
-					<p>빵상</p>
+					<a href="#foot 8">
+						<p>빵상</p>
+					</a>
 				</div>
 				<div id="mmkyC" style="width: 250px;">
-					<p>이 차는 이제</p>
+					<a href="#foot 3">
+						<p>이 차는 이제</p>
+					</a>
 				</div>
 				<div id="mmkyT1">
-					<p>china</p>
+					<a href="#foot 20">
+						<p>china</p>
+					</a>
 				</div>
 				<div id="mmkyN" style="margin-left: 620px;">
-					<p>박미경</p>
+					<a href="#foot 14">
+						<p>박미경</p>
+					</a>
 				</div>
 				<div id="mmkyN" style="margin-left: 150px;">
-					<p>박미경</p>
+					<a href="#foot 14">
+						<p>박미경</p>
+					</a>
 				</div>
 				<div id="mmkyN2">
-					<p>박미경</p>
+					<a href="#foot 14">
+						<p>박미경</p>
+					</a>
 				</div>
 				<div id="mmkyN3">
-					<p>박미경</p>
+					<a href="#foot 14">
+						<p>박미경</p>
+					</a>
 				</div>
 				<div id="mmkyN3" style="margin-left: 30px;">
-					<p>박미경</p>
+					<a href="#foot 14">
+						<p>박미경</p>
+					</a>
 				</div>
 			</div>
 			<div class="timeline12">
 				<div id="mmkyT2">
-					<p>china</p>
+					<a href="#foot 20">
+						<p>china</p>
+					</a>
 				</div>
 				<div id="mmkyN" style="margin-left: 710px;">
-					<p>박미경</p>
+					<a href="#foot 14">
+						<p>박미경</p>
+					</a>
 				</div>
 				<div id="mmkyG" style="margin-left: 670px;">
-					<p>Any song</p>
+					<a href="#foot 7">
+						<p>Any song</p>
+					</a>
 				</div>
 				<div id="mmkyT2" style="margin-left: 0px; width: 200px;" >
-					<p>china</p>
+					<a href="#foot 20">
+						<p>china</p>
+					</a>
 				</div>
 
 
@@ -249,19 +675,29 @@
 
 			<div class="timeline2">
 				<div id="mmkyE">
+					<a href="#foot 5">
 					<p>아모르파티</p>
+					</a>
 				</div>
 				<div id="mmkyF">
-					<p>기분이조크든요</p>
+					<a href="#foot 6">
+					 	<p>기분이조크든요</p>
+					 </a>
 				</div>
 				<div id="mmkyT3">
-					<p>china</p>
+					<a href="#foot 20">
+						<p>china</p>
+					</a>
 				</div>
 				<div id="mmkyW">
-					<p>공항도둑</p>
+					<a href="#foot 23">
+						<p>공항도둑</p>
+					</a>
 				</div>
 				<div id="mmkyK" style="margin-left: 1400px; width: 1100px;" >
-					<p>깡</p>
+					<a href="#foot 11">
+						<p>깡</p>
+					</a>
 				</div>
 				
 
@@ -270,141 +706,230 @@
 
 			<div class="timeline3">
 				<div id="mmkyM">
-					<p>소년점프</p>
+					<a href="#foot 13">
+						<p>소년점프</p>
+					</a>
 				</div>
 				<div id="mmkyH2">
-					<p>빵상</p>
+					<a href="#foot 8">
+						<p>빵상</p>
+					</a>
 				</div>
 				<div id="mmkyH2">
-					<p>빵상</p>
+					<a href="#foot 8">
+						<p>빵상</p>
+					</a>
 				</div>
 				<div id="mmkyL">
-					<p>디오니소스</p>
+					<a href="#foot 12">
+						<p>디오니소스</p>
+					</a>
 				</div>
 				<div id="mmkyU">
-					<p>장문복</p>
+					<a href="#foot 21">
+						<p>장문복</p>
+					</a>
 				</div>
 				<div id="mmkyL" style="margin-left:0px;">
-					<p>디오니소스</p>
+					<a href="#foot 12">
+						<p>디오니소스</p>
+					</a>
 				</div>
 				<div id="mmkyR">
-					<p>누구인가?</p>
+					<a href="#foot 18">
+						<p>누구인가?</p>
+					</a>
 				</div>
 				<div id="mmkyD">
-					<p>우한코로스</p>
+					<a href="#foot 4">
+						<p>우한코로스</p>
+					</a>
 				</div>
 				<div id="mmkyV">
-					<p>예나선정이딸이에요</p>
+					<a href="#foot 22">
+						<p>예나선정이딸이에요</p>
+					</a>
 				</div>
 				<div id="mmkyD" style="margin-left: 0px;">
-					<p>우한코로스</p>
+					<a href="#foot 4">
+						<p>우한코로스</p>
+					</a>
 				</div>
 				<div id="mmkyJ">
-					<p>4달라</p>
+					<a href="#foot 10">
+						<p>4달라</p>
+					</a>
 				</div>
 				<div id="mmkyK" style="margin-left: 180px;">
-					<p>깡</p>
+					<a href="#foot 11">
+						<p>깡</p>
+					</a>
 				</div>
 				<div id="mmkyP" style="margin-left: 120px;">
-					<p>안녕히계세요 여러분</p>
+					<a href="#foot 16">
+						<p>안녕히계세요 여러분</p>
+					</a>
 				</div>
 				<div id="mmkyP" style="margin-left: 120px;">
-					<p>안녕히계세요 여러분</p>
+					<a href="#foot 16">
+						<p>안녕히계세요 여러분</p>
+					</a>
+
 				</div>
 
 			</div>
 			<div class="timeline4">
 				<div id="mmkyS" style="margin-left:600px;">
-					<p>고자라니</p>
+					<a href="#foot 19">
+						<p>고자라니</p>
+					</a>
 				</div>
 				<div id="mmkyS">
-					<p>고자라니</p>
+					<a href="#foot 19">
+						<p>고자라니</p>
+					</a>
 				</div>
 				<div id="mmkyS">
-					<p>고자라니</p>
+					<a href="#foot 19">
+						<p>고자라니</p>
+					</a>
 				</div>
 				<div id="mmkyO">
-					<p>불쾌지수녀</p>
+					<a href="#foot 15">
+						<p>불쾌지수녀</p>
+					</a>
 				</div>
 				<div id="mmkyT4">
-					<p>china</p>
+					<a href="#foot 20">
+						<p>china</p>
+					</a>
 				</div>
 				<div id="mmkyG">
-					<p>Any song</p>
+					<a href="#foot 7">
+						<p>Any song</p>
+					</a>
 				</div>
 				<div id="mmkyW">
-					<p>공항도둑</p>
+					<a href="#foot 23">
+						<p>공항도둑</p>
+					</a>
 				</div>
+
 				<div id="mmkyQ">
-					<p>펀쿨섹</p>
+					<a href="#foot 17">
+						<p>펀쿨섹</p>
+					</a>
 				</div>
 				<div id="mmkyT1" style="margin-left: 500px;">
-					<p>china</p>
+					<a href="#foot 20">
+						<p>china</p>
+					</a>
 				</div>
 				<div id="mmkyT1">
-					<p>china</p>
+					<a href="#foot 20">
+						<p>china</p>
+					</a>
 				</div>
 				<div id="mmkyT1">
-					<p>china</p>
+					<a href="#foot 20">
+						<p>china</p>
+					</a>
 				</div>
 			</div>
 			<div class="timeline5">
 				<div id="mmkyM2" style="margin-left: 1400px;">
-					<p>마미손</p>
+					<a href="#foot 13">
+						<p>마미손</p>
+					</a>
 				</div>
 				<div id="mmkyM2">
-					<p>마미손</p>
+					<a href="#foot 13">
+						<p>마미손</p>
+					</a>
 				</div>
 				<div id="mmkyO2" style="margin-left: 300px;">
+					<a href="#foot 13">
+						<p>마미손</p>
+					</a>
+					<a href="#foot 13">
 					<p>불쾌지수</p>
 				</div>
 				<div id="mmkyM2">
-					<p>마미손</p>
+					<a href="#foot 13">
+						<p>마미손</p>
+					</a>
 				</div>
 				<div id="mmkyK" style="margin-left: 540px;">
-					<p>깡</p>
+					<a href="#foot 11">
+						<p>깡</p>
+					</a>
 				</div>
 				<div id="mmkyW" style="margin-left: 200px;">
-					<p>공항도둑</p>
+					<a href="#foot 23">
+						<p>공항도둑</p>
+					</a>
 				</div>
 				<div id="mmkyP" style="width: 150px;">
+					<a href="#foot 16">
 					<p>안녕히계세요 여러분</p>
+				</a>
 				</div>
 			</div>
 			<div class="timeline6">
 				<div id="mmkyK" style="margin-left: 1100px;">
-					<p>깡</p>
+					<a href="#foot 11">
+						<p>깡</p>
+					</a>
 				</div>
 				<div id="mmkyK" style="margin-left: 1330px;">
-					<p>깡</p>
+					<a href="#foot 11">
+						<p>깡</p>
+					</a>
 				</div>
 				<div id="mmkyP" style="width: 150px; margin-left: 100px;">
-					<p>안녕히계세요 여러분</p>
+					<a href="#foot 16">
+						<p>안녕히계세요 여러분</p>
+					</a>
 				</div>
 			</div>
+
 			<div class="timeline7">
 				<div id="mmkyK2" style="margin-left: 1900px;">
-					<p>깡</p>
+					<a href="#foot 11">
+						<p>깡</p>
+					</a>
 				</div>
 				<div id="mmkyZ" style="margin-left: 100px;">
-					<p>강형욱</p>
+					<a href="#foot 26">
+						<p>강형욱</p>
+					</a>
 				</div>
 				<div id="mmkyZ" style="margin-left: 100px;">
-					<p>강형욱</p>
+					<a href="#foot 26">
+						<p>강형욱</p>
+					</a>
 				</div>
 			</div>
 			<div class="timeline8">
 				<div id="mmkyY" style="margin-left: 1400px;">
+					<a href="#foot 25">
 					<p>좋아?</p>
+					</a>
 				</div>
 				<div id="mmkyY2">
-					<p>웨딩드레스입으니까</p>
+					<a href="#foot 25">
+					<p>좋아?</p>
+					</a>
 				</div>
 				<div id="mmkyY3">
-					<p>생일축하한다!</p>
+					<a href="#foot 25">
+					<p>좋아?</p>
+					</a>
 				</div>
 				<div id="mmkyZ" style="margin-left: 1200px;">
-					<p>강형욱</p>
+					<a href="#foot 26">
+						<p>강형욱</p>
+					</a>
 				</div>
 			</div>
 
@@ -413,4 +938,23 @@
 		<footer></footer> <!--끝머리-->
  
 	</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!--제이쿼리 최신버전 사용-->
+		<script>
+		/*팝업*/
+		function openForm() {
+		  document.getElementById("blue-popup").style.display = "block";
+		}
+		function closeForm() {
+		  document.getElementById("blue-popup").style.display = "none";
+		
+        }
+        /*이미지구역*/
+        function randomBH(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+		</script>
+	
 </html>
