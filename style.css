@@ -748,7 +748,14 @@ text-decoration: none;
   background-color: #FF6A6A;
 }
 
-#mmkyL {
+#mmkyL1 {
+  width: 170px;
+  float: left;
+  margin-left: 30px;
+  background-color: #A36BFF;
+}
+
+#mmkyL2 {
   width: 170px;
   float: left;
   margin-left: 30px;
@@ -834,7 +841,14 @@ text-decoration: none;
   background-color: #2A3BD7;
 }
 
-#mmkyG {
+#mmkyG1 {
+  width: 200px;
+  float: left;
+  margin-left: 30px;
+  background-color: #FAFF00;
+}
+
+#mmkyG2 {
   width: 200px;
   float: left;
   margin-left: 30px;
@@ -896,7 +910,7 @@ text-decoration: none;
 
 /*타임라인6*/
 
-#mmkyK {
+#mmkyK1 {
   width: 800px;
   float: left;
   margin-left: 50px;
@@ -906,6 +920,34 @@ text-decoration: none;
 /*타임라인7*/
 #mmkyK2 {
   width: 2000px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FFFFFF;
+}
+
+#mmkyK3 {
+  width: 800px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FFFFFF;
+}
+
+#mmkyK4 {
+  width: 800px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FFFFFF;
+}
+
+#mmkyK5 {
+  width: 800px;
+  float: left;
+  margin-left: 50px;
+  background-color: #FFFFFF;
+}
+
+#mmkyK6 {
+  width: 800px;
   float: left;
   margin-left: 50px;
   background-color: #FFFFFF;
