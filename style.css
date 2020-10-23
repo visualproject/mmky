@@ -1,9 +1,12 @@
 /*CSS*/
+
+
 body{margin: 0px;
 padding:0px;}
 h1{
 text-align: center;
 }
+
 
 /*진입 팝업~~~~*/
 #draggable { width: 150px; height: 150px; padding: 0.5em; }
@@ -91,7 +94,7 @@ video {
 
 
 .nav{
-  width: 200px;
+  width: 180px;
   height: 40px;
   padding: 10px;
   z-index: 99;
@@ -121,17 +124,14 @@ video {
   font-weight: bold;
 }
 
-.nav:visited {
-  color: black;
-  text-decoration: none;
-
-}
 
 
 #nav1{
   background: #4DB4FF;
   top: 0px;
   left: 0px;
+  border-radius: 0px 100px 100px 0px;
+  border-left: none;
 }
       #nav1:hover {
         background-color: white;
@@ -151,6 +151,8 @@ video {
   right: 0px;
   top: 0px;
   background: #e364c8;
+  border-radius: 100px 0px 0px 100px;
+  border-right: none;
 
 }
 
@@ -162,7 +164,9 @@ video {
 #nav3{
   left: 0px;
   bottom: 0px;
- background: yellow;
+ background: #fff100;
+ border-radius: 0px 100px 100px 0px;
+  border-left: none;
 
 }
 
@@ -181,6 +185,8 @@ video {
   right: 0px;
   bottom: 0px;
   background: #43E082;
+  border-radius: 100px 0px 0px 100px;
+  border-right: none;
 }
       #nav4:hover {
         background-color: white;
@@ -244,8 +250,11 @@ margin:0px;
 
 .column {
   line-height: 1.6;
+  
+
 
 }
+
 
 .marker:hover {
   background-color: yellow;
@@ -255,6 +264,7 @@ ol{
   margin-top: 4.5%;
   left: 1em;
   right: 1em;
+  width: 1550px;
 
   display: block;
   position: fixed;
@@ -272,6 +282,8 @@ ol{
   column-width: 240px;
   overflow-x: scroll;
   list-style-type:none;
+
+    /* Can be replaced it with any other value*/
 
 }
 
@@ -499,11 +511,21 @@ text-decoration: none;
   background-color: #90FF39;
 }
 
+/*
 #mmkyA:hover {
   background-image: url(mmkyhover/mmkyAhover.png);
-  background-size: cover;
+  background-size: 55px;
   background-repeat: no-repeat;
+
 }
+*/
+#mmkyA2 {
+  width: 250px;
+  float: left;
+  margin-left: 100px;
+  background-color: #90FF39;
+}
+
 
 #mmkyB {
   width: 100px;
@@ -532,6 +554,56 @@ text-decoration: none;
   background-color: #2A3BD7;
 }
 
+#mmkyT2 {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #2A3BD7;
+}
+
+#mmkyT3 {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #2A3BD7;
+}
+
+#mmkyT4 {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #2A3BD7;
+}
+
+#mmkyT5 {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #2A3BD7;
+}
+
+#mmkyT6 {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #2A3BD7;
+}
+
+#mmkyT7 {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #2A3BD7;
+}
+#mmkyT8 {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  background-color: #2A3BD7;
+}
+
+
+
 #mmkyH {
   width: 100px;
   float: left;
@@ -539,7 +611,21 @@ text-decoration: none;
   background-color: #FF6A6A;
 }
 
-#mmkyN {
+#mmkyN1 {
+  width: 180px;
+  float: left;
+  margin-left: 10px;
+  background-color: #00F3B9;
+}
+
+#mmkyN4 {
+  width: 180px;
+  float: left;
+  margin-left: 10px;
+  background-color: #00F3B9;
+}
+
+#mmkyN6 {
   width: 180px;
   float: left;
   margin-left: 10px;
@@ -547,6 +633,13 @@ text-decoration: none;
 }
 
 #mmkyN2 {
+  width: 130px;
+  float: left;
+  margin-left: 130px;
+  background-color: #00F3B9;
+}
+
+#mmkyN5 {
   width: 130px;
   float: left;
   margin-left: 130px;
@@ -592,16 +685,56 @@ text-decoration: none;
   background-color: #2A3BD7;
 }
 
-#mmkyW {
+#mmkyW1 {
   width: 80px;
   float: left;
   margin-left: 380px;
   background-color: #522A2A;
 }
 
+#mmkyW2 {
+  width: 80px;
+  float: left;
+  margin-left: 380px;
+  background-color: #522A2A;
+}
+#mmkyW3 {
+  width: 80px;
+  float: left;
+  margin-left: 380px;
+  background-color: #522A2A;
+}
 /*타임라인3*/
 
-#mmkyM {
+#mmkyM1 {
+  width: 470px;
+  float: left;
+  margin-left: 700px;
+  background-color: #FF5CB4;
+}
+
+#mmkyM2 {
+  width: 470px;
+  float: left;
+  margin-left: 700px;
+  background-color: #FF5CB4;
+}
+
+#mmkyM3 {
+  width: 470px;
+  float: left;
+  margin-left: 700px;
+  background-color: #FF5CB4;
+}
+
+#mmkyM4 {
+  width: 470px;
+  float: left;
+  margin-left: 700px;
+  background-color: #FF5CB4;
+}
+
+#mmkyM5 {
   width: 470px;
   float: left;
   margin-left: 700px;
@@ -668,14 +801,26 @@ text-decoration: none;
 
 /*타임라인4*/
 
-#mmkyS {
+#mmkyS1 {
+  width: 130px;
+  float: left;
+  margin-left: 30px;
+  background-color: #B6A99E;
+}
+#mmkyS2 {
+  width: 130px;
+  float: left;
+  margin-left: 30px;
+  background-color: #B6A99E;
+}
+#mmkyS3 {
   width: 130px;
   float: left;
   margin-left: 30px;
   background-color: #B6A99E;
 }
 
-#mmkyO {
+#mmkyO1 {
   width: 1000px;
   float: left;
   margin-left: 50px;
@@ -721,7 +866,28 @@ text-decoration: none;
   background-color: #60BCFF;
 }
 
-#mmkyP {
+#mmkyP1 {
+  width: 250px;
+  float: left;
+  margin-left: 20px;
+  background-color: #00BF64;
+}
+
+#mmkyP2 {
+  width: 250px;
+  float: left;
+  margin-left: 20px;
+  background-color: #00BF64;
+}
+
+#mmkyP3 {
+  width: 250px;
+  float: left;
+  margin-left: 20px;
+  background-color: #00BF64;
+}
+
+#mmkyP4 {
   width: 250px;
   float: left;
   margin-left: 20px;
@@ -746,7 +912,7 @@ text-decoration: none;
 }
 
 /*타임라인8*/
-#mmkyY {
+#mmkyY1 {
   width: 80px;
   float: left;
   margin-left: 200px;
@@ -767,7 +933,21 @@ text-decoration: none;
   background-color: #FF6B00;
 }
 
-#mmkyZ {
+#mmkyZ1 {
+  width: 220px;
+  float: left;
+  margin-left: 100px;
+  background-color: #56605B;
+}
+
+#mmkyZ2 {
+  width: 220px;
+  float: left;
+  margin-left: 100px;
+  background-color: #56605B;
+}
+
+#mmkyZ3 {
   width: 220px;
   float: left;
   margin-left: 100px;
@@ -776,10 +956,299 @@ text-decoration: none;
 
 
 #pdf {
-  margin-top: 3.5%;
-  left: 25%;
-  position: absolute;
-  margin-bottom: 6%;
+  margin-top: 2.5%;
+  position: relative;
+  margin-bottom: 2.5%;
+  width: 100%;
+  height: 100%;
+}
+
+#new {
+  background-color: #fff100;
+  transition: all ease 0.7s;
+  bottom:0px;
+}
+
+
+
+
+#new:hover {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+
+}
+
+#new:active {
+  background-color: black 0.3s;
+
+}
+
+#new:active { box-shadow: 0 5px #43E082; transform: translateY(4px); background-color: #e364c8; }
+
+
+
+
+.gifm {
+  position: fixed;
+  animation: dynamic 5s;
+  z-index: 999;
+
+}
+
+.gifm:hover { animation-play-state: paused; }
+
+#gifm1 { 
+  top: 200px;
+  animation-name: gifmove1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-duration: 47s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes gifmove1 {
+  0% {left: -20%;}
+  100% {left: 130%;}
+
+}
+
+
+#gifm2 { 
+  right: 0; 
+  bottom: 50px;
+
+  animation-name: gifmove2;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes gifmove2 {
+  0% {right:  0%;}
+  5%  {right: 5%;}
+  10% {right: 10%;}
+  15% {right: 15%;}
+  20% {right: 20%;}
+  25% {right: 25%;}
+  30% {right: 30%;}
+  35% {right: 35%;}
+  40% {right: 40%;}
+  45% {right: 45%;}
+  50% {right: 50%;}
+  55% {right: 55%;}
+  60% {right: 60%;}
+  65% {right: 65%;}
+  70% {right: 70%;}
+  75% {right: 75%;}
+  80% {right: 80%;}
+  85% {right: 85%;}
+  90% {right: 90%;}
+  95% {right: 95%;}
+  100% {right: 100%;}
+}
+
+#gifm3 {
+  left: 300px;
+  opacity: 0;
+  animation: gifmove3 4.5s;
+  animation-name: gifmove3;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+
+
+}
+
+@keyframes gifmove3 {
+  0% {top: 0%; opacity: 1;}
+  99% {top: 40%; opacity: 1;}
+  100% {top: 40%; opacity: 0;}
+
+}
+
+#gifm4 {
+  right: 50px;
+  top: 10px;
+
+  animation-name: gifmove4;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes gifmove4 {
+  0% {top:0%; right: 10%;}
+  20%{top:20%; right: 10%;}
+  40%{top:20%; right: 30%;}
+  60%{top:0%; right: 20%;}
+  80%{top:2%; right: 40%;}
+  100% {top:-20%; right: 40%;}
+
+
+}
+
+#gifm5 {
+  right: 30%;
+  bottom: : 10px;
+
+  animation-name: gifmove5;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 6s;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes gifmove5 {
+  0% {bottom:-10%; left: 40%;}
+  20%{bottom: 20%; left: 40%;}
+  40%{bottom:30%; left: 50%;}
+  60%{bottom:50%; left: 70%; }
+  80%{bottom:80%; left: 50%;}
+  100% {bottom:100%; left: 20%;}
+
+
+}
+
+#gifm6 {
+  top: 10px;
+  left: 400px;
+  animation-name: gifmove6;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes gifmove6 {
+  0% {top: 10%;}
+  20%{top: 10%; right: 40%;}
+  40%{top: 50%; left: 40%;}
+  60%{top: 20%; left: 20%; }
+  80%{top: 20%; left: 30%; }
+  100% {top: 10%; left: 20%;}
+
+
+}
+
+#gifm7 { 
+  right: 200px;
+  bottom: 150px;
+  animation-name: gifmove7;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes gifmove7 {
+  0% {right: -20%;}
+  25% {right: 30%;}
+  35% {right: 35%; }
+  100% {right: 130%;}
+
+}
+
+#gifm8 {
+margin: 1%; 
+  animation-name: gifmove8;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  transition: none;
+}
+
+@keyframes gifmove8 {
+  0%   {left: 0%; top: 0%;}
+  25% {transform: none;}
+  26%  {left: 95%; top: 0%; transform: rotate( 90deg);}
+  50%  {left: 95%; top: 85%; transform: rotate( 90deg);}
+  51%  {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);}
+  75%  {left: 0%; top: 85%; transform: none;
+      -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);}
+  76%  {transform: rotate( -90deg);}
+  100% {left: 0%; top: 0%; transform: rotate( -90deg);}
+
+}
+
+.gifs {
+    position: fixed;
+  z-index: 999;
+}
+
+#gifm9 {
+ top:500px;
+left: 80px;
+
+}
+
+
+#gifm10 {
+  bottom: 100px;
+  left: 100px;
+  
+}
+
+#gifm11 {
+ right:200px;
+ bottom:500px;
+
+
+}
+
+
+#gifm12 {
+  bottom: 200px;
+  right:300px;
+  
+}
+
+#gifm13 {
+left:350px;
+ bottom:100px;
+
+
+}
+
+
+#gifm14 {
+  bottom: 400px;
+  right:100px;
+  
+}
+
+
+#gifm15 {
+ left:240px;
+ bottom:500px;
+
+
+}
+
+
+#gifm16 {
+  top: 230px;
+  right:500px;
+  
 }
 
 
