@@ -453,6 +453,18 @@ video {
 #nav1{
   left: 0px;
   bottom: 0px;
+ background: #4DB4FF;
+ border-radius: 0px 100px 100px 0px;
+  border-left: none;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-bottom: -0px;
+        font-size: 16px;
+}
+
+#nav3{
+  left: 0px;
+  bottom: 0px;
  background: #fff100;
  border-radius: 0px 100px 100px 0px;
   border-left: none;
