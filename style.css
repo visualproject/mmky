@@ -584,14 +584,16 @@ height: 100%; border: 0;
 
 #marq1 {
   top:0;
-  margin:10px;
+  margin: 10px;
   position: fixed;
+  z-index: 9;
 }
 
 #marq2 {
   bottom: 0;
-  margin:0px;
+  margin: 5px;
   position: fixed;
+  z-index: 9;
 }
 
 .flex{
@@ -721,7 +723,7 @@ ol{
   column-gap: 40px;
   column-rule: 1px solid black;
   column-span: all;
-  column-width: 24vh;
+  column-width: 20vh;
   overflow-x: auto;
   overflow-y: hidden;
   list-style-type:none;
@@ -867,7 +869,7 @@ ul a:active {
 @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
 .timeline {
     width: 2300px;
-    height: 40vh;
+    height: 38vh;
   float: left;
   position: absolute;
   display: inline;
@@ -940,6 +942,8 @@ font-size: 12pt;
   width: 200%;
   margin-top: 5px;
   float: left;
+  margin-bottom: 8vh;
+
 }
 
 .timeline a:link{
