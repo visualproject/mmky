@@ -36,20 +36,12 @@ $(function(){
 		var path = $(this).attr('href');
 		$('.cont').append(embed);
 		$(path).show();
-		$('.dim').show();
 	})
   
 	$('.close').on('click', function(){ //레이어 닫을때
 		$(this).parents('#layer').hide();
-		$('.dim').hide();
 		$('.cont').empty();
 	})
-  
-  $('.dim').on('click', function(){
-    $(this).hide();
-    $('#layer').hide();
-    $('.cont').empty();
-  })
   
 });
 /*팝업*/
