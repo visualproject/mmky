@@ -846,25 +846,108 @@ ul a:active {
 
 
 .timeline {
-    width: 3500px;
+    width: 357vh;
     height: 50vh;  
   float: left;
   position: fixed;
   display: inline;
-  font-size: 15px;
+  font-size: 12px;
   
   overflow-x:auto;
   overflow-y:hidden;
 
-  background-image: url('bg_black_1.png');
+  background-image: url('bg_black.png');
          background-color: #161616;
          background-repeat: repeat;
-         background-size: 40%;
+         background-size: 49%;
 
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   bottom:0px;
 
+}
+
+.time{
+  width: 100px;
+  padding: 1px;
+  display: flex;
+}
+
+#time1 {
+  text-align: left;
+  background-color: white;
+  color: black;
+  margin-bottom: 0px;
+}
+
+#time2 {
+  text-align: left;
+  margin-left: 454px;
+  background-color: white;
+  color: black;
+}
+
+#time3 {
+  text-align: left;
+  margin-left: 454px;
+  background-color: white;
+  color: black;
+}
+
+#time4 {
+  text-align: left;
+  margin-left: 454px;
+  background-color: white;
+  color: black;
+}
+
+#time5 {
+  text-align: left;
+  margin-left: 454px;
+  background-color: white;
+  color: black;
+}
+#time6 {
+  text-align: left;
+  margin-left: 454px;
+  background-color: white;
+  color: black;
+}
+#time7 {
+  text-align: left;
+  margin-left: 454px;
+  background-color: white;
+  color: black;
+}
+
+#time8 {
+  text-align: left;
+  margin-left: 454px;
+  background-color: white;
+  color: black;
+}
+
+#time9 {
+  text-align: left;
+  margin-left: 454px;
+  background-color: white;
+  color: black;
+}
+
+#time10 {
+  text-align: left;
+  margin-left: 454px;
+  right: 0; 
+  background-color: white;
+  color: black;
+}
+
+.timeline hr{
+  width: 4500px;
+  color: #666;
+  border: none;
+  border: 1px solid;
+  text-align: left;
 }
 
 
@@ -878,10 +961,10 @@ ul a:active {
 font-size: 12pt;
 
   overflow: auto;
-  background-image: url('bg_black_1.png');
+  background-image: url('bg_black.png');
          background-color: #161616;
          background-repeat: repeat;
-         background-size: 40%;
+         background-size: 100%;
 
 }
 
@@ -893,8 +976,8 @@ font-size: 12pt;
   display: inline;
   width: 200%;
   float: left;
-  margin-top: 3vh;
-  overflow-x: scroll;
+  margin-bottom: 1vh;
+
 
 }
 
@@ -903,22 +986,23 @@ font-size: 12pt;
   display: inline;
   width: 200%;
   float: left;
-  margin-top: 5px;
+    margin-bottom: 1vh;
 }
 
 .timeline2 {
   position: static;
   display: inline;
   width: 200%;
-  margin-top: 5px;
   float: left;
+  margin-bottom: 1vh;
 }
+
 
 .timeline3 {
   position: static;
   display: inline;
   width: 200%;
-  margin-top: 5px;
+  margin-bottom: 1vh;
   float: left;
 }
 
@@ -926,7 +1010,7 @@ font-size: 12pt;
   position: static;
   display: inline;
   width: 200%;
-  margin-top: 5px;
+  margin-bottom: 1vh;
   float: left;
 }
 
@@ -934,7 +1018,7 @@ font-size: 12pt;
   position: static;
   display: inline;
   width: 200%;
-  margin-top: 5px;
+  margin-bottom: 1vh;
   float: left;
 }
 
@@ -942,7 +1026,7 @@ font-size: 12pt;
   position: static;
   display: inline;
   width: 200%;
-  margin-top: 5px;
+  margin-bottom: 1vh;
   float: left;
   margin-bottom: 8vh;
 
@@ -980,14 +1064,14 @@ text-decoration: none;
 /*
 #K5A:hover {
   background-image: url(mmkyhover/mmkyAhover.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
 */
 
 #mmkyA1 {
-  width: 250px;
+  width: 25vh;
   float: left;
   margin-left: 100px;
   background-color: #90FF39;
@@ -995,7 +1079,7 @@ text-decoration: none;
 
 #mmkyA1:hover {
   background-image: url(mmkyhover/A.png);
-  background-size: 55px;
+  background-size: 50px;
   background-repeat: no-repeat;
 
 }
@@ -1006,7 +1090,7 @@ text-decoration: none;
 
 
 #mmkyA2 {
-  width: 250px;
+  width: 250vh;
   float: left;
   margin-left: 100px;
   background-color: #90FF39;
@@ -1014,7 +1098,7 @@ text-decoration: none;
 
 #mmkyA2:hover {
   background-image: url(mmkyhover/A.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1027,14 +1111,14 @@ text-decoration: none;
 
 
 #mmkyB {
-  width: 100px;
+  width: 10vh;
   float: left;
   background-color: #FF9839;
 }
 
 #mmkyB:hover {
   background-image: url(mmkyhover/B.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1046,7 +1130,7 @@ text-decoration: none;
 
 
 #mmkyI {
-  width: 250px;
+  width: 25vh;
   float: left;
   margin-left: 100px;
   background-color: #FDB4FF;
@@ -1054,7 +1138,7 @@ text-decoration: none;
 
 #mmkyI:hover {
   background-image: url(mmkyhover/I1.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1064,7 +1148,7 @@ text-decoration: none;
 }
 
 #mmkyC1 {
-  width: 100px;
+  width: 100vh;
   float: left;
   margin-left: 50px;
   background-color: #D2D2D2;
@@ -1072,7 +1156,7 @@ text-decoration: none;
 
 #mmkyC1:hover {
   background-image: url(mmkyhover/C.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1084,7 +1168,7 @@ text-decoration: none;
 
 
 #mmkyH1 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 8가0px;
   background-color: #FF6A6A;
@@ -1092,7 +1176,7 @@ text-decoration: none;
 
 #mmkyH1:hover {
   background-image: url(mmkyhover/H.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1103,7 +1187,7 @@ text-decoration: none;
 
 
 #mmkyH2 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 100px;
   background-color: #FF6A6A;
@@ -1111,7 +1195,7 @@ text-decoration: none;
 
 #mmkyH2:hover {
   background-image: url(mmkyhover/H.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1123,7 +1207,7 @@ text-decoration: none;
 
 
 #mmkyH3 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 8가0px;
   background-color: #FF6A6A;
@@ -1131,7 +1215,7 @@ text-decoration: none;
 
 #mmkyH3:hover {
   background-image: url(mmkyhover/H.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1142,7 +1226,7 @@ text-decoration: none;
 
 
 #mmkyH4 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 8가0px;
   background-color: #FF6A6A;
@@ -1150,7 +1234,7 @@ text-decoration: none;
 
 #mmkyH4:hover {
   background-image: url(mmkyhover/H.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1164,7 +1248,7 @@ text-decoration: none;
 
 
 #mmkyC2 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 50px;
   background-color: #D2D2D2;
@@ -1172,7 +1256,7 @@ text-decoration: none;
 
 #mmkyC2:hover {
   background-image: url(mmkyhover/C.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1183,7 +1267,7 @@ text-decoration: none;
 
 
 #mmkyT6 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 50px;
   background-color: #2A3BD7;
@@ -1191,7 +1275,7 @@ text-decoration: none;
 
 #mmkyT6:hover {
   background-image: url(mmkyhover/T.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1202,7 +1286,7 @@ text-decoration: none;
 
 
 #mmkyR {
-  width: 260px;
+  width: 26vh;
   float: left;
   margin-left: 180px;
   background-color: #E0C741;
@@ -1210,7 +1294,7 @@ text-decoration: none;
 
 #mmkyR:hover {
   background-image: url(mmkyhover/R.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1221,7 +1305,7 @@ text-decoration: none;
 
 
 #mmkyD1 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 0px;
   background-color: #E21919;
@@ -1229,7 +1313,7 @@ text-decoration: none;
 
 #mmkyD1:hover {
   background-image: url(mmkyhover/D.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1240,7 +1324,7 @@ text-decoration: none;
 
 
 #mmkyW3 {
-  width: 80px;
+  width: 8vh;
   float: left;
   margin-left: 100px;
   background-color: #9b9b9b;
@@ -1248,7 +1332,7 @@ text-decoration: none;
 
 #mmkyW3:hover {
   background-image: url(mmkyhover/W.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1261,7 +1345,7 @@ text-decoration: none;
 
 
 #mmkyT1 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 100px;
   background-color: #2A3BD7;
@@ -1269,7 +1353,7 @@ text-decoration: none;
 
 #mmkyT1:hover {
   background-image: url(mmkyhover/T2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1291,7 +1375,7 @@ text-decoration: none;
 
 #mmkyT3:hover {
   background-image: url(mmkyhover/T.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1310,7 +1394,7 @@ text-decoration: none;
 
 #mmkyT4:hover {
   background-image: url(mmkyhover/T2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1323,7 +1407,7 @@ text-decoration: none;
 
 
 #mmkyT5 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 300px;
   background-color: #2A3BD7;
@@ -1331,7 +1415,7 @@ text-decoration: none;
 
 #mmkyT5:hover {
   background-image: url(mmkyhover/T2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1342,7 +1426,7 @@ text-decoration: none;
 
 
 #mmkyT7 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 20px;
   background-color: #2A3BD7;
@@ -1350,7 +1434,7 @@ text-decoration: none;
 
 #mmkyT7:hover {
   background-image: url(mmkyhover/T.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1364,7 +1448,7 @@ text-decoration: none;
 
 
 #mmkyT8 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 100px;
   background-color: #2A3BD7;
@@ -1373,7 +1457,7 @@ text-decoration: none;
 
 #mmkyT8:hover {
   background-image: url(mmkyhover/T2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1386,7 +1470,7 @@ text-decoration: none;
 
 
 #mmkyN1 {
-  width: 180px;
+  width: 18vh;
   float: left;
   margin-left: 150px;
   background-color: #00F3B9;
@@ -1395,7 +1479,7 @@ text-decoration: none;
 
 #mmkyN1:hover {
   background-image: url(mmkyhover/N.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1407,7 +1491,7 @@ text-decoration: none;
 
 
 #mmkyN4 {
-  width: 180px;
+  width: 18vh;
   float: left;
   margin-left: 50px;
   background-color: #00F3B9;
@@ -1415,7 +1499,7 @@ text-decoration: none;
 
 #mmkyN4:hover {
   background-image: url(mmkyhover/N.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1425,7 +1509,7 @@ text-decoration: none;
 }
 
 #mmkyN6 {
-  width: 180px;
+  width: 18vh;
   float: left;
   margin-left: 610px;
   background-color: #00F3B9;
@@ -1433,7 +1517,7 @@ text-decoration: none;
 
 #mmkyN6:hover {
   background-image: url(mmkyhover/N.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1443,7 +1527,7 @@ text-decoration: none;
 }
 
 #mmkyN2 {
-  width: 130px;
+  width: 13vh;
   float: left;
   margin-left: 130px;
   background-color: #00F3B9;
@@ -1452,7 +1536,7 @@ text-decoration: none;
 
 #mmkyN2:hover {
   background-image: url(mmkyhover/N.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1462,46 +1546,9 @@ text-decoration: none;
 }
 
 
-#mmkyN5 {
-  width: 130px;
-  float: left;
-  margin-left: 130px;
-  background-color: #00F3B9;
-}
-
-
-#mmkyN5:hover {
-  background-image: url(mmkyhover/N.png);
-  background-size: 55px;
-  background-repeat: no-repeat;
-
-}
-
-#mmkyN5:active {
- box-shadow: 0 5px #43E082; transform: translateY(3px); background-color: #e364c8; 
-}
-
-#mmkyN3 {
-  width: 300px;
-  float: left;
-  margin-left: 130px;
-  background-color: #00F3B9;
-}
-
-#mmkyN3:hover {
-  background-image: url(mmkyhover/N.png);
-  background-size: 55px;
-  background-repeat: no-repeat;
-
-}
-
-#mmkyN3:active {
- box-shadow: 0 5px #43E082; transform: translateY(3px); background-color: #e364c8; 
-}
-
 /*타임라인1.2*/
 #mmkyT2 {
-  width: 700px;
+  width: 70vh;
   float: left;
   margin-left: 190px;
   background-color: #2A3BD7;
@@ -1509,7 +1556,7 @@ text-decoration: none;
 
 #mmkyT2:hover {
   background-image: url(mmkyhover/T2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1521,7 +1568,7 @@ text-decoration: none;
 /*타임라인2*/
 
 #mmkyE {
-  width: 800px;
+  width: 80vh;
   float: left;
   margin-left: 300px;
   background-color: #A36BFF;
@@ -1529,7 +1576,7 @@ text-decoration: none;
 
 #mmkyE:hover {
   background-image: url(mmkyhover/E.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1539,7 +1586,7 @@ text-decoration: none;
 }
 
 #mmkyF {
-  width: 300px;
+  width: 30vh;
   float: left;
   margin-left: 20px;
   background-color: #FFF06A;
@@ -1547,7 +1594,7 @@ text-decoration: none;
 
 #mmkyF:hover {
   background-image: url(mmkyhover/F.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1558,7 +1605,7 @@ text-decoration: none;
 
 
 #mmkyX {
-  width: 200px;
+  width: 20vh;
   float: left;
   margin-left: 20px;
   background-color: yellow;
@@ -1566,7 +1613,7 @@ text-decoration: none;
 
 #mmkyX:hover {
   background-image: url(mmkyhover/X.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1580,7 +1627,7 @@ text-decoration: none;
 
 
 #mmkyT3 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 60px;
   background-color: #2A3BD7;
@@ -1588,7 +1635,7 @@ text-decoration: none;
 
 #mmkyT3:hover {
   background-image: url(mmkyhover/T.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1599,7 +1646,7 @@ text-decoration: none;
 
 
 #mmkyW1 {
-  width: 80px;
+  width: 8vh;
   float: left;
   margin-left: 10px;
   background-color: #9b9b9b;
@@ -1607,7 +1654,7 @@ text-decoration: none;
 
 #mmkyW1:hover {
   background-image: url(mmkyhover/W.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1618,7 +1665,7 @@ text-decoration: none;
 
 
 #mmkyW2 {
-  width: 80px;
+  width: 8vh;
   float: left;
   margin-left: 0px;
   background-color: #9b9b9b;
@@ -1626,7 +1673,7 @@ text-decoration: none;
 
 #mmkyW2:hover {
   background-image: url(mmkyhover/W.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1647,7 +1694,7 @@ text-decoration: none;
 
 #mmkyM1:hover {
   background-image: url(mmkyhover/M.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1666,7 +1713,7 @@ text-decoration: none;
 
 #mmkyM1:hover {
   background-image: url(mmkyhover/M.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1676,7 +1723,7 @@ text-decoration: none;
 }
 
 #mmkyM3 {
-  width: 150px;
+  width: 15vh;
   float: left;
   margin-left: 100px;
   background-color: #FF5CB4;
@@ -1684,7 +1731,7 @@ text-decoration: none;
 
 #mmkyM3:hover {
   background-image: url(mmkyhover/M.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1694,7 +1741,7 @@ text-decoration: none;
 }
 
 #mmkyO1 {
-  width: 300px;
+  width: 30vh;
   float: left;
   margin-left: 150px;
   background-color: #60BCFF;
@@ -1703,7 +1750,7 @@ text-decoration: none;
 
 #mmkyO1:hover {
   background-image: url(mmkyhover/O.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1713,7 +1760,7 @@ text-decoration: none;
 }
 
 #mmkyM4 {
-  width: 200px;
+  width: 20vh;
   float: left;
   margin-left: 300px;
   background-color: #FF5CB4;
@@ -1721,7 +1768,7 @@ text-decoration: none;
 
 #mmkyM4:hover {
   background-image: url(mmkyhover/M.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1731,14 +1778,14 @@ text-decoration: none;
 }
 
 #mmkyM5 {
-  width: 370px;
+  width: 37vh;
   float: left;
   margin-left: 500px;
   background-color: #FF5CB4;
 }
 #mmkyM5:hover {
   background-image: url(mmkyhover/M.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1750,7 +1797,7 @@ text-decoration: none;
 
 
 #mmkyL1 {
-  width: 170px;
+  width: 17vh;
   float: left;
   margin-left: 50px;
   background-color: #A36BFF;
@@ -1758,7 +1805,7 @@ text-decoration: none;
 
 #mmkyL1:hover {
   background-image: url(mmkyhover/L.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1769,7 +1816,7 @@ text-decoration: none;
 
 
 #mmkyL2 {
-  width: 170px;
+  width: 17vh;
   float: left;
   margin-left: 30px;
   background-color: #A36BFF;
@@ -1777,7 +1824,7 @@ text-decoration: none;
 
 #mmkyL2:hover {
   background-image: url(mmkyhover/L2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1788,8 +1835,7 @@ text-decoration: none;
 
 
 #mmkyU {
-  width: 70px;
-  height: 50px;
+  width: 7vh;
   float: left;
   margin-left: 0px;
   background-color: #00FFF0;
@@ -1797,7 +1843,7 @@ text-decoration: none;
 
 #mmkyU:hover {
   background-image: url(mmkyhover/U.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1808,7 +1854,7 @@ text-decoration: none;
 
 
 #mmkyV {
-  width: 200px;
+  width: 20vh;
   float: left;
   margin-left: 100px;
   background-color: #FF8515;
@@ -1817,7 +1863,7 @@ text-decoration: none;
 
 #mmkyV:hover {
   background-image: url(mmkyhover/V.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1828,7 +1874,7 @@ text-decoration: none;
 
 
 #mmkyD2 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 100px;
   background-color: #E21919;
@@ -1836,7 +1882,7 @@ text-decoration: none;
 
 #mmkyD2:hover {
   background-image: url(mmkyhover/D.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1847,7 +1893,7 @@ text-decoration: none;
 
 
 #mmkyJ1 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 100px;
   background-color: #43A84D;
@@ -1855,7 +1901,7 @@ text-decoration: none;
 
 #mmkyJ1:hover {
   background-image: url(mmkyhover/J.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1866,7 +1912,7 @@ text-decoration: none;
 
 
 #mmkyJ2 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 80px;
   background-color: #43A84D;
@@ -1874,7 +1920,7 @@ text-decoration: none;
 
 #mmkyJ2:hover {
   background-image: url(mmkyhover/J.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1887,7 +1933,7 @@ text-decoration: none;
 
 
 #mmkyZ2 {
-  width: 230px;
+  width: 23vh;
   float: left;
   margin-left: 100px;
   background-color: #ffd39b;
@@ -1896,7 +1942,7 @@ text-decoration: none;
 
 #mmkyZ2:hover {
   background-image: url(mmkyhover/Z.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1908,7 +1954,7 @@ text-decoration: none;
 
 
 #mmkyZ3 {
-  width: 230px;
+  width: 23vh;
   float: left;
   margin-left: 1000px;
   background-color: #ffd39b;
@@ -1916,7 +1962,7 @@ text-decoration: none;
 
 #mmkyZ3:hover {
   background-image: url(mmkyhover/Z.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1931,7 +1977,7 @@ text-decoration: none;
 /*타임라인4*/
 
 #mmkyS1 {
-  width: 130px;
+  width: 13vh;
   float: left;
   margin-left: 300px;
   background-color: #B6A99E;
@@ -1939,7 +1985,7 @@ text-decoration: none;
 
 #mmkyS1:hover {
   background-image: url(mmkyhover/S.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1950,14 +1996,14 @@ text-decoration: none;
 
 
 #mmkyS2 {
-  width: 130px;
+  width: 13vh;
   float: left;
   margin-left: 30px;
   background-color: #B6A99E;
 }
 #mmkyS2:hover {
   background-image: url(mmkyhover/S.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1967,7 +2013,7 @@ text-decoration: none;
 }
 
 #mmkyS3 {
-  width: 130px;
+  width: 13vh;
   float: left;
   margin-left: 30px;
   background-color: #B6A99E;
@@ -1975,7 +2021,7 @@ text-decoration: none;
 
 #mmkyS3:hover {
   background-image: url(mmkyhover/S.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -1986,7 +2032,7 @@ text-decoration: none;
 
 
 #mmkyT4 {
-  width: 500px;
+  width: 50vh;
   float: left;
   margin-left: 400px;
   background-color: #2A3BD7;
@@ -1994,7 +2040,7 @@ text-decoration: none;
 
 #mmkyT4:hover {
   background-image: url(mmkyhover/T2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2005,7 +2051,7 @@ text-decoration: none;
 
 
 #mmkyG1 {
-  width: 200px;
+  width: 20vh;
   float: left;
   margin-left: 30px;
   background-color: #FAFF00;
@@ -2013,7 +2059,7 @@ text-decoration: none;
 
 #mmkyG1:hover {
   background-image: url(mmkyhover/G.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2024,7 +2070,7 @@ text-decoration: none;
 
 
 #mmkyG2 {
-  width: 100px;
+  width: 10vh;
   float: left;
   margin-left: 300px;
   background-color: #FAFF00;
@@ -2032,7 +2078,7 @@ text-decoration: none;
 
 #mmkyG2:hover {
   background-image: url(mmkyhover/G.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2043,7 +2089,7 @@ text-decoration: none;
 
 
 #mmkyQ {
-  width: 250px;
+  width: 25vh;
   float: left;
   margin-left: 50px;
   background-color: #4292BF;
@@ -2051,7 +2097,7 @@ text-decoration: none;
 
 #mmkyQ:hover {
   background-image: url(mmkyhover/Q.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2065,7 +2111,7 @@ text-decoration: none;
 /*타임라인5*/
 
 #mmkyM2 {
-  width: 130px;
+  width: 13vh;
   float: left;
   margin-left: 50px;
   background-color: #FF5CB4;
@@ -2073,7 +2119,7 @@ text-decoration: none;
 
 #mmkyM2:hover {
   background-image: url(mmkyhover/M.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2086,7 +2132,7 @@ text-decoration: none;
 
 
 #mmkyO2 {
-  width: 700px;
+  width: 70vh;
   float: left;
   margin-left: 1000px;
   background-color: #60BCFF;
@@ -2094,7 +2140,7 @@ text-decoration: none;
 
 #mmkyO2:hover {
   background-image: url(mmkyhover/O.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2107,7 +2153,7 @@ text-decoration: none;
 
 
 #mmkyP1 {
-  width: 200px;
+  width: 20vh;
   float: left;
   margin-left: 30px; 
   background-color: #00BF64;
@@ -2115,7 +2161,7 @@ text-decoration: none;
 
 #mmkyP1:hover {
   background-image: url(mmkyhover/P.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2129,7 +2175,7 @@ text-decoration: none;
 
 
 #mmkyP2 {
-  width: 200px;
+  width: 20vh;
   float: left;
   margin-left: 10px; 
   background-color: #00BF64;
@@ -2138,7 +2184,7 @@ text-decoration: none;
 
 #mmkyP2:hover {
   background-image: url(mmkyhover/P.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2151,7 +2197,7 @@ text-decoration: none;
 
 
 #mmkyP3 {
-  width: 150px;
+  width: 15vh;
   float: left;
   margin-left: 10px; 
   background-color: #00BF64;
@@ -2160,7 +2206,7 @@ text-decoration: none;
 
 #mmkyP3:hover {
   background-image: url(mmkyhover/P.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2172,7 +2218,7 @@ text-decoration: none;
 
 
 #mmkyP4 {
-  width: 250px;
+  width: 25vh;
   float: left;
   margin-left: 2000px;
   background-color: #00BF64;
@@ -2181,7 +2227,7 @@ text-decoration: none;
 
 #mmkyP4:hover {
   background-image: url(mmkyhover/P.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2195,7 +2241,7 @@ text-decoration: none;
 /*타임라인6*/
 
 #mmkyK1 {
-  width: 800px;
+  width: 80vh;
   float: left;
   margin-left: 50px;
   background-color: #FFFFFF;
@@ -2203,7 +2249,7 @@ text-decoration: none;
 
 #mmkyK1:hover {
   background-image: url(mmkyhover/K.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2216,7 +2262,7 @@ text-decoration: none;
 
 
 #mmkyK2 {
-  width: 300px;
+  width: 30vh;
   float: left;
   margin-left: 50px;
   background-color: #FFFFFF;
@@ -2225,7 +2271,7 @@ text-decoration: none;
 
 #mmkyK2:hover {
   background-image: url(mmkyhover/K2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2238,7 +2284,7 @@ text-decoration: none;
 /*타임라인7*/
 
 #mmkyK3 {
-  width: 800px;
+  width: 80vh;
   float: left;
   margin-left: 1100px;
 
@@ -2247,7 +2293,7 @@ text-decoration: none;
 
 #mmkyK3:hover {
   background-image: url(mmkyhover/K.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2257,7 +2303,7 @@ text-decoration: none;
 }
 
 #mmkyK4 {
-  width: 600px;
+  width: 60vh;
   float: left;
   margin-left: 150px;
   background-color: #FFFFFF;
@@ -2265,7 +2311,7 @@ text-decoration: none;
 
 #mmkyK4:hover {
   background-image: url(mmkyhover/K2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2276,7 +2322,7 @@ text-decoration: none;
 
 
 #mmkyK5 {
-  width: 600px;
+  width: 130vh;
   float: left;
   margin-left: 100px;
   background-color: #FFFFFF;
@@ -2284,7 +2330,7 @@ text-decoration: none;
 
 #mmkyK5:hover {
   background-image: url(mmkyhover/K.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2295,14 +2341,14 @@ text-decoration: none;
 
 
 #mmkyK6 {
-  width: 600px;
+  width: 60vh;
   float: left;
   margin-left: 50px;
   background-color: #FFFFFF;
 }
 #mmkyK6:hover {
   background-image: url(mmkyhover/K2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2314,7 +2360,7 @@ text-decoration: none;
 
 /*타임라인8*/
 #mmkyY1 {
-  width: 80px;
+  width: 8vh;
   float: left;
   margin-left: 100px;
   background-color: #FF6B00;
@@ -2322,7 +2368,7 @@ text-decoration: none;
 
 #mmkyY1:hover {
   background-image: url(mmkyhover/Y1.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2333,7 +2379,7 @@ text-decoration: none;
 
 
 #mmkyY2 {
-  width: 200px;
+  width: 20vh;
   float: left;
   margin-left: 30px;
   background-color: #FF6B00;
@@ -2341,7 +2387,7 @@ text-decoration: none;
 
 #mmkyY2:hover {
   background-image: url(mmkyhover/Y2.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
@@ -2352,7 +2398,7 @@ text-decoration: none;
 
 
 #mmkyY3 {
-  width: 220px;
+  width: 22vh;
   float: left;
   margin-left: 100px;
   background-color: #FF6B00;
@@ -2360,7 +2406,7 @@ text-decoration: none;
 
 #mmkyY3:hover {
   background-image: url(mmkyhover/Y3.png);
-  background-size: 55px;
+  background-size:50px;
   background-repeat: no-repeat;
 
 }
