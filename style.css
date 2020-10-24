@@ -267,7 +267,7 @@ button {
 }
 
 /* The popup form - hidden by default */
-.video-popup {
+.videowrap {
   display: none;
   position: fixed;
   width: 100%;
@@ -275,14 +275,15 @@ button {
   left: 0;
   top: 80px;
   overflow: auto;
-  z-index: 9;
+  z-index: 99;
 
 }
 
 
 
+
 /* Modal Content */
-.mix-content{
+.inner{
   background-color: black;
   margin: auto;
   padding: 25px;
@@ -293,20 +294,20 @@ button {
 
 }
 
-.embed-container {
+.cont {
   position: relative;
   padding-bottom: 45%;
   height: 0;
   left: 0px;
 }
 
-.embed-container embed, .embed-container iframe {
+.cont embed, .cont iframe {
 position: absolute; width: 100%; left: 0px;
 height: 100%; border: 0;
 }
 
 
-.mix-content .btn {
+.inner .btn {
   color: #adadad;
   width: 50px;
   height: 50px;
@@ -320,16 +321,16 @@ height: 100%; border: 0;
 }
 
 /* Add some hover effects to buttons */
-.mix-content .btn:hover{
+.inner .btn:hover{
   color: #fff;
 }
 
-.mix-content h1{
+.inner h1{
   margin: 10px;
   text-align: center;
 }
 
-.mix-content p{
+.inner p{
   text-align: center;
 
 }
@@ -340,9 +341,11 @@ video {
 
 }
 
+
+
 @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
 
-.video-popup {
+.videowrap {
   display: none;
   position: fixed;
   width: 100%;
@@ -350,13 +353,13 @@ video {
   left: 0;
   top: 70px;
   overflow: auto;
-  z-index: 9;
+  z-index: 99;
   text-align: left;
 
 }
 
 
-.mix-content .btn {
+.inner .btn {
   color: #adadad;
   width: 30px;
   height: 30px;
@@ -371,20 +374,20 @@ video {
   font-size: 35px;
 }
 
-.mix-content h1{
+.inner h1{
   margin: 10px;
   text-align: left;
     margin:3vh;
 }
 
-.mix-content p{
+.inner p{
   text-align: left;
   margin:3vh;
 
 }
 
 
-.mix-content{
+.inner{
   background-color: black;
   margin: auto;
   padding: 1vh;
@@ -397,14 +400,14 @@ video {
 
 }
 
-.embed-container {
+.cont {
   position: relative;
   padding-bottom: 45%;
   height: 0;
   left: 0px;
 }
 
-.embed-container embed, .embed-container iframe {
+.cont embed, .cont iframe {
 position: absolute; width: 90%; left: 0vh;
 height: 100%; border: 0;
 }
@@ -497,6 +500,7 @@ height: 100%; border: 0;
         padding-top: 10px;
     padding-bottom: -0px;
     font-size: 16px;
+    z-index: 999;
 }
 }
 
@@ -2446,7 +2450,7 @@ text-decoration: none;
   margin-bottom: 2.5%;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 
@@ -2476,7 +2480,7 @@ text-decoration: none;
 
 
 #pdf {
-  z-index: 3;
+  z-index:9;
   margin-top: 6%;
   position: relative;
   margin-bottom: 2.5%;
@@ -2508,7 +2512,6 @@ text-decoration: none;
 
 
 .gifm {
-  z-index: 1;
   cursor: pointer;
 }
 
@@ -2794,6 +2797,9 @@ left:30px;
 
 @media (max-width:600px){
 
+.gifm {
+  z-index: 1;
+}
 
 #gifm9 {
  top:10px;
