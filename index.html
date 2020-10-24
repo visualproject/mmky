@@ -14,6 +14,8 @@
 				user-scalable : 사용자의 확대/축소 기능을 설정, 기본값은 yes이다.-->
 		<title>Mmky Online</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style2.css">
+
 		<link rel="shortcut icon" href=""><!--파비콘-->
 		<link rel="apple-touch-icon=precomposed" href="">
 
@@ -27,8 +29,7 @@
 				 background-attachment: fixed;s
         		width: 100%;
         		background-size: cover;
-			}
-
+}
 
 		</style>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -42,6 +43,7 @@
 		  document.getElementById("blue-popup").style.display = "none";
 		
         }
+ 
         /*이미지랜덤*/
         function randomBH(min, max) {
         min = Math.ceil(min);
@@ -49,14 +51,28 @@
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+      $( document ).ready( function() {
+        $( window ).scroll( function() {
+          if ( $( this ).scrollTop() > 200 ) {
+            $( '.top' ).fadeIn();
+          } else {
+            $( '.top' ).fadeOut();
+          }
+        } );
+        $( '.top' ).click( function() {
+          $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+          return false;
+        } );
+      } );
+
     function randImg(){
-        var ry = randomBH(0,39);
+        var ry = randomBH(0,86);
         /*
         if(ry < 24) ry = '0' + ry;
         else ry = '' + ry;
         */
-        console.log('<img src="mmky/' + fileArr[ry] + '" "border="0" width="100%">',ry);
-        return '<img src="mmky/' + fileArr[ry] + '" "border="0" width="100%">';
+        console.log('<img src="mmky/' + fileArr[ry] + '" "border="0" width="80%">',ry);
+        return '<img src="mmky/' + fileArr[ry] + '" "border="0"width="80%">';
     }
 
     var fileArr = [     
@@ -76,6 +92,50 @@
     					"K_1.gif",
     					"K_2.gif",
     					"Z_1.gif",
+    					"B_1.gif",
+    					"D_1.gif",
+    					"F_1.gif",
+    					"F_2.gif",
+    					"G_1.gif",
+    					"G_2.gif",
+    					"G_3.gif",
+    					"G_4.gif",
+    					"H_1.gif",
+    					"J_1.gif",
+    					"K_3.gif",
+    					"K_4.gif",
+    					"K_5.gif",
+    					"K_6.gif",
+    					"K_7.gif",
+    					"K_8.gif",
+    					"K_9.gif",
+    					"K_10.gif",
+    					"K_11.gif",
+    					"K_12.gif",
+    					"N_1.gif",
+    					"N_2.gif",
+    					"N_3.gif",
+    					"O_1.gif",
+    					"P_1.gif",
+    					"R_1.gif",
+    					"S_1.gif",
+    					"T_1.gif",
+    					"T_2.gif",
+    					"T_3.gif",
+    					"T_4.gif",
+    					"T_5.gif",
+    					"T_6.gif",
+    					"T_7.gif",
+    					"T_8.gif",
+    					"T_9.gif",
+    					"U_1.gif",
+    					"V_1.gif",
+    					"W_1.gif",
+    					"X_1.gif",
+    					"X_2.gif",
+    					"Y_1.gif",
+    					"Y_2.gif",
+    					"Y_3.gif",
     					"01.jpg",
     					"02.jpg",
     					"03.jpg",
@@ -99,13 +159,18 @@
     					"021.jpg",
     					"022.png",
     					"023.jpg",
-    					"024.jpg"
+    					"024.jpg",
+    					"E_2.gif",
+    					"V_2.gif",
+    					"W_2.gif",
     	]
+
+
 		</script>
 	</head>
 
 
-	<body style="overflow-y: auto;">
+	<body style="overflow-y: auto; overflow-x: hidden;">
 		<header>
 		<div class="container1">
 				<button class="open-button" onclick="openForm()">
@@ -118,7 +183,7 @@
 								<h1>Meme-key Mix</h1>
 								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
 								<center>
-									<iframe src="https://player.vimeo.com/video/469913924" width="740" height="530" frameborder="0" allow="autoplay; fullscreen"></iframe>
+									<iframe id="mixvideo" src="https://player.vimeo.com/video/469913924" width="740" height="530" frameborder="0" allow="autoplay; fullscreen"></iframe>
 								</center>
 								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
 							</div>
@@ -127,8 +192,8 @@
 
 			<a href="index.html"><div class="nav" id="nav2">HOME</div></a>
 		</div>
-		<div style="margin: 10px; position: fixed; z-index: 9;">
-		<marquee scrollamount="10" bgcolor="#FFF">
+		<div id="marq1" style="position: fixed; z-index: 9;">
+		<marquee style="margin: 0px;" scrollamount="10" bgcolor="#FFF">
 				<div class="flex" id="flex1">
 					<div class="flex_item">A는 청사과맛이다.</div>
 					<div class="flex_item">Y는 열정적이다.</div>
@@ -206,8 +271,8 @@
 		<div class="container2">
 			<a href="yellow.html"><div class="nav" id="nav3">Meme-key Report</div></a>
 			<a href="green.html"><div class="nav" id="nav4">Links</div></a>
-			<div style="margin: 10px; position: fixed; z-index: 9;">
-				<marquee scrollamount="10" direction="right" bgcolor="#FFF" >
+			<div id="marq2" style="position: fixed; z-index: 9;">
+				<marquee style="margin: 0px;" scrollamount="10" direction="right" bgcolor="#FFF" >
 					<div class="flex" id="flex2">
 						<div class="flex_item"><span>Y는 생일축하전문이다.</span></div>
 						<div class="flex_item">B는 사과했다.</div>
@@ -281,210 +346,536 @@
 				</marquee>
 			</div>	
 		</div>
+		<div class="first">
 
-		<!--팝업-->
-			<div class="gifbox" style="padding-top: 150px;">
+			<div class="intro1">
+				<span id="cntLabel">프로젝트 &lt;Monkey See, Meme-key Do&gt;는 밈 소비의 즐거움이 모든 것을<br>밈화하며 누군가를 
+					조롱거리로 전락시키고 있지는 않은지에 대해 숙어 <br>&ldquo;Make a Monkey (out) of Somebody&rdquo;에 
+					빗대어 <br>&ldquo;누군가를 원숭이로 만들고 있지는 않은가?&rdquo;라는 의문을 던진다.</span></div>
+			<div class="intro2">
+				<span id="cntLabel">현재 머무는 웹 &lt;Mmky Online&gt;, 좌측 상단의 &lt;Meme-key mix&gt;,<br>좌측 하단의 
+					&lt;Meme-key Report&gt;까지 총 세 가지의 메인 산출물을 가지고 있다. 
+					<br>가장 이상적인 관람 순서는 영상 ➡ 웹 ➡ 보고서 이다. <br>보고서를 통해 마무리하며프로젝트의 전체 맥락을 확인하기를 추천한다.<br></span>
+					<a href="http://hknudesign.kr/show/2020/visual/2015286003/index.html" target="_blank"> 프로젝트 링크 </a>
+			</div>
+		</div>
+
+		</div>
+		<!--random image-->
+			<div class="gifbox">
 				<!--1-->
-				<span style="float:left;" class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+				<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 				<!--2-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
-	    		<!--3-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
-	    		<!--4-->
-			    <span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
-			    <!--5-->
-			   <span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
-			    <!--6-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+				<!--3-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+				<!--4-->
+			    <div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+				<!--5-->
+			   <div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+				 <!--6-->
+				 <div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--7-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--8-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 				<!--9-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--10-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--11-->
-			    <span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+			   <div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 			    <!--12-->
-			 	<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+			 	<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 			    <!--13-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
-	    		<!--14-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+				<!--14-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--15-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 				<!--16-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--17-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--18-->
-				<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+				<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 			    <!--19-->
-			    <span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+			   <div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+
+
+
 			    <!--20-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--21-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--22-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    	<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--23-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--24-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--25-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--26-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--27-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--28-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--29-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+
+
+
 	    		<!--30-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--31-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--32-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 
 	    		<!--33-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--34-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--35-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--36-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		<!--37-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		    		<!--38-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		    		<!--39-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
 	    		    		<!--40-->
-	    		<span class="imgBox">
-					<script>document.write(randImg());</script>
-				</span>
-	    		    		<!--41
-	    		<div style="float:left;" class="imgBox">
-	    			<script>document.write(randImg());</script>
-	    		</div>
-	    		-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+
+
+
+	    		    		<!--41-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--42-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--43-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--44-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--45-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--46-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--47-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--48-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--49-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+							<!--50-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+
+
+	    		    		<!--51-->
+	    	<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--52-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    
+	    		    		<!--53-->
+	    	<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--54-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--55-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--56-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--57-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--58-->
+	    	<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--59-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--60-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+
+
+
+
+
+	    		
+	    		    		<!--61-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--62-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--63-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--64-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--65-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--66-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--67-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--68-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--69-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--70-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--71-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--72-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--73-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--74-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--75-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--76-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--77-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--78-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--79-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--80-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+
+				<!--81-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		   		<!--82-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		   		<!--83-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    			   	<!--84-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		   		<!--85-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		   		<!--86-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+
+				   		<!--61-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--62-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--63-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--64-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--65-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--66-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		
+	    		    		<!--67-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--68-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--69-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--70-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--71-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--72-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--73-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--74-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--75-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--76-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--77-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--78-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--79-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		    		<!--80-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+
+				<!--81-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		   		<!--82-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		   		<!--83-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    			   	<!--84-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		   		<!--85-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+	    		   		<!--86-->
+	    		<div class="imgBox" >
+					<script>document.write(randImg()); </script>
+				</div>
+
+
+	    		
 	    	</div>
     
 			
-		<!--	<script>	
-				var imgArry=new Array()
+		<footer>
 
-					imgArry[0]="<a href='#' ><img src='images/1.jpg'></a>";
-					imgArry[1]="<a href='#' ><img src='images/2.jpg'></a>";
-					imgArry[3]="<a href='#' ><img src='images/3.jpg'></a>";
-					imgArry[4]="<a href='#' ><img src='images/0.jpg'></a>";
+        <div id="footer">
+        	<span id="name">(c) Hylein kang, haelyyyn@gmail.ocm</span><br>
+        	<br>
+            <span id="insta"><a href="www.instagram.com/___9ang" target="_blank">instagam</a></span>
+            <span id="behance"><a href="behance.net/hyelingang" target="_blank">behance</a></span>
+            <br>
+           <span id="hknu"> <a href="www.hknudesign.kr/show/2020" target="_blank">
+        	Hankyong National University Department of Design. 24th Graduation.</a>
+        	<br>
+        	<span id="TopButton" class="top" style="font-size: 25pt;"><a href="#">&#128053;</a></span>
+        </div>
 
-					var whichquote=Math.floor(Math.random()*(imgArry.length))
-					document.write(imgArry[whichquote])
-				</script>
--->
-
-		
-
-
-		<nav></nav> <!--메뉴-->
-		
-		<!--<div class="flex-wrap" id="news-flex0">
-			<div id="marquee-bubble">
-				<div class="marquee-wrap">
-					<div class="col">col</div>
-					<div class="col">col</div>
-					<div class="col">col</div>
-					<div class="col">col</div>
-					<div class="col">col</div>
-					<div class="col">col</div>
-				</div>
-			</div>
-		</div>
-		-->
-		<footer></footer> <!--끝머리-->
+		</footer> <!--끝머리-->
  
 	</body>
 </html>

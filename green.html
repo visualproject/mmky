@@ -13,6 +13,7 @@
 				user-scalable : 사용자의 확대/축소 기능을 설정, 기본값은 yes이다.-->
 		<title>Meme-key Archiving</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style2.css">
 		<link rel="shortcut icon" href=""><!--파비콘-->
 		<link rel="apple-touch-icon=precomposed" href="">
 
@@ -27,7 +28,7 @@
 	</head>
 
 
-	<body style="overflow: hidden;">
+	<body style="overflow-x: auto; overflow-y:hidden;">
 		<header>
 
 			<div class="container1">
@@ -41,7 +42,7 @@
 								<h1>Meme-key Mix</h1>
 								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
 									<center>
-									<iframe src="https://player.vimeo.com/video/469913924" width="740" height="530" frameborder="0" allow="autoplay; fullscreen" ></iframe>
+									<iframe id="mixvideo" src="https://player.vimeo.com/video/469913924" width="740" height="530" frameborder="0" allow="autoplay; fullscreen"></iframe>
 								</center>
 								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
 						</div>
@@ -49,7 +50,7 @@
 				<a href="index.html"><div class="nav" id="nav2">HOME</div></a>
 			</div>
 
-			<div class="marquee" style="margin: 10px; position: fixed;">
+			<div id="marq1" style=" position: fixed;">
 				<marquee scrollamount="10" bgcolor="#FFF">
 					<div class="flex" id="flex1">
 							<div class="flex_item">A는 사과맛이다.</div>
@@ -97,7 +98,7 @@
 			<a href="green.html">
 				<div class="nav" id="nav4">Links</div>
 			</a>
-				<div class="marquee" style="margin: 10px; position: fixed;">
+				<div id="marq2" style="position: fixed; z-index: 9;" >
 					<marquee scrollamount="10" direction="right" bgcolor="#FFF" >
 						<div class="flex" id="flex2">
 							<div class="flex_item"><span>Y는 생일축하전문이다.</span></div>
@@ -152,7 +153,6 @@
 				</ul>
 				<hr>
 			</span>
-			<br><br>
 			<span class="group2">
 				<!--밈숭A 트로피카나-->
 				<li class="foot" id="foot 1">
@@ -164,8 +164,8 @@
 					</p>
 					 <p>롯데 칠성음료에서 생산/판매하는 탄산음료의 광고. 사과맛, 오렌지맛, 포도맛, 복숭아맛, 자몽맛, 망고맛, 청포도맛, 파인애플맛까지 총 8종류가 있다.</p>
 				</li>
-				<br><br>
 				<!--밈숭B 고승덕-->
+				<hr>
 				<li class="foot" id="foot 2">
 					<p>
 						<a href="https://www.youtube.com/watch?v=RvcCmC22U2Q" target="_blank">
@@ -191,6 +191,7 @@
 							</a>
 					</p>
 				</li>
+				<hr>
 				<!--밈숭C 이 차는 이제-->
 				<li class="foot" id="foot 3">
 					<p>
@@ -207,6 +208,7 @@
 					</p>
 				</li>
 				<!--밈숭D 우한코로스-->
+				<hr>
 				<li class="foot" id="foot 4">
 					<p>
 						<a href="https://www.youtube.com/watch?v=TSaFGrCLd5g" target="_blank">황교안 말실수...우한 코로스???
@@ -217,6 +219,7 @@
 						&#128053;는 대한민국 법조인 정치인이다. MBN의 코로나바이러스감영증-19 관련 인터뷰 중 &ldquo;우한 코로나바이러스&rdquo;를 &ldquo;우한 코로스&rdquo;라고 말했다가 정정하는 일이 있었고 이 외에도 마스크를 뒤집어 착용하는 사진이 있는 등의 모습을 보여 비웃음을 샀다.
 					</p>
 				</li>
+				<hr>
 				<!--밈숭E 아모르파티-->
 				<li class="foot" id="foot 5">
 					<p>
@@ -227,6 +230,7 @@
 						아모르 파티(라틴어: Amor fati) 또는 운명애(運命愛)는 &ldquo;운명의 사랑&rdquo;, &ldquo;운명에 대한 사랑&rdquo;으로 번역할 수 있는 라틴어 어구이다. 발매는 2013년도였으나 2016년 열린음악회를 계기로 서서히 알려지며 2018년, 부산대 학생회의 초청으로 중·장년층 트로트를 부르던 가수가 대학축제에서 공연을 하는 기념비적인 역사를 처음 쓰게 된다.
 					</p>
 				</li>
+				<hr>
 				<!--밈숭F 조크든요-->
 				<li class="foot" id="foot 6">
 					<p>
@@ -243,6 +247,7 @@
 						</a>
 					</p>
 				</li>
+				<hr>
 				<!--밈숭G 지코 아무노래챌린지-->
 				<li class="foot" id="foot 7">
 					<p>
@@ -257,6 +262,7 @@
 						</a>
 					</p>
 				</li>
+				<hr>
 				<!--밈숭H 빵상아줌마-->
 				<li class="foot" id="foot 8">
 					<p>
@@ -268,6 +274,7 @@
 						&#128053;는 자동으로 우주신과 소통하고 있다고 주장하는 작가 겸 역술가이다. &ldquo;빵상&rdquo;, &ldquo;깨랑깨랑&rdquo;으로 유명하다. 현재 서울특별시 성북구 동소문로 237(길음동 541-80) 에서 &ldquo;예언가 &#128053; 철학관&rdquo; 이란 이름으로 철학관을 운영하고 있다.
 					</p>
 				</li>
+				<hr>
 				<!--밈숭I 던질까말까-->
 				<li class="foot" id="foot 9">
 					<p>
@@ -287,6 +294,7 @@
 						</a>
 					</p>
 				</li>
+				<hr>
 				<!--밈숭J 4달러-->
 				<li class="foot" id="foot 10">
 					<p>
@@ -302,6 +310,7 @@
 						</a>
 					</p>
 				</li>
+				<hr>
 				<!--밈숭K 깡-->
 				<li class="foot" id="foot 11">
 					<p>
@@ -322,6 +331,7 @@
 						</a>
 					</p>
 				</li>
+				<hr>
 				<!--밈숭L 오르페우스-->
 				<li class="foot" id="foot 12">
 					<p>
@@ -333,6 +343,7 @@
 						2003년과 2004년에 SBS,투니버스에서 방영한 애니메이션 올림포스 가디언 21화의 영상. 2016년 6월 여름시기에 재조명되어 인기를 끌었다.
 					</p>
 				</li>
+				<hr>
 				<!--밈숭M 마미손-->
 				<li class="foot" id="foot 13">
 					<p>
@@ -349,7 +360,7 @@
 						사람들은 &#128053;과 매드 클라운이 동일인이라고 생각하지만 정작 &#128053;과 매드 클라운은 부인하고있는 상태이다. 
 					</p>
 				</li>
-
+				<hr>
 					<!--밈숭N 백수단선배님-->
 				<li class="foot" id="foot 14">
 					<p>
@@ -364,6 +375,7 @@
 						</a>
 					</p>
 				</li>
+				<hr>
 				<!--밈숭O 불쾌지수녀 혁형-->
 				<li class="foot" id="foot 15">
 					<p>
@@ -382,6 +394,7 @@
 							<sup>[2]</sup></a> 
 					</p>
 				</li>
+				<hr>
 				<!--밈숭P 가영이퇴사짤-->
 				<li class="foot" id="foot 16">
 					<p>
@@ -401,6 +414,7 @@
 						</a> 
 					</p>
 				</li>
+				<hr>
 				<!--밈숭Q 펀쿨섹좌-->
 				<li class="foot" id="foot 17">
 					<p>
@@ -413,9 +427,9 @@
 					<p>
 						일본의 정치인. 자유민주당 소속 중의원이자 현직 환경대신. 2019년 9월경 환경대신 취임 직후 유엔 기후행동 정상회의에 참석하여 회의 전날, &ldquo;기후변화 문제는 Fun하고 Cool하고 Sexy하게 대처해야 한다&rdquo;고 발언하여 논란이 있었다. 이 발언을 펀쿨섹으로, 조롱격으로 &ldquo;본좌&rdquo;를 첨가하여 &ldquo;펀쿨섹좌&rdquo;로 불린다.
 					</p>
-					
-					<br><br><br>
+
 				</li>
+				<hr>
 				<!--밈숭R 궁예-->
 				<li class="foot" id="foot 18">
 					<p>
@@ -428,6 +442,7 @@
 						KBS 대하드라마 태조 왕건의 등장인물 &#128053;의 대사. 2000년 12월 31일 방영된 80회에서 신하 한 명이 기침 소리를 낸 것에 &#128053;가 &ldquo;누구인가? 지금 누가 기침 소리를 내었어?&rdquo;라며 다그치는 장면이 유행이 되어 수많은 패러디를 만들어냈다.
 					</p>
 				</li>
+				<hr>
 				<!--밈숭S 야인시대 고자라니-->
 				<li class="foot" id="foot 19">
 					<p>
@@ -439,8 +454,8 @@
 					<p>
 						2003년 3월 4일에 방영된 SBS 드라마 야인시대 64화 에피소드에서 나온 장면. 이 장면 이후로 &ldquo;고자&rdquo;라는 단어의 용례가 확장되었고 수많은 패러디를 만들어냈다.
 					</p>
-					<br>
-				</li>
+					</li>
+				<hr>
 				<!--밈숭T 트럼프 차이나-->
 				<li class="foot" id="foot 20">
 					<p>
@@ -452,8 +467,8 @@
 					<p>
 						미국의 기업인 출신 제45대 대통령이다. 밈 자체가 된 대표적 사례 중 하나이다. 해당 영상은 평소 너무 잦게 언급하는 &ldquo;중국&rdquo;을 모아 Mashup형태로 만들어낸 것이다.
 					</p>
-					<br><br>
 				</li>
+				<hr>
 				<!--밈숭U 장문복-->
 				<li class="foot" id="foot 21">
 					<p>
@@ -465,8 +480,8 @@
 					<p>
 						2010년 8월 6일 방영된 슈퍼스타K2 대구 예선에서 출연했다. 아웃사이더의 스피드 레이서를 속사포로 부리는 모습이 화제가 되었다. 
 					</p>
-					<br>
 				</li>
+				<hr>
 				<!--밈숭V 오렌지주스-->
 				<li class="foot" id="foot 22">
 					<p>
@@ -478,8 +493,8 @@
 					<p>
 						MBC 드라마 사랑했나봐에서 컬트적인 인기를 얻은 장면. 2013년 4월 1일 방영된 120화에서 등장했다. 원작에서는 &#128053;이 한윤진(박시은)을 통해 주예나가 최선정(김보경)의 딸이란 것을 알자 충격을 받는 심각한 장면이다.
 					</p>
-					<br>
 				</li>
+				<hr>
 				<!--밈숭W 공항도둑-->
 				<li class="foot" id="foot 23">
 					<p>
@@ -491,9 +506,8 @@
 					<p>
 						2014년 4월 13일 페이스북에 올라와 인기를 탔던 동영상으로, 한 중년 남성이 인천국제공항 제1여객터미널 편의점에서 과자를 절도하려다 손님을 응대하던 청년에게 들켜 말싸움을 하는 내용이 담겨 있다.
 					</p>
-					<br>
-					<br>
 				</li>
+				<hr>
 				<!--밈숭X 김무성-->
 				<li class="foot" id="foot 24">
 					<p>
@@ -512,9 +526,7 @@
 						</a>
 					</p>
 				</li>
-
-
-
+				<hr>
 				<!--밈숭Y 유노윤호-->
 				<li class="foot" id="foot 25">
 					<p>
@@ -543,6 +555,7 @@
 						2011년 2월 18일 방송된 KBS 뮤직뱅크의 &ldquo;왜&rdquo; 무대이다. 같은 그룹 멤버인 최강창민의 생일을 축하해주는 모습에 화제가 되었다.
 					</p>
 				</li>
+				<hr>
 				<!--밈숭Z 반복강조-->
 				<li class="foot" id="foot 26">
 					<p>
@@ -553,7 +566,6 @@
 					<p>
 						대한민국의 기업인이자 반려견 훈련사이다. 2016년 EBS 세상에 나쁜 개는 없다 시즌1 바닥을 무서워하는 개 미키편에서 나온 말이다.
 					</p>
-					<br>
 				</li>
 				<hr>
 				<span class="group3">
@@ -572,15 +584,14 @@
 			</span>
 
 		</ol>
-		
 		<div class="timeline" style="  overflow-x: scroll;">
 			<div class="timeline1">
 				<a href="#foot 1">
-					<div id="mmkyA1" onclick="goto(300)">
+					<div id="mmkyA1" onclick="goto(450)">
 						<p>트로피카나</p>
 					</div>
 				</a>
-				
+
 				<div id="mmkyB" onclick="goto(900)">
 					<a href="#foot 2">
 						<p>미안하다</p>
@@ -593,7 +604,7 @@
 					</a>
 				</div>
 
-				<div id="mmkyI" onclick="goto(3000)">
+				<div id="mmkyI" onclick="goto(310)">
 					<a href="#foot 9">
 						<p>던질까 말까</p>
 					</a>
@@ -603,12 +614,12 @@
 						<p>이 차는 이제</p>
 					</a>
 				</div>
-				<div id="mmkyH1" onclick="goto(2700)">
+				<div id="mmkyH1" onclick="goto(2000)">
 					<a href="#foot 8">
 						<p>빵상</p>
 					</a>
 				</div>
-				<div id="mmkyH2" style="margin-left: 150px;">
+				<div id="mmkyH2" style="margin-left: 150px;" onclick="goto(2000)">
 					<a href="#foot 8">
 						<p>깨랑</p>
 					</a>
@@ -618,7 +629,7 @@
 						<p>이 차는 이제</p>
 					</a>
 				</div>
-				<div id="mmkyT6" onclick="goto(8000)">
+				<div id="mmkyT6" onclick="goto(7200)">
 					<a href="#foot 20">
 						<p>china</p>
 					</a>
@@ -636,7 +647,7 @@
 					</a>
 				</div>
 
-				<div id="mmkyW3" onclick="goto(9000)">
+				<div id="mmkyW3" onclick="goto(7700)">
 					<a href="#foot 23">
 						<p>공항도둑</p>
 					</a>
@@ -671,23 +682,29 @@
 			<!--TTIMELINE1-->
 
 			<div class="timeline2">
-				<div id="mmkyE" onclick="goto(1800)">
+				<div id="mmkyE" onclick="goto(1200)">
 					<a href="#foot 5">
 					<p>아모르파티</p>
 					</a>
 				</div>
-				<div id="mmkyF" onclick="goto(2100)">
+				<div id="mmkyF" onclick="goto(1800)">
 					<a href="#foot 6">
 					 	<p>기분이조크든요</p>
 					 </a>
 				</div>
-				<div id="mmkyT5" onclick="goto(8000)">
+				<div id="mmkyX" onclick="goto(5400)">
+					<a href="#foot 24">
+					 	<p>노룩패스</p>
+					 </a>
+				</div>
+
+				<div id="mmkyT5" onclick="goto(7200)">
 					<a href="#foot 20">
 						<p>china</p>
 					</a>
 				</div>
 
-				<div id="mmkyM4" onclick="goto(4500)">
+				<div id="mmkyM4" onclick="goto(3700)">
 					<a href="#foot 13">
 						<p>계획대로되고있어</p>
 					</a>
@@ -700,19 +717,19 @@
 				</div>
 
 				
-				<div id="mmkyK4" onclick="goto(3500)">
+				<div id="mmkyK4" onclick="goto(4500)">
 					<a href="#foot 11">
 						<p>깡</p>
 					</a>
 				</div>
 
-				<div id="mmkyP1" onclick="goto(7000)">
+				<div id="mmkyP1" onclick="goto(6000)">
 					<a href="#foot 16">
 						<p>안녕히계세요 여러분</p>
 					</a>
 				</div>
 
-				<div id="mmkyP2" onclick="goto(7000)">
+				<div id="mmkyP2" onclick="goto(6000)">
 					<a href="#foot 16">
 						<p>안녕히계세요 여러분</p>
 					</a>
@@ -722,35 +739,35 @@
 
 
 			<div class="timeline12">
-				<div id="mmkyM1" onclick="goto(4500)">
+				<div id="mmkyM1" onclick="goto(3700)">
 					<a href="#foot 13">
 						<p>계획대로 되고 있어</p>
 					</a>
 				</div>
-				<div id="mmkyH2">
+				<div id="mmkyH3" onclick="goto(2000)">
 					<a href="#foot 8">
 						<p>깨랑</p>
 					</a>
 				</div>
-				<div id="mmkyH2">
+				<div id="mmkyH4" onclick="goto(2000)">
 					<a href="#foot 8">
 						<p>빵상</p>
 					</a>
 				</div>
 
-				<div id="mmkyO1" onclick="goto(5000)">
+				<div id="mmkyO1" onclick="goto(4300)">
 					<a href="#foot 13">
 						<p>불쾌지수</p>
 					</a>
 				</div>
 
-				<div id="mmkyV" onclick="goto(6000)">
+				<div id="mmkyV" onclick="goto(6300)">
 					<a href="#foot 22">
 						<p>예나선정이딸이에요</p>
 					</a>
 				</div>
 
-				<div id="mmkyJ1" onclick="goto(4000)">
+				<div id="mmkyJ1" onclick="goto(2800)">
 					<a href="#foot 10">
 						<p>4달라</p>
 					</a>
@@ -761,19 +778,19 @@
 						<p>Any song</p>
 					</a>
 				</div>
-				<div id="mmkyW1"onclick="goto(9000)">
+				<div id="mmkyW1"onclick="goto(7700)">
 					<a href="#foot 23">
 						<p>공항도둑</p>
 					</a>
 				</div>
 				
-				<div id="mmkyT8" onclick="goto(8000)">
+				<div id="mmkyT8" onclick="goto(7200)">
 					<a href="#foot 20">
 						<p>china</p>
 					</a>
 				</div>
 
-				<div id="mmkyQ"  onclick="goto(6000)">
+				<div id="mmkyQ"  onclick="goto(5000)">
 					<a href="#foot 17">
 						<p>펀쿨섹</p>
 					</a>
@@ -792,17 +809,17 @@
 
 			<div class="timeline3">니
 
-				<div id="mmkyS1" style="margin-left:600px;"  onclick="goto(8000)">
+				<div id="mmkyS1" onclick="goto(1000)">
 					<a href="#foot 19">
 						<p>고자라니</p>
 					</a>
 				</div>
-				<div id="mmkyS2" onclick="goto(8000)">
+				<div id="mmkyS2" onclick="goto()">
 					<a href="#foot 19">
 						<p>고자라니</p>
 					</a>
 				</div>
-				<div id="mmkyS3" onclick="goto(8000)">
+				<div id="mmkyS3" onclick="goto()">
 					<a href="#foot 19">
 						<p>고자라니</p>
 					</a>
@@ -819,17 +836,17 @@
 					<p>좋아?</p>
 					</a>
 				</div>
-				<div id="mmkyL1" onclick="goto(4200)">
+				<div id="mmkyL1" onclick="goto(3500)">
 					<a href="#foot 12">
 						<p>디오니소스</p>
 					</a>
 				</div>
-				<div id="mmkyU" onclick="goto(9000)">
+				<div id="mmkyU" onclick="goto(6000)">
 					<a href="#foot 21">
 						<p>췍</p>
 					</a>
 				</div>
-				<div id="mmkyL2" style="margin-left:0px;" onclick="goto(4200)">
+				<div id="mmkyL2" style="margin-left:0px;" onclick="goto(3500)">
 					<a href="#foot 12">
 						<p>디오니소스</p>
 					</a>
@@ -862,14 +879,14 @@
 					</a>
 				</div>
 
-				<div id="mmkyW2" onclick="goto(9000)">
+				<div id="mmkyW2" onclick="goto(7700)">
 					<a href="#foot 23">
 						<p>공항도둑</p>
 					</a>
 				</div>
 
 
-				<div id="mmkyP3"  onclick="goto(7000)">
+				<div id="mmkyP3"  onclick="goto(6000)">
 					<a href="#foot 16">
 					<p>안녕히계세요 여러분</p>
 				</a>
@@ -884,19 +901,19 @@
 			
 
 			<div class="timeline5">
-				<div id="mmkyO2" onclick="goto(5000)">
+				<div id="mmkyO2" onclick="goto(4300)">
 					<a href="#foot 15">
 						<p>불쾌지수녀</p>
 					</a>
 				</div>
 
-				<div id="mmkyT2" onclick="goto(8000)">
+				<div id="mmkyT2" onclick="goto(7200)">
 					<a href="#foot 20">
 						<p>china</p>
 					</a>
 				</div>
 
-				<div id="mmkyJ2" onclick="goto(4000)">
+				<div id="mmkyJ2" onclick="goto(2800)">
 					<a href="#foot 10">
 						<p>4달라</p>
 					</a>
@@ -908,19 +925,19 @@
 					</a>
 				</div>
 
-				<div id="mmkyT3" onclick="goto(8000)">
+				<div id="mmkyT3" onclick="goto(7200)">
 					<a href="#foot 20">
 						<p>china</p>
 					</a>
 				</div>
 
-				<div id="mmkyT4" onclick="goto(8000)">
+				<div id="mmkyT4" onclick="goto(7200)">
 					<a href="#foot 20">
 						<p>china</p>
 					</a>
 				</div>
 				
-				<div id="mmkyT7" onclick="goto(8000)">
+				<div id="mmkyT7" onclick="goto(7200)">
 					<a href="#foot 20">
 						<p>china</p>
 					</a>
@@ -930,12 +947,12 @@
 
 			<div class="timeline6">
 			
-				<div id="mmkyM2" onclick="goto(4500)" style="  margin-left: 1200px;">
+				<div id="mmkyM2" onclick="goto(3700)" style="  margin-left: 1200px;">
 					<a href="#foot 13">
 						<p>오케이 계획대</p>
 					</a>
 				</div>
-				<div id="mmkyM3" onclick="goto(4500)">
+				<div id="mmkyM3" onclick="goto(3700)">
 					<a href="#foot 13">
 						<p>되고있</p>
 					</a>
@@ -946,7 +963,7 @@
 					<p>좋아?</p>
 					</a>
 				</div>
-					<div id="mmkyP4" style="width: 150px; margin-left: 100px;" onclick="goto(7000)">
+					<div id="mmkyP4" style="width: 150px; margin-left: 100px;" onclick="goto(6000)">
 					<a href="#foot 16">
 						<p>안녕히계세요 여러분</p>
 					</a>

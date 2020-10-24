@@ -6,65 +6,64 @@ font-family: 'Noto Sans KR', sans-serif;
 
 
 body{margin: 0px;
-padding:0px;
-
-
-
-}
+padding:0px;}
 
 h1{
 text-align: center;
 }
 
+@media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
+       
+/*index contents*/
 .first {
 background-image: url('firstbg.jpg');
          background-color: #161616;
          background-repeat: repeat;
          background-size: 50%;
-width: 100%;
-height:180px;
+height: 260px;
 position: absolute;
-top:0px;
-left:0px;
-right:0px;
+width: 100%;
+padding-top: 12%;
+margin-bottom: 10px;
 border: 2px solid black;
-padding-top: 60px;
+padding-left:10%;
 }
 
 
 .intro1 {
   float: left;
-  width: 450px;
+  width: 400px;
   height: 90px;
-  font-size: 13px;
+  font-size: 12px;
   background: white;
-  padding: 30px;
-  margin: 10px;
+  padding-top: 8px;
+  padding-left: 1px;
+  padding-bottom: 5px;
+  padding-right: 1px;
   display: inline-block;
+  position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
-  margin-left: 16%;
-
+  margin: 1px;
 }
-
 .intro2 {
   float: left;
-  width: 450px;
+  width: 400px;
   height: 90px;
-  font-size: 13px;
+  font-size: 12px;
   background: white;
-  padding: 30px;
-  margin: 10px;
+  padding-top: 8px;
+  padding-left: 1px;
+  padding-bottom: 5px;
+  padding-right: 1px;
   display: inline-block;
+  position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
+  margin:1px;
 }
-
-
-
-
 
 .intro1:hover {transform: translateX(3px);
   color: red;
@@ -77,6 +76,7 @@ padding-top: 60px;
  text-shadow: 0 0 24px;
 
 }
+
 .intro2 a:hover {
   text-decoration: 1px;
 }
@@ -99,24 +99,23 @@ text-decoration: none;
 
 }
 
-
-
 .gifbox {
   align-content: center;
-  width: 90%;
+  width: 100%;
   margin-left: 10%;
   margin-right: 10%;
   position: relative;
-  margin-top:100px;
-  padding-top: 200px;
+  margin-top: 300px;
+  padding-top: 50px;
   padding-bottom: 50px;
 
 }
 
 
+
 .imgBox {
-min-width: 150px;
-max-width: 400px;   
+min-width: 70px;
+max-width: 150px;   
 max-height: 10px; /*
 
         min-width: 200px; 
@@ -129,11 +128,52 @@ max-height: 10px; /*
     }
 
 
-
-button {
+  button {
   border: none;
   background-color: black;
 }
+
+#flex1 {
+margin:0px;
+}
+
+#flex2 {
+  margin:0px;
+}
+
+
+/*index contetns*/
+.container1{
+  position: absolute;
+  height: 50px;
+  top:0px;
+}
+
+.container2{
+  position: absolute;
+  bottom: 50px;
+  height: 10px;
+}
+
+
+#marq1 {
+  top:0;
+  margin:10px;
+
+}
+
+#marq2 {
+  bottom: 0;
+  margin:0px;
+
+}
+.flex{
+  display: flex;
+  z-index: 9;
+
+
+  }
+
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
 }
@@ -143,9 +183,9 @@ button {
   display: none;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 70%;
   left: 0;
-  top: 80px; d
+  top: 100px;
   overflow: auto;
   z-index: 9;
 }
@@ -154,10 +194,10 @@ button {
 .mix-content{
   background-color: black;
   margin: auto;
-  padding: 40px;
-  padding-bottom: 30px;
+  padding: 20px;
+  padding-bottom: 20px;
   border: none;
-  width: 60%;
+  width: 80%;
   color: #ffffff;
 }
 
@@ -165,7 +205,7 @@ button {
   color: #adadad;
   width: 50px;
   height: 50px;
-  line-height: 50px;
+  line-height: 30px;
   border: none;
   cursor: pointer;
   margin-bottom:10px;
@@ -189,30 +229,19 @@ button {
 
 }
 
-video {
+#mixvideo {
   width: 100%;
-  height: auto;
-
+  height: 400px;
+  margin: 0;
 }
 
-
-
-
-
-
+/*NAV*/
 
 .nav{
-  width: 180px;
+  width: 100px;
   height: 40px;
-  padding: 10px;
-  z-index: 99;
-  position: fixed;
-  border-radius: 100px;
-  text-align: center;
-  border: 2px solid black;
+  padding: 5px;
   font-size: 18px;
-  line-height: 40px;
-  color: black;
 }
 
 /* unvisited link */
@@ -240,6 +269,10 @@ video {
   left: 0px;
   border-radius: 0px 100px 100px 0px;
   border-left: none;
+    line-height: 16px;
+        padding-top: 10px;
+    padding-bottom: -0px;
+    font-size: 16px;
 }
       #nav1:hover {
         background-color: white;
@@ -275,6 +308,10 @@ video {
  background: #fff100;
  border-radius: 0px 100px 100px 0px;
   border-left: none;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-bottom: -0px;
+        font-size: 16px;
 
 }
 
@@ -307,67 +344,16 @@ video {
         font-weight: bold;
       }
 
-#marq1 {
-  top:0;
-  margin:10px;
-  position: fixed;
-}
-
-#marq2 {
-  bottom: 0;
-  margin:0px;
-  position: fixed;
-}
-
-.flex{
-	display: flex;
-  z-index: 9;
-
-	}
-
-.flex_item {
-  margin: 12px 12px;
-  padding: 5px 10px;
-  line-height: 10px;
-  width: auto;
-  height: 10px;
-  text-align: center;
-  font-size: 15px; 
-}
-
-.flex_item:hover {
-  color: red;
-  text-decoration: none; text-shadow: 0 0 24px;
-  /*text-decoration: underline overline;*/
-}
-
-#flex1 {
-margin:0px;
-}
-
-#flex2 {
-  margin:0px;
-}
-
-.container1{
-  position: absolute;
-  height: 50px;
-  top:0px;
-}
-
-.container2{
-  position: absolute;
-  bottom: 50px;
-  height: 10px;
 }
 
 
-
-
+@media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
+ 
 /*GREEN*/
 
 .column {
-  line-height: 1.6;
+  margin-top:100px;
+  line-height: 1.4;
   overflow-x: auto;
 
 
@@ -396,9 +382,9 @@ width: 3px solid black;
 }
 
 ol{
-  margin-top: 5em;
-  left: 1em;
-  right: 1em;
+  margin-top: 80px;
+  left: 0.5em;
+  right: 0.5em;
   width: 1700px auto;
 
   display: initial;
@@ -406,14 +392,14 @@ ol{
 
   text-align: left;
   float: left;
-  height: 30%;
+  height: 36%;
 
 
   column-count: auto;
   column-gap: 40px;
   column-rule: 1px solid black;
   column-span: all;
-  column-width: 240px;
+  column-width: 200px;
   overflow-x: scroll;
   list-style-type:none;
 
@@ -434,7 +420,7 @@ sup {
 }
 
 ul {
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding: 0px;
   position: relative;
 
@@ -454,13 +440,13 @@ li.foot {
 }
 
 li {
-  font-size: 0.8em;
+  font-size: 0.9em;
 
 }
 
 
 li p {
-  line-height: 160%;
+  line-height: 150%;
   position: relative;
   margin-top: 0;
   text-align: left;
@@ -524,20 +510,16 @@ ul a:active {
 
 .timeline {
     width: 2800px;
-    height: 55%;
+    height: 47%;
   float: left;
-  position: fixed;
+  position: absolute;
   display: inline;
-  margin-top: 200px;
-  overflow-x:scroll;
+
+  overflow-x: scroll;
   background-image: url('bg_black_1.png');
          background-color: #161616;
          background-repeat: repeat;
          background-size: 40%;
-  padding: 20px;
-  text-align: center;
-  bottom:0px;
-
 
 }
 
@@ -546,7 +528,7 @@ ul a:active {
   display: inline;
   width: 200%;
   float: left;
-  margin-top: 20px;
+  margin-top: 5px;
   overflow-x: scroll;
 
 }
@@ -597,6 +579,7 @@ ul a:active {
   width: 200%;
   margin-top: 5px;
   float: left;
+
 }
 
 .timeline a:link{
@@ -2021,26 +2004,31 @@ text-decoration: none;
 }
 
 
+
+
+/*yellow*/
+
 #pdf {
-  margin-top: 2.5%;
+  margin-top: 4%;
   position: relative;
   margin-bottom: 2.5%;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: auto;
+}
+
+#pdffile {
+width: 100%;
 }
 
 #new {
   background-color: #fff100;
   transition: all ease 0.7s;
   bottom:0px;
-  width: 60px; 
-  position: absolute; 
-  height: 60px; 
+  width: 110px;
+  height: 40px; 
   top: 3em; 
-  right: 20em; 
-  text-align: center; 
-  display: inline-block; 
-  padding: 1%;
+  bottom: 3em;
+  right: 0em;
 }
 
 
@@ -2049,7 +2037,7 @@ text-decoration: none;
 #new:hover {
   background-color: black;
   color: white;
-  border-radius: 50px;
+  border-radius: 50px 0px 0px 50px;
 
 }
 
@@ -2326,17 +2314,20 @@ left:350px;
   
 }
 
+
 #footer {
     padding-top: 20px; 
     padding-bottom: 30px;
-    bottom:0;
-    height: 150px;
     border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    height: 150px;
     background-color: black;
     color: white;
-    left:0px;
-    display: block;
+    left:0;
+    right:0;
+    bottom:0;
     text-align: center;
+
 }
 
 #footer a:link{
@@ -2385,6 +2376,8 @@ text-decoration: none;
 a.top {
 
 }
+
+
 
 /*
 flex-grow 플렉스 아이템이 컨테이너 안에서 차지하는 크기의 정도. 기본값이 0 1로 설정하면 컨테이너 크기만큼 꽉찬 아이템을 그릴 수 있음

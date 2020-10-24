@@ -15,6 +15,7 @@
 				user-scalable : 사용자의 확대/축소 기능을 설정, 기본값은 yes이다.-->
 		<title>Mmky Online</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style2.css">
 		<link rel="shortcut icon" href=""><!--파비콘-->
 		<link rel="apple-touch-icon=precomposed" href="">
 
@@ -59,7 +60,7 @@
 								<h1>Meme-key Mix</h1>
 								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
 									<center>
-									<iframe src="https://player.vimeo.com/video/469913924" width="740" height="530" frameborder="0" allow="autoplay; fullscreen"></iframe>
+									<iframe id="mixvideo" src="https://player.vimeo.com/video/469913924" width="740" height="530" frameborder="0" allow="autoplay; fullscreen"></iframe>
 								</center>
 								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
 							</div>
@@ -69,7 +70,7 @@
 
 			<a href="index.html"><div class="nav" id="nav2">HOME</div></a>
 		</div>
-		<div style="margin: 10px; position: fixed; z-index: 9;">
+		<div id="marq1" style="position: fixed; z-index: 9;">
 		<marquee scrollamount="10" bgcolor="#FFF">
 				<div class="flex" id="flex1">
 					<div class="flex_item">A는 청사과맛이다.</div>
@@ -115,7 +116,7 @@
 		<div class="container2">
 			<a href="yellow.html"><div class="nav" id="nav3">Meme-key Report</div></a>
 			<a href="green.html"><div class="nav" id="nav4">Links</div></a>
-			<div style="margin: 10px; position: fixed; z-index: 9;">
+			<div id="marq2" style="position: fixed; z-index: 9;">
 				<marquee scrollamount="10" direction="right" bgcolor="#FFF" >
 					<div class="flex" id="flex2">
 						<div class="flex_item"><span>Y는 생일축하전문이다.</span></div>
@@ -178,7 +179,7 @@
 		<center>
 		<div id="pdf"> 
 			<button onclick="window.open('yellow/pdfblank.html','new window','width=800,height=900,location=no,status=no,scrollbars=yes');">
-				<div id="new" style="width: 50px; position: absolute; height: 50px; top: 2em; right: 20em; text-align: center; display: inline-block; padding: 1%;" >&#10063;<br>새창으로<br>띄우기</p></div></button>
+				<div id="new">&#10063;<br>새창으로 띄우기</p></div></button>
 
 			<!--
 			<a href="yellow/pdfblank.html" onclick="window.open('','','width=600px, height=700px'))">
@@ -186,7 +187,7 @@
 		</a>
 
 	-->
-			<embed src="yellow/viewer2.pdf#toolbar=0" type="application/pdf" width=800px height=800px allowfullscreen="true">
+			<embed id="pdffile" src="yellow/viewer2.pdf#toolbar=0" type="application/pdf" width=800px height=800px allowfullscreen="true">
 
 		</div>
 		</center>
