@@ -7,8 +7,7 @@ font-family: 'Noto Sans KR', sans-serif;
 
 body{margin: 0px;
 padding:0px;
-
-
+width: 100vw;
 
 }
 
@@ -41,6 +40,7 @@ padding-top: 60px;
   padding: 30px;
   margin: 10px;
   display: inline-block;
+  position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
@@ -56,7 +56,8 @@ padding-top: 60px;
   background: white;
   padding: 30px;
   margin: 10px;
-  display: inline-block;
+
+  position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
@@ -67,6 +68,12 @@ padding-top: 60px;
 
 
 .intro1:hover {transform: translateX(3px);
+  color: red;
+ text-shadow: 0 0 24px;
+
+}
+
+.intlabel:hover {transform: translateX(3px);
   color: red;
  text-shadow: 0 0 24px;
 
@@ -159,6 +166,13 @@ button {
   border: none;
   width: 60%;
   color: #ffffff;
+}
+
+#mixvideo {
+  margin-top:10px;
+
+  width:740px; 
+  height:530px;
 }
 
 .mix-content .btn {
