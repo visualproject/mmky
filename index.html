@@ -27,15 +27,33 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<!--제이쿼리 최신버전 사용-->
 		<script>
+			
 		/*팝업*/
-		function openForm() {
-		  document.getElementById("blue-popup").style.display = "block" ;
-
-		}
-		function closeForm() {
-		  document.getElementById("blue-popup").style.display = "none";
 		
-        }
+$(function(){
+  
+	var embed = $('#player'); //동영상 코드
+  
+	$('.button').on('click', function(){ //레이어 열때
+		var path = $(this).attr('href');
+		$('.cont').append(embed);
+		$(path).show();
+		$('.dim').show();
+	})
+  
+	$('.close').on('click', function(){ //레이어 닫을때
+		$(this).parents('#layer').hide();
+		$('.dim').hide();
+		$('.cont').empty();
+	})
+  
+  $('.dim').on('click', function(){
+    $(this).hide();
+    $('#layer').hide();
+    $('.cont').empty();
+  })
+  
+});
 
  
         /*이미지랜덤*/
@@ -148,6 +166,9 @@
 
 		</script>
 		<script type="text/javascript">
+			
+		</script>
+		<script type="text/javascript">
 			      $( document ).ready( function() {
         $( window ).scroll( function() {
           if ( $( this ).scrollTop() > 200 ) {
@@ -161,7 +182,9 @@
           return false;
         } );
       } );
-		</script>
+		</script> 
+
+
 	</head>
 
 
@@ -242,18 +265,18 @@
 				</div>
 			</marquee>
 		</div>
-		<button class="open-button" onclick="openForm()">
+			<a href="#layer" class="button">
 					<div class="nav" id="nav1">
-					Meme-key Mix</div>
-				</button>			
-					<div class="video-popup" id="blue-popup">
-							<div class="mix-content">
-								<button type="button" class="btn cancel" onclick="closeForm(); javascript:player.api('pause');">&times;</button>
+					Meme-key Mix</div></a>			
+					<div class="videowrap" id="layer">
+							<div class="inner">
+								<a href="#none" class="close">
+								<button type="button" class="btn cancel">&times;</button></a>
 								<h1>Meme-key Mix</h1>
 								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
 								<center>
-									<div class="embed-container">
-									<iframe src="https://player.vimeo.com/video/469913924" width="500" height="380" frameborder="0" allowfullscreen ></iframe>
+									<div class="cont">
+									<iframe id="player" src="https://player.vimeo.com/video/469913924" width="500" height="380" frameborder="0" allowfullscreen ></iframe>
 								</div>
 								</center>
 								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
