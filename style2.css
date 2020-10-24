@@ -27,7 +27,7 @@ position: absolute;
 padding-top: 17%;
 margin-bottom: 5px;
 border: 2px solid black;
-padding-left:5%;
+text-align: center;
 }
 
 
@@ -40,7 +40,7 @@ padding-left:5%;
   padding-left: 1px;
   padding-bottom: 1px;
   padding-right: 1px;
-  display: inline-block;
+  display: inline;
   position: relative;
   text-align:center;
   line-height: 150%;
@@ -55,12 +55,13 @@ padding-left:5%;
   background: white;  padding-left: 1px;
   padding-bottom: 5px;
   padding-right: 1px;
-  display: inline-block;
+  display: inline;
   position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
   margin:5px;
+
 }
 
 .intro1:hover {transform: translateX(3px);
@@ -184,31 +185,36 @@ margin:0px;
 .open-button {
 }
 
-/* The popup form - hidden by default */
-.video-popup {
-  display: none;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 70px;
-  overflow: auto;
-  z-index: 9;
-}
-
 /* Modal Content */
 .mix-content{
   background-color: black;
   margin: auto;
+  padding: 40px;
   border: none;
-  width: 80%;
+  width: 60%;
   color: #ffffff;
+  position: relative;
+
 }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  left: 0px;
+}
+
+.embed-container embed, .embed-container iframe {
+position: absolute; width: 100%; left: 0px;
+height: 100%; border: 0;
+}
+
 
 .mix-content .btn {
   color: #adadad;
   width: 50px;
   height: 50px;
-  line-height: 30px;
+  line-height: 50px;
   border: none;
   cursor: pointer;
   margin-bottom:10px;
@@ -232,12 +238,13 @@ margin:0px;
 
 }
 
-#mixvideo {
+video {
   width: 100%;
-  height: 200px;
-  margin: 0;
-    margin-top:10px;
+  height: auto;
+
 }
+
+
 
 /*NAV*/
 
@@ -386,17 +393,17 @@ width: 3px solid black;
 }
 
 ol{
-  margin-top: 80px;
+  top:-5vh;
   left: 0.5em;
   right: 0.5em;
   width: 1700px auto;
+  height: 35%;
 
   display: initial;
   position: fixed;
 
   text-align: left;
   float: left;
-  height: 36%;
 
 
   column-count: auto;
@@ -404,7 +411,8 @@ ol{
   column-rule: 1px solid black;
   column-span: all;
   column-width: 200px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
   list-style-type:none;
 
     /* Can be replaced it with any other value*/
@@ -514,12 +522,13 @@ ul a:active {
 
 .timeline {
     width: 2800px;
-    height: 47%;
+    height: 47vh;
   float: left;
   position: absolute;
   display: inline;
 
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
   background-image: url('bg_black_1.png');
          background-color: #161616;
          background-repeat: repeat;

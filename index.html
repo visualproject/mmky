@@ -38,12 +38,13 @@
 		/*팝업*/
 		function openForm() {
 		  document.getElementById("blue-popup").style.display = "block" ;
-		  
+
 		}
 		function closeForm() {
 		  document.getElementById("blue-popup").style.display = "none";
 		
         }
+
  
         /*이미지랜덤*/
         function randomBH(min, max) {
@@ -174,23 +175,6 @@
 	<body style="overflow-y: auto; overflow-x: hidden;">
 		<header>
 		<div class="container1">
-				<button class="open-button" onclick="openForm()">
-					<div class="nav" id="nav1">
-					Meme-key Mix</div>
-				</button>			
-					<div class="video-popup" id="blue-popup">
-							<div class="mix-content">
-								<button type="button" class="btn cancel" onclick="closeForm()">&times;</button>
-								<h1>Meme-key Mix</h1>
-								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
-								<center>
-									<iframe id="mixvideo" src="https://player.vimeo.com/video/469913924" frameborder="0" allow="autoplay; fullscreen"></iframe>
-								</center>
-								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
-							</div>
-					</div>
-
-
 			<a href="index.html"><div class="nav" id="nav2">HOME</div></a>
 		</div>
 		<div id="marq1" style="position: fixed; z-index: 9;">
@@ -265,6 +249,23 @@
 				</div>
 			</marquee>
 		</div>
+		<button class="open-button" onclick="openForm()">
+					<div class="nav" id="nav1">
+					Meme-key Mix</div>
+				</button>			
+					<div class="video-popup" id="blue-popup">
+							<div class="mix-content">
+								<button type="button" class="btn cancel" onclick="closeForm(); javascript:player.api('pause');">&times;</button>
+								<h1>Meme-key Mix</h1>
+								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
+								<center>
+									<div class="embed-container">
+									<iframe src="https://player.vimeo.com/video/469913924" width="500" height="380" frameborder="0" allowfullscreen ></iframe>
+								</div>
+								</center>
+								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
+							</div>
+					</div>
 
 
 

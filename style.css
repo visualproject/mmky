@@ -155,6 +155,7 @@ button {
   top: 80px; d
   overflow: auto;
   z-index: 9;
+
 }
 
 /* Modal Content */
@@ -162,18 +163,25 @@ button {
   background-color: black;
   margin: auto;
   padding: 40px;
-  padding-bottom: 30px;
   border: none;
   width: 60%;
   color: #ffffff;
+  position: relative;
+
 }
 
-#mixvideo {
-  margin-top:10px;
-
-  width:740px; 
-  height:530px;
+.embed-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  left: 0px;
 }
+
+.embed-container embed, .embed-container iframe {
+position: absolute; width: 100%; left: 0px;
+height: 100%; border: 0;
+}
+
 
 .mix-content .btn {
   color: #adadad;
@@ -410,7 +418,8 @@ width: 3px solid black;
 }
 
 ol{
-  margin-top: 5em;
+  margin-top: 20px;
+  padding-top: 4.5vh;
   left: 1em;
   right: 1em;
   width: 1700px auto;
@@ -420,7 +429,8 @@ ol{
 
   text-align: left;
   float: left;
-  height: 30%;
+  height: 30vh;
+
 
 
   column-count: auto;
@@ -428,7 +438,8 @@ ol{
   column-rule: 1px solid black;
   column-span: all;
   column-width: 240px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
   list-style-type:none;
 
     /* Can be replaced it with any other value*/
@@ -538,12 +549,13 @@ ul a:active {
 
 .timeline {
     width: 2800px;
-    height: 55%;
+    height: 55vh;
   float: left;
   position: fixed;
   display: inline;
-  margin-top: 200px;
-  overflow-x:scroll;
+  margin-top: 200vh;
+  overflow-x:auto;
+  overflow-x:hidden;
   background-image: url('bg_black_1.png');
          background-color: #161616;
          background-repeat: repeat;
@@ -560,7 +572,7 @@ ul a:active {
   display: inline;
   width: 200%;
   float: left;
-  margin-top: 20px;
+  margin-top: 3vh;
   overflow-x: scroll;
 
 }
