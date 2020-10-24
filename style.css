@@ -32,6 +32,18 @@ border: 2px solid black;
 padding-top: 60px;
 }
 
+#indexbody {
+         background-image: url('bg.gif');
+         background-color: #161616;
+         background-repeat: repeat;
+         background-size: 100% 100%;
+         background-attachment: fixed;s
+            width: 100%;
+            background-size: cover;
+
+          }
+
+
 @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
        
 /*index contents*/
@@ -48,6 +60,18 @@ padding-top: 17%;
 border: 2px solid black;
 text-align: center;
 }
+#indexbody {
+         background-image: url('bg.gif');
+         background-color: #161616;
+         background-repeat: repeat;
+         background-size: 30vh 30vh;
+         background-attachment: fixed;s
+            width: 100%;
+            background-size: cover;
+
+          }
+
+
 } 
 
 /*웹 인트로
