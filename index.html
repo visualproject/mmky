@@ -5,879 +5,164 @@
 		<!--주석-->
 		<meta charset="utf-8"> <!--문자셋-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-</head>	
 				<!--width=device-width :페이지의 너비를 기기의 스크린 너비로 설정
 				initial-scale=1.0 : 원래의 크기로 사용한다는 의미이다.
 				minimum-scale :축소했을때의 최소로 축소 가능한 수치
 				maximum-scale : 확대했을때의 최대로 확대가능한 수치
 				user-scalable : 사용자의 확대/축소 기능을 설정, 기본값은 yes이다.-->
-		<title>Mmky Online</title>
+		<title>The Form of Veiwing Main Links</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-
-
 		<link rel="shortcut icon" href=""><!--파비콘-->
 		<link rel="apple-touch-icon=precomposed" href="">
 
-
-		<style type="text/css">
-			body {
-				 background-image: url('bg.gif');
-				 background-color: #161616;
-				 background-repeat: repeat;
-				 background-size: 100% 100%;
-				 background-attachment: fixed;s
-        		width: 100%;
-        		background-size: cover;
-}
-
-		</style>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<!--제이쿼리 최신버전 사용-->
-		<script>
-		/*팝업*/
-		function openForm() {
-		  document.getElementById("blue-popup").style.display = "block" ;
+		<script type="text/javascript">
+			function openForm() {
+  				document.getElementById("myForm").style.display = "block";
+			}
 
-		}
-		function closeForm() {
-		  document.getElementById("blue-popup").style.display = "none";
-		
-        }
-
- 
-        /*이미지랜덤*/
-        function randomBH(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-      $( document ).ready( function() {
-        $( window ).scroll( function() {
-          if ( $( this ).scrollTop() > 200 ) {
-            $( '.top' ).fadeIn();
-          } else {
-            $( '.top' ).fadeOut();
-          }
-        } );
-        $( '.top' ).click( function() {
-          $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
-          return false;
-        } );
-      } );
-
-    function randImg(){
-        var ry = randomBH(0,86);
-        /*
-        if(ry < 24) ry = '0' + ry;
-        else ry = '' + ry;
-        */
-        console.log('<img src="mmky/' + fileArr[ry] + '" "border="0" width="80%">',ry);
-        return '<img src="mmky/' + fileArr[ry] + '" "border="0"width="80%">';
-    }
-
-    var fileArr = [     
-    					"A_1.gif",
-    					"A_3.gif",
-    					"E_1.gif",
-    					"I_1.gif",
-    					"I_2.gif",
-    					"I_3.gif",
-    					"I_4.gif",
-    					"I_5.gif",
-    					"L_1.gif",
-    					"M_1.gif",
-    					"M_2.gif",
-    					"M_3.gif",
-    					"Q_1.gif",
-    					"K_1.gif",
-    					"K_2.gif",
-    					"Z_1.gif",
-    					"B_1.gif",
-    					"D_1.gif",
-    					"F_1.gif",
-    					"F_2.gif",
-    					"G_1.gif",
-    					"G_2.gif",
-    					"G_3.gif",
-    					"G_4.gif",
-    					"H_1.gif",
-    					"J_1.gif",
-    					"K_3.gif",
-    					"K_4.gif",
-    					"K_5.gif",
-    					"K_6.gif",
-    					"K_7.gif",
-    					"K_8.gif",
-    					"K_9.gif",
-    					"K_10.gif",
-    					"K_11.gif",
-    					"K_12.gif",
-    					"N_1.gif",
-    					"N_2.gif",
-    					"N_3.gif",
-    					"O_1.gif",
-    					"P_1.gif",
-    					"R_1.gif",
-    					"S_1.gif",
-    					"T_1.gif",
-    					"T_2.gif",
-    					"T_3.gif",
-    					"T_4.gif",
-    					"T_5.gif",
-    					"T_6.gif",
-    					"T_7.gif",
-    					"T_8.gif",
-    					"T_9.gif",
-    					"U_1.gif",
-    					"V_1.gif",
-    					"W_1.gif",
-    					"X_1.gif",
-    					"X_2.gif",
-    					"Y_1.gif",
-    					"Y_2.gif",
-    					"Y_3.gif",
-    					"01.jpg",
-    					"02.jpg",
-    					"03.jpg",
-    					"04.jpg",
-    					"05.jpg",
-    					"06.jpg",
-    					"07.jpg",
-    					"08.jpg",
-    					"09.jpg",
-    					"010.jpg",
-    					"011.jpg",
-    					"012.jpg",
-    					"013.jpg",
-    					"014.jpg",
-    					"015.jpg",
-    					"016.jpg",
-    					"017.jpg",
-    					"018.jpg",
-    					"019.jpg",
-    					"020.jpg",
-    					"021.jpg",
-    					"022.png",
-    					"023.jpg",
-    					"024.jpg",
-    					"E_2.gif",
-    					"V_2.gif",
-    					"W_2.gif",
-    	]
-
+			function closeForm() {
+			  document.getElementById("myForm").style.display = "none";
+			}
 
 		</script>
+		<style type="text/css">
+
+
+.title{
+  right: 1px;
+  left: 0px;
+  margin: 0px;
+  top: 0px;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  z-index: 9;
+
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  text-align: center;
+  
+   font-size: 38px;
+
+   line-height: 50px;
+}
+
+			
+.mainbox {
+  width: 100%;
+  position: absolute;
+  background-color: #EEE;
+  height: 90%;
+
+
+}
+
+.maintap {
+
+  margin: 0;
+
+  text-align: center;
+  padding: 1%;
+  right: 0;
+  border-right: solid black 2px;
+  width: 47.5%;
+  float: left;
+  transition: 0.3s;
+  overflow: hidden;
+  height:100%;
+	position: relative; display: inline-block; 
+}
+
+.maintap:first-child {
+  border-left: none;
+}
+
+.maintap:last-child {
+  border-right: none;
+}
+
+.maintap:hover {
+  background-color: #7EA2FF;
+
+}
+
+
+article a:link {
+color: black;
+}
+
+
+article a:visited {
+color: black;	
+}
+
+
+article a:active {
+	color: white;
+	background-position: black;
+}
+		</style>
 	</head>
+	<body style="overflow: hidden;">
+		<!--첫머리 -->
+	
+			<!--메뉴-->
+			<header>
+			<!--메뉴-->
+			<!--TITLE-->	
+		</header> 
+		<!--본문-->
+			<div class="title" style="border-top: none;">
+				The Form of Viewing 시청의 형태
+			</div>		
+		<div class="mainbox" >
+			<div class="maintap">
+				<img src="img/main1.gif" style="padding: 5px; width: 100%;margin-top: 30px; "  alt="Analysis">
+					<article style="text-align: center;">
+						<h1>시청실험</h1>
+						<a href="http://dptv2020.cafe24.com" target="_blank"><p>The Form of Viewing</p></a>
+						<p>모바일을 권장합니다.</p>
+					</article>
+			</div>
 
-
-	<body style="overflow-y: auto; overflow-x: hidden;">
-		<header>
-		<div class="container1">
-			<a href="index.html"><div class="nav" id="nav2">HOME</div></a>
-		</div>
-		<div id="marq1" style="position: fixed; z-index: 9;">
-		<marquee style="margin: 0px;" scrollamount="10" bgcolor="#FFF">
-				<div class="flex" id="flex1">
-					<div class="flex_item">A는 청사과맛이다.</div>
-					<div class="flex_item">Y는 열정적이다.</div>
-					<div class="flex_item">D는 마스크 관련 이슈가 두개나 있다.</div>
-					<div class="flex_item">H는 신이 난다.</div>
-					<div class="flex_item">B는 락스타인가?</div>
-					<div class="flex_item">Z는 말을 더듬었다</div>
-					<div class="flex_item">W와 X는 공항과 관련있다.</div>
-					<div class="flex_item">E는 신이 난다.</div>
-					<div class="flex_item">Y는 3학년 2반이었다.</div>
-					<div class="flex_item">K는 춤을 춘다.</div>
-					<div class="flex_item">O는 중독성이 있다.</div>
-					<div class="flex_item">N은 가수다.</div>
-					<div class="flex_item">I는 신이 난다.</div>
-					<div class="flex_item">F는 멋쟁이다.</div>
-					<div class="flex_item">G는 챌린지를 유행시켰다.</div>
-					<div class="flex_item">V는 애드립이다.</div>
-					<div class="flex_item">R은 힙합대통령이라서 힙통령이다.</div>
-					<div class="flex_item">S는 충격받았다.</div>
-					<div class="flex_item">K는 광고를 찍었다.</div>
-					<div class="flex_item">M은 억울했다.</div>
-					<div class="flex_item">P는 퇴사짤로 유명하다.</div>
-					<div class="flex_item">D는 당 대표였다.</div>
-					<div class="flex_item">W는 욕을 한다.</div>
-					<div class="flex_item">J는 사실 현실성이 없다.</div>
-					<div class="flex_item">V는 음료수를 먹는다.</div>
-					<div class="flex_item">N은 알바몬 광고를 찍었다.</div>
-					<div class="flex_item">I는 중독성 있다.</div>
-					<div class="flex_item">B는 아버지다.</div>
-					<div class="flex_item">Q는 개그라고 한 것이었다.</div>
-					<div class="flex_item">H는 신통하다.</div>
-					<div class="flex_item">U는 화를 낸다.</div>
-					<div class="flex_item">L은 분위기를 띄운다.</div>
-					<div class="flex_item">G는 아무노래나 틀어보라는 이야기다.</div>
-					<div class="flex_item">T는 개구리와 관련있다.</div>
-					<div class="flex_item">U는 J와 같다.</div>
-					<div class="flex_item">B는 사과했다.</div>
-						<div class="flex_item">V는 애드립이다.</div>
-						<div class="flex_item">Y는 축구를 했다.</div>
-						<div class="flex_item">S는 U,J와 관련있다.</div>
-						<div class="flex_item">O는 여름이다.</div>
-						<div class="flex_item">T는 중국을 싫어하나?</div>
-						<div class="flex_item">G는 참여한 사람이 많다.</div>
-						<div class="flex_item">C는 정보전달에 힘쓰고 있다.</div>
-						<div class="flex_item">H는 그 후 한번 더 인터뷰를 했다.</div>
-						<div class="flex_item">Y는 발명 중이다.</div>
-						<div class="flex_item">I는 어린이를 대상으로 만들어졌다.</div>
-						<div class="flex_item">K는 2020의 가장 대표적인 밈숭이다.</div>
-						<div class="flex_item">Y는 예고를 했다.</div>
-						<div class="flex_item">J는 정의롭다.</div>
-						<div class="flex_item">E는 멋진 무대매너를 가지고 있다.</div>
-						<div class="flex_item">Z는 또다른 Z로 화제가 되었다.</div>
-						<div class="flex_item">T는 미국인이다.</div>
-						<div class="flex_item">N은 진심이다.</div>
-						<div class="flex_item">Z는 강아지를 좋아한다.</div>
-						<div class="flex_item">X는 해외에서도 화제였다.</div>
-						<div class="flex_item">F는 광고로도 제작되었다.</div>
-						<div class="flex_item">I는 춤을 잘추는 어린이로 유명하다.</div>
-						<div class="flex_item">X는 농구와 관련있다.</div>
-						<div class="flex_item">R은 프로듀스 101도 나왔다.</div>
-						<div class="flex_item">K는 조명을 좋아한다.</div>
-						<div class="flex_item">M은 래퍼 매드클라운과 관련이 있을까?</div>
-						<div class="flex_item">S는 당시에는 화제가 되진 않았다.</div>
-						<div class="flex_item">Q는 일본인이다.</div>
-						<div class="flex_item">M은 춤을 춘다.</div>
-						<div class="flex_item">O는 후에 아나운서로 화제가 되었다.</div>
-						<div class="flex_item">P는 한국버전으로 화제였다.</div>
-				</div>
-			</marquee>
-		</div>
-		<button class="open-button" onclick="openForm()">
-					<div class="nav" id="nav1">
-					Meme-key Mix</div>
-				</button>			
-					<div class="video-popup" id="blue-popup">
-							<div class="mix-content">
-								<button type="button" class="btn cancel" onclick="closeForm(); javascript:player.api('pause');">&times;</button>
-								<h1>Meme-key Mix</h1>
-								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
-								<center>
-									<div class="embed-container">
-									<iframe src="https://player.vimeo.com/video/469913924" width="500" height="380" frameborder="0" allowfullscreen ></iframe>
-								</div>
-								</center>
-								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
-							</div>
-					</div>
-
-
-
-		</header> <!--첫머리 -->	
-		<div class="container2">
-			<a href="yellow.html"><div class="nav" id="nav3">Meme-key Report</div></a>
-			<a href="green.html"><div class="nav" id="nav4">Links</div></a>
-			<div id="marq2" style="position: fixed; z-index: 9;">
-				<marquee style="margin: 0px;" scrollamount="10" direction="right" bgcolor="#FFF" >
-					<div class="flex" id="flex2">
-						<div class="flex_item"><span>Y는 생일축하전문이다.</span></div>
-						<div class="flex_item">B는 사과했다.</div>
-						<div class="flex_item">V는 애드립이다.</div>
-						<div class="flex_item">Y는 농구를 했다.</div>
-						<div class="flex_item">S는 U,J와 관련있다.</div>
-						<div class="flex_item">O는 여름이다.</div>
-						<div class="flex_item">T는 중국을 싫어하나?</div>
-						<div class="flex_item">G는 참여한 사람이 많다.</div>
-						<div class="flex_item">C는 정보전달에 힘쓰고 있다.</div>
-						<div class="flex_item">H는 그 후 한번 더 인터뷰를 했다.</div>
-						<div class="flex_item">Y는 발명 중이다.</div>
-						<div class="flex_item">I는 어린이를 대상으로 만들어졌다.</div>
-						<div class="flex_item">K는 2020의 가장 대표적인 밈숭이다.</div>
-						<div class="flex_item">Y는 예고를 했다.</div>
-						<div class="flex_item">J는 정의롭다.</div>
-						<div class="flex_item">E는 멋진 무대매너를 가지고 있다.</div>
-						<div class="flex_item">Z는 또다른 Z로 화제가 되었다.</div>
-						<div class="flex_item">T는 미국인이다.</div>
-						<div class="flex_item">N은 진심이다.</div>
-						<div class="flex_item">Z는 강아지를 좋아한다.</div>
-						<div class="flex_item">X는 해외에서도 화제였다.</div>
-						<div class="flex_item">F는 광고로도 제작되었다.</div>
-						<div class="flex_item">I는 춤을 잘추는 어린이로 유명하다.</div>
-						<div class="flex_item">X는 축구와 관련있다.</div>
-						<div class="flex_item">R은 프로듀스 101도 나왔다.</div>
-						<div class="flex_item">K는 조명을 좋아한다.</div>
-						<div class="flex_item">M은 래퍼 매드클라운과 관련이 있을까?</div>
-						<div class="flex_item">S는 당시에는 화제가 되진 않았다.</div>
-						<div class="flex_item">Q는 일본인이다.</div>
-						<div class="flex_item">M은 춤을 춘다.</div>
-						<div class="flex_item">O는 후에 아나운서로 화제가 되었다.</div>
-						<div class="flex_item">P는 한국버전으로 화제였다.</div>
-						<div class="flex_item">A는 청사과맛이다.</div>
-					<div class="flex_item">Y는 열정적이다.</div>
-					<div class="flex_item">D는 마스크 관련 이슈가 두개나 있다.</div>
-					<div class="flex_item">H는 신이 난다.</div>
-					<div class="flex_item">B는 락스타인가?</div>
-					<div class="flex_item">Z는 말을 더듬었다</div>
-					<div class="flex_item">W와 X는 공항과 관련있다.</div>
-					<div class="flex_item">E는 신이 난다.</div>
-					<div class="flex_item">Y는 3학년 2반이었다.</div>
-					<div class="flex_item">K는 춤을 춘다.</div>
-					<div class="flex_item">O는 중독성이 있다.</div>
-					<div class="flex_item">N은 가수다.</div>
-					<div class="flex_item">I는 신이 난다.</div>
-					<div class="flex_item">F는 멋쟁이다.</div>
-					<div class="flex_item">G는 챌린지를 유행시켰다.</div>
-					<div class="flex_item">V는 애드립이다.</div>
-					<div class="flex_item">R은 힙합대통령이라서 힙통령이다.</div>
-					<div class="flex_item">S는 충격받았다.</div>
-					<div class="flex_item">K는 광고를 찍었다.</div>
-					<div class="flex_item">M은 억울했다.</div>
-					<div class="flex_item">P는 퇴사짤로 유명하다.</div>
-					<div class="flex_item">D는 당 대표였다.</div>
-					<div class="flex_item">W는 욕을 한다.</div>
-					<div class="flex_item">J는 사실 현실성이 없다.</div>
-					<div class="flex_item">V는 음료수를 먹는다.</div>
-					<div class="flex_item">N은 알바몬 광고를 찍었다.</div>
-					<div class="flex_item">I는 중독성 있다.</div>
-					<div class="flex_item">B는 아버지다.</div>
-					<div class="flex_item">Q는 개그라고 한 것이었다.</div>
-					<div class="flex_item">H는 신통하다.</div>
-					<div class="flex_item">U는 화를 낸다.</div>
-					<div class="flex_item">L은 분위기를 띄운다.</div>
-					<div class="flex_item">G는 아무노래나 틀어보라는 이야기다.</div>
-					<div class="flex_item">T는 개구리와 관련있다.</div>
-					<div class="flex_item">U는 J와 같다.</div>
-					<div class="flex_item">B는 사과했다.</div>
-					</div>
-				</marquee>
-			</div>	
-		</div>
-		<div class="first">
-
-			<div class="intro1">
-				<span class="intLabel">프로젝트 &lt;Monkey See, Meme-key Do&gt;는 밈 소비의 즐거움이 모든 것을<br>밈화하며 누군가를 
-					조롱거리로 전락시키고 있지는 않은지에 대해 숙어 <br>&ldquo;Make a Monkey (out) of Somebody&rdquo;에 
-					빗대어 <br>&ldquo;누군가를 원숭이로 만들고 있지는 않은가?&rdquo;라는 의문을 던진다.</span></div>
-			<div class="intro2">
-				<span class="intLabel">현재 머무는 웹 &lt;Mmky Online&gt;, 좌측 상단의 &lt;Meme-key mix&gt;,<br>좌측 하단의 
-					&lt;Meme-key Report&gt;까지 총 세 가지의 메인 산출물을 가지고 있다. 
-					<br>가장 이상적인 관람 순서는 영상 ➡ 웹 ➡ 보고서 이다. <br>보고서를 통해 마무리하며프로젝트의 전체 맥락을 확인하기를 추천한다.<br></span>
-					<a href="http://hknudesign.kr/show/2020/visual/2015286003/index.html" target="_blank"> 프로젝트 링크 </a>
+			<div class="maintap">
+				<img src="img/main2.gif" style="padding: 5px; width: 100%; margin-top: 30px; " alt="Mapping">
+				<article style="text-align: center;">
+						<h1>Project Archive</h1>
+						<a href="http://dptv2020.cafe24.com/archive.html" target="_blank"><p>The Form of Viewing</p></a>
+						<p>웹을 권장합니.</p>
+					</article>
 			</div>
 		</div>
 
-		</div>
-		<!--random image-->
-			<div class="gifbox">
-				<!--1-->
-				<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-				<!--2-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-				<!--3-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-				<!--4-->
-			    <div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-				<!--5-->
-			   <div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-				 <!--6-->
-				 <div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--7-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--8-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-				<!--9-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--10-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--11-->
-			   <div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-			    <!--12-->
-			 	<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-			    <!--13-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-				<!--14-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--15-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-				<!--16-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--17-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--18-->
-				<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-			    <!--19-->
-			   <div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
+		<button class="open-button" onclick="openForm()">&copy;</button>
 
+			<div class="form-popup" id="myForm">
+			  <form class="form-container">
+			    <h2>Credit</h2>
+			  <label for="made" id="made"></label> 
+			   <p>강혜린(haelyyyn@gmail.com)</p>
+			   <p>문경아(mooonkyunga@gmail.com)</p>
+			   <br>
+			   <label for="pro"><b>지도교수</b></label>
+			   <p>이병학</p>
+			   <br>
+			   <label for="pro"><b>개발도움</b></label>
+			   <p>고주원(datapro9207@naver.com)</p>
+			   <br>
+			   <label for="hknu"><a href="http://www.hknudesign.kr/show/2020/" target="_blank"><p>국립한경대학교 디자인과 24회 <br>졸업전시회 [택] <br>Hankyong National University<br>Department of Design. 24th Graduation.</p></a></label>
+			   
 
+			  </form>
 
-			    <!--20-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--21-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--22-->
-	    	<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--23-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--24-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--25-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--26-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--27-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--28-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--29-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-
-
-
-	    		<!--30-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--31-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--32-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-
-	    		<!--33-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--34-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--35-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--36-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		<!--37-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--38-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--39-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--40-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-
-
-
-	    		    		<!--41-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--42-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--43-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--44-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--45-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--46-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--47-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--48-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--49-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-							<!--50-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-
-
-	    		    		<!--51-->
-	    	<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--52-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    
-	    		    		<!--53-->
-	    	<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--54-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--55-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--56-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--57-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--58-->
-	    	<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--59-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--60-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-
-
-
-
-
-	    		
-	    		    		<!--61-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--62-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--63-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--64-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--65-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--66-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--67-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--68-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--69-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--70-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--71-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--72-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--73-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--74-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--75-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--76-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--77-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--78-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--79-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--80-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-
-				<!--81-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		   		<!--82-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		   		<!--83-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    			   	<!--84-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		   		<!--85-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		   		<!--86-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-
-				   		<!--61-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--62-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--63-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--64-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--65-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--66-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		
-	    		    		<!--67-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--68-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--69-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--70-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--71-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--72-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--73-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--74-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--75-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--76-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--77-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--78-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--79-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		    		<!--80-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-
-				<!--81-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		   		<!--82-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		   		<!--83-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    			   	<!--84-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		   		<!--85-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-	    		   		<!--86-->
-	    		<div class="imgBox" >
-					<script>document.write(randImg()); </script>
-				</div>
-
-
-	    		
-	    	</div>
-    
-			
-		<footer>
-
-        <div id="footer">
-        	<span id="name">(c) Hylein kang, haelyyyn@gmail.ocm</span><br>
-        	<br>
-            <span id="insta"><a href="www.instagram.com/___9ang" target="_blank">instagam</a></span>
-            <span id="behance"><a href="behance.net/hyelingang" target="_blank">behance</a></span>
-            <br>
-           <span id="hknu"> <a href="www.hknudesign.kr/show/2020" target="_blank">
-        	Hankyong National University Department of Design. 24th Graduation.</a>
-        	<br>
-        	<span id="TopButton" class="top" style="font-size: 25pt;"><a href="#">&#128053;</a></span>
-        </div>
-
-		</footer> <!--끝머리-->
+			  <button type="button" class="btn cancel" onclick="closeForm()">&copy;</button>
+			</div>
+		
+		<footer></footer> <!--끝머리-->
  
 	</body>
 </html>
