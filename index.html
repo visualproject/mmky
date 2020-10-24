@@ -25,9 +25,9 @@
 		<link rel="apple-touch-icon=precomposed" href="">
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> 
-</script>
+		</script>
 
-<script type="text/javascript">
+		<script type="text/javascript">
        
         function randomBH(min, max) {
         min = Math.ceil(min);
@@ -139,32 +139,32 @@
 		</script>
 
 		<script> 
-			
-$(function(){
-  
-	var embed = $('#player'); //동영상 코드
-  
-	$('.button').on('click', function(){ //레이어 열때
-		var path = $(this).attr('href');
-		$('.cont').append(embed);
-		$(path).show();
-	})
-  
-	$('.close').on('click', function(){ //레이어 닫을때
-		$(this).parents('#layer').hide();
-		$('.cont').empty();
-	})
-  
-  $('.dim').on('click', function(){
-    $(this).hide();
-    $('#layer').hide();
-    $('.cont').empty();
-  })
-  
-});
-/*팝업*/
+					
+		$(function(){
+		  
+			var embed = $('#player'); //동영상 코드
+		  
+			$('.button').on('click', function(){ //레이어 열때
+				var path = $(this).attr('href');
+				$('.cont').append(embed);
+				$(path).show();
+			})
+		  
+			$('.close').on('click', function(){ //레이어 닫을때
+				$(this).parents('#layer').hide();
+				$('.cont').empty();
+			})
+		  
+		  $('.dim').on('click', function(){
+		    $(this).hide();
+		    $('#layer').hide();
+		    $('.cont').empty();
+		  })
+		  
+		});
+		/*팝업*/
 
-</script>
+		</script>
 
 		<script type="text/javascript">
 			      $( document ).ready( function() {
