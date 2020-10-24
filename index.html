@@ -23,29 +23,8 @@
 
 		<link rel="shortcut icon" href=""><!--파비콘-->
 		<link rel="apple-touch-icon=precomposed" href="">
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> 
-</script>
 
-		<script> 
-			
-$(function(){
-  
-	var embed = $('#player'); //동영상 코드
-  
-	$('.button').on('click', function(){ //레이어 열때
-		var path = $(this).attr('href');
-		$('.cont').append(embed);
-		$(path).show();
-	})
-  
-	$('.close').on('click', function(){ //레이어 닫을때
-		$(this).parents('#layer').hide();
-		$('.cont').empty();
-	})
-  
-});
-/*팝업*/
-
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> 
 </script>
 
 <script type="text/javascript">
@@ -158,6 +137,34 @@ $(function(){
  /*이미지랜덤*/
 
 		</script>
+
+		<script> 
+			
+$(function(){
+  
+	var embed = $('#player'); //동영상 코드
+  
+	$('.button').on('click', function(){ //레이어 열때
+		var path = $(this).attr('href');
+		$('.cont').append(embed);
+		$(path).show();
+	})
+  
+	$('.close').on('click', function(){ //레이어 닫을때
+		$(this).parents('#layer').hide();
+		$('.cont').empty();
+	})
+  
+  $('.dim').on('click', function(){
+    $(this).hide();
+    $('#layer').hide();
+    $('.cont').empty();
+  })
+  
+});
+/*팝업*/
+
+</script>
 
 		<script type="text/javascript">
 			      $( document ).ready( function() {

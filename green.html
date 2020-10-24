@@ -1003,7 +1003,6 @@
  
 	</body>
 
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> 
 			
 function goto(where){
@@ -1011,9 +1010,9 @@ function goto(where){
 }
 	
 /*북마커*/
-</script>
 
-		<script type="text/javascript"> 
+</script>
+		<script> 
 			
 $(function(){
   
@@ -1023,12 +1022,10 @@ $(function(){
 		var path = $(this).attr('href');
 		$('.cont').append(embed);
 		$(path).show();
-		$('.dim').show();
 	})
   
 	$('.close').on('click', function(){ //레이어 닫을때
 		$(this).parents('#layer').hide();
-		$('.dim').hide();
 		$('.cont').empty();
 	})
   
@@ -1040,6 +1037,7 @@ $(function(){
   
 });
 /*팝업*/
+
 </script>
 
 

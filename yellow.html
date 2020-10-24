@@ -29,9 +29,11 @@
 			}
 
 		</style>
+
+
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> 
 			</script>
-	<script type="text/javascript"> 
+		<script> 
 			
 $(function(){
   
@@ -41,12 +43,10 @@ $(function(){
 		var path = $(this).attr('href');
 		$('.cont').append(embed);
 		$(path).show();
-		$('.dim').show();
 	})
   
 	$('.close').on('click', function(){ //레이어 닫을때
 		$(this).parents('#layer').hide();
-		$('.dim').hide();
 		$('.cont').empty();
 	})
   
@@ -62,7 +62,9 @@ $(function(){
 </script>
 
 
-			
+
+
+
 	</head>
 
 
