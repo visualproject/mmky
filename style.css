@@ -636,7 +636,7 @@ ol{
   left: 0.5em;
   right: 0.5em;
   width: 1800px auto;
-  height: 34vh;
+  height: 40vh;
 
   display: initial;
   position: fixed;
@@ -763,7 +763,7 @@ ul a:active {
 
 .timeline {
     width: 3500px;
-    height: 55vh;  
+    height: 45vh;  
   float: left;
   position: fixed;
   display: inline;
