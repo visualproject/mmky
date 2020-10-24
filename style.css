@@ -263,23 +263,22 @@ button {
   background-color: black;
 }
 /* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-}
+
 
 /* The popup form - hidden by default */
-.videowrap {
+#layer {
   display: none;
   position: fixed;
   width: 100%;
-  height: 100%;
   left: 0;
-  top: 80px;
-  overflow: auto;
+  padding: 20px;
   z-index: 99;
-
+  top:6vh;
 }
 
-
+#layer #player {
+  display:block; 
+  margin:20px auto 0;}
 
 
 /* Modal Content */
@@ -294,39 +293,45 @@ button {
 
 }
 
+/*video container*/
 .cont {
   position: relative;
-  padding-bottom: 45%;
+  padding-bottom: 60%;
   height: 0;
   left: 0px;
 }
 
 .cont embed, .cont iframe {
 position: absolute; width: 100%; left: 0px;
-height: 100%; border: 0;
+height: 100%; border: 0; top:-2vh;
 }
 
 
-.inner .btn {
+.inner .close {
   color: #adadad;
   width: 50px;
   height: 50px;
+  position:absolute; 
+  display:block;
   line-height: 50px;
+  right: 6vh;
   border: none;
   cursor: pointer;
-  margin-bottom:10px;
   float: right;
-  top: 0;
+  top: 2vh;
   font-size: 37px;
-}
+  }
+
 
 /* Add some hover effects to buttons */
-.inner .btn:hover{
+.inner .close:hover{
   color: #fff;
 }
 
+/*content box text*/
+
 .inner h1{
-  margin: 10px;
+  margin: 1px;
   text-align: center;
 }
 
@@ -334,6 +339,8 @@ height: 100%; border: 0;
   text-align: center;
 
 }
+
+
 
 video {
   width: 100%;
@@ -345,7 +352,7 @@ video {
 
 @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
 
-.videowrap {
+#layer {
   display: none;
   position: fixed;
   width: 100%;
@@ -356,41 +363,12 @@ video {
   z-index: 99;
   text-align: left;
 
-}
-
-
-.inner .btn {
-  color: #adadad;
-  width: 30px;
-  height: 30px;
-  line-height: 50px;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 10px;
-  float: right;
-  top: 0;
-  margin-right: 4vh;
-  margin-top: 1vh;
-  font-size: 35px;
-}
-
-.inner h1{
-  margin: 10px;
-  text-align: left;
-    margin:3vh;
-}
-
-.inner p{
-  text-align: left;
-  margin:3vh;
 
 }
-
 
 .inner{
   background-color: black;
   margin: auto;
-  padding: 1vh;
   border: none;
   width: 100%;
   color: #ffffff;
@@ -400,16 +378,53 @@ video {
 
 }
 
+.inner .close {
+  color: #adadad;
+  width: 30px;
+  height: 30px;
+  position:absolute;
+  display:block;
+  line-height: 50px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  top: 2vh;
+  right: 8vh;
+  margin-right: 4vh;
+  margin-top: 1vh;
+  font-size: 35px;
+}
+
+
+
+
+
+
+
+.inner h1{
+  margin: 10px;
+  text-align: left;
+    margin:2vh;
+}
+
+.inner p{
+  text-align: left;
+  margin:1vh;
+
+}
+
+
+
 .cont {
   position: relative;
-  padding-bottom: 45%;
+  padding-bottom: 50%;
   height: 0;
   left: 0px;
 }
 
 .cont embed, .cont iframe {
 position: absolute; width: 90%; left: 0vh;
-height: 100%; border: 0;
+height: 100%; border: 0; top:-2vh;
 }
 }
 

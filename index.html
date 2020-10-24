@@ -40,25 +40,23 @@ $(function(){
 	})
   
 	$('.close').on('click', function(){ //레이어 닫을때
-		$(this).parents('.videowrap').hide();
+		$(this).parents('#layer').hide();
 		$('.dim').hide();
 		$('.cont').empty();
 	})
   
   $('.dim').on('click', function(){
     $(this).hide();
-    $('.videowrap').hide();
+    $('#layer').hide();
     $('.cont').empty();
   })
   
 });
+/*팝업*/
 
 </script>
 
-<script type="text/javascript"> 
-
-/*팝업*/
- 
+<script type="text/javascript">
        
         function randomBH(min, max) {
         min = Math.ceil(min);
@@ -269,20 +267,23 @@ $(function(){
 		</div>
 			<a href="#layer" class="button">
 					<div class="nav" id="nav1">
-					Meme-key Mix</div></a>			
-					<div class="videowrap" id="layer">
-							<div class="inner">
-								<a href="#none" class="close">
-								<button type="button" class="btn cancel">&times;</button></a>
-								<h1>Meme-key Mix</h1>
-								<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
-								<center>
-									<div class="cont">
-									<iframe id="player" src="https://player.vimeo.com/video/469913924" width="500" height="380" frameborder="0" allowfullscreen ></iframe>
+					Meme-key Mix</div>
+				</a>	
+
+					<div id="layer">
+						<div class="inner">
+								<a href="#none">
+									<button type="button" class="close">&times;</button>
+								</a>
+									<h1>Meme-key Mix</h1>
+									<p>26가지 밈숭이의 향연, Meme-key mix를 만나보세요!</p>
+								
+								<div class="cont">
+										<iframe id="player" src="https://player.vimeo.com/video/469913924" width="500" height="380" frameborder="0" allowfullscreen ></iframe>
 								</div>
-								</center>
+								
 								<p>(c)copylight. Monkey See, Memekey Do. 2020</p>									
-							</div>
+						</div>
 					</div>
 
 

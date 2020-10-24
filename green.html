@@ -1006,6 +1006,15 @@
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"> 
 			
+function goto(where){
+	document.getElementById('scrollpane').scrollLeft = where;
+}
+	
+/*북마커*/
+</script>
+
+		<script type="text/javascript"> 
+			
 $(function(){
   
 	var embed = $('#player'); //동영상 코드
@@ -1030,15 +1039,9 @@ $(function(){
   })
   
 });
-
-
-/*북마커*/
-function goto(where){
-	document.getElementById('scrollpane').scrollLeft = where;
-}
-	
-
+/*팝업*/
 </script>
+
 
 
 
