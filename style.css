@@ -710,7 +710,7 @@ ol{
   left: 0.5em;
   right: 0.5em;
   width: 1800px auto;
-  height: 35vh;
+  height: 30vh;
 
   display: initial;
   position: fixed;
@@ -723,7 +723,7 @@ ol{
   column-gap: 40px;
   column-rule: 1px solid black;
   column-span: all;
-  column-width: 20vh;
+  column-width: 17vh;
   overflow-x: auto;
   overflow-y: hidden;
   list-style-type:none;
@@ -869,7 +869,7 @@ ul a:active {
 @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
 .timeline {
     width: 2300px;
-    height: 38vh;
+    height: 35vh;
   float: left;
   position: absolute;
   display: inline;
@@ -2381,6 +2381,7 @@ text-decoration: none;
 #pdf embed{
    width: 800px;
   height:800px; 
+  overflow: auto;
 }
 
 #new {
