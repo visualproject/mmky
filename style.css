@@ -612,10 +612,10 @@ ol{
 @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
 
 ol{
-  top:-5vh;
+  top:2vh;
   left: 0.5em;
   right: 0.5em;
-  width: 1700px auto;
+  width: 1800px auto;
   height: 35%;
 
   display: initial;
@@ -742,27 +742,30 @@ ul a:active {
 
 
 .timeline {
-    width: 2800px;
-    height: 55vh;
+    width: 3500px;
+    height: 55vh;  
   float: left;
   position: fixed;
   display: inline;
-  margin-top: 200vh;
+  
   overflow-x:auto;
-  overflow-x:hidden;
+  overflow-y:hidden;
+
   background-image: url('bg_black_1.png');
          background-color: #161616;
          background-repeat: repeat;
          background-size: 40%;
+
   padding: 20px;
   text-align: center;
   bottom:0px;
 }
 
+
 @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
 .timeline {
-    width: 2800px;
-    height: 47vh;
+    width: 2300px;
+    height: 50vh;
   float: left;
   position: absolute;
   display: inline;
