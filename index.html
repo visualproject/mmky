@@ -40,14 +40,14 @@ $(function(){
 	})
   
 	$('.close').on('click', function(){ //레이어 닫을때
-		$(this).parents('#layer').hide();
+		$(this).parents('.videowrap').hide();
 		$('.dim').hide();
 		$('.cont').empty();
 	})
   
   $('.dim').on('click', function(){
     $(this).hide();
-    $('#layer').hide();
+    $('.videowrap').hide();
     $('.cont').empty();
   })
   
