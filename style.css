@@ -40,78 +40,90 @@ background-image: url('firstbg.jpg');
          background-color: #161616;
          background-repeat: repeat;
          background-size: 50%;
-width: 100%;
-height: 290px;
+         height: 290px;
 position: absolute;
+width: 108vw;
 padding-top: 17%;
-margin-bottom: 5px;
+
 border: 2px solid black;
 text-align: center;
 }
 } 
 
+/*웹 인트로
+
+*/
+
 .intro1 {
   float: left;
-  width: 450px;
-  height: 90px;
+  width: 45vh;
+  height: 9vh;
   font-size: 13px;
   background: white;
   padding: 30px;
-  margin: 10px;
+  margin: 1vw;
   display: inline-block;
   position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
-  margin-left: 16%;
+  margin-left: 20vw;
 
 }
 
 .intro2 {
   float: left;
-  width: 450px;
-  height: 90px;
+  width: 45vh;
+  height: 9vh;
   font-size: 13px;
   background: white;
   padding: 30px;
-  margin: 10px;
+  margin: 1vw;
 
   position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
 }
+
+/*모바일*/
+
+
 @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
 .intro1 {
   float: left;
-  width: 480px;
-  height: 60px;
+  width: 39.5vh;
+  height: 7vh;
   font-size: 10px;
   background: white;
-  padding-left: 1px;
-  padding-right: 1px;
+  padding-top: 2vh;
+
   display: block;
   position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
-  margin: 5px;
+  margin: 1vh;
+  padding-bottom: 2vh;
 
 
 }
 .intro2 {
   float: left;
-  width: 480px;
-  height: 60px;
+  width: 39.5vh;
+  height: 9vh;
   font-size: 10px;
-  background: white;  padding-left: 1px;
-  padding-right: 1px;
+  background: white;
+     padding-top: 2vh;
+
   display: block;
   position: relative;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
-  margin:5px;
+  margin:1vh;
+  padding-bottom: 1vh;
+
 
 }
 }
@@ -234,7 +246,7 @@ button {
   width: 100%;
   height: 100%;
   left: 0;
-  top: 80px; d
+  top: 80px;
   overflow: auto;
   z-index: 9;
 
@@ -244,7 +256,7 @@ button {
 .mix-content{
   background-color: black;
   margin: auto;
-  padding: 40px;
+  padding: 25px;
   border: none;
   width: 60%;
   color: #ffffff;
@@ -298,13 +310,6 @@ video {
   height: auto;
 
 }
-
-
-    @media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
-
-
-}
-
 
 
 
@@ -616,7 +621,7 @@ ol{
   left: 0.5em;
   right: 0.5em;
   width: 1800px auto;
-  height: 35%;
+  height: 34vh;
 
   display: initial;
   position: fixed;
@@ -2270,6 +2275,40 @@ text-decoration: none;
   height: 100%;
 }
 
+
+#pdf embed{
+   width: 800px;
+  height:800px; 
+}
+
+#new {
+  background-color: #fff100;
+  transition: all ease 0.7s;
+  bottom:0px;
+  width: 60px; 
+  position: absolute; 
+  height: 60px; 
+  top: 0em; 
+  right: 20%; 
+  text-align: center;  
+  padding: 1%;
+}
+
+
+@media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
+
+
+#pdf {
+  margin-top: 2.5%;
+  position: relative;
+  margin-bottom: 2.5%;
+}
+
+#pdf embed{
+  width: 350px;
+  height: 88vh;
+}
+
 #new {
   background-color: #fff100;
   transition: all ease 0.7s;
@@ -2278,10 +2317,12 @@ text-decoration: none;
   position: absolute; 
   height: 60px; 
   top: 3em; 
-  right: 20em; 
+  right: 1vh; 
   text-align: center; 
   display: inline-block; 
   padding: 1%;
+  z-index: 9;
+}
 }
 
 
