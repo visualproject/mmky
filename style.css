@@ -68,6 +68,7 @@ text-align: center;
   line-height: 150%;
   border: black 2px solid;
   margin-left: 20vw;
+  word-break: keep-all;
 
 }
 
@@ -84,6 +85,7 @@ text-align: center;
   text-align:center;
   line-height: 150%;
   border: black 2px solid;
+  word-break: keep-all;
 }
 
 /*모바일*/
@@ -105,13 +107,14 @@ text-align: center;
   border: black 2px solid;
   margin: 1vh;
   padding-bottom: 2vh;
+    word-break: keep-all;
 
 
 }
 .intro2 {
   float: left;
   width: 39.5vh;
-  height: 9vh;
+  height: 10vh;
   font-size: 10px;
   background: white;
      padding-top: 2vh;
@@ -123,7 +126,7 @@ text-align: center;
   border: black 2px solid;
   margin:1vh;
   padding-bottom: 1vh;
-
+  word-break: keep-all;
 
 }
 }
