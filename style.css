@@ -355,10 +355,10 @@ video {
 #layer {
   display: none;
   position: fixed;
-  width: 100%;
+  width: 90%;
   height: 100%;
   left: 0;
-  top: 70px;
+  top: 50px;
   overflow: auto;
   z-index: 99;
   text-align: left;
@@ -370,9 +370,12 @@ video {
   background-color: black;
   margin: auto;
   border: none;
-  width: 100%;
+    padding-left: 3vh;
+  margin-left: 0;
+  left: 0;
+  width: 90%;
   color: #ffffff;
-  position: relative;
+  position: absolute;
   font-size: 12px;
   text-align: left;
 
@@ -388,7 +391,7 @@ video {
   border: none;
   cursor: pointer;
   float: right;
-  top: 1vh;
+  top: 2vh;
   right: 8vh;
   margin-right: 4vh;
   margin-top: 1vh;
