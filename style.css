@@ -362,6 +362,7 @@ video {
   overflow: auto;
   z-index: 99;
   text-align: left;
+  padding-left: 0px;
 
 
 }
@@ -370,6 +371,7 @@ video {
   background-color: black;
   margin: auto;
   border: none;
+  padding:2vh;
   width: 100%;
   color: #ffffff;
   position: relative;
@@ -392,7 +394,7 @@ video {
   right: 8vh;
   margin-right: 4vh;
   margin-top: 1vh;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 
