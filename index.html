@@ -138,25 +138,34 @@
 
 		</script>
 
-		<script type="text/javascript"> 
-					
-		$(function(){
-		  
-			var embed = $('#player'); //동영상 코드
-		  
-			$('.button').on('click', function(){ //레이어 열때
-				var path = $(this).attr('href');
-				$('.cont').append(embed);
-				$(path).show();
-			})
-		  
-			$('.close').on('click', function(){ //레이어 닫을때
-				$(this).parents('#layer').hide();
-				$('.cont').empty();
-			})
-		  
-		});
-		/*팝업*/
+		<script> 
+			
+$(function(){
+  
+	var embed = $('#player'); //동영상 코드
+  
+	$('.button').on('click', function(){ //레이어 열때
+		var path = $(this).attr('href');
+		$('.cont').append(embed);
+		$(path).show();
+	})
+  
+	$('.close').on('click', function(){ //레이어 닫을때
+		$(this).parents('#layer').hide();
+		$('.cont').empty();
+	})
+  
+  $('.dim').on('click', function(){
+    $(this).hide();
+    $('#layer').hide();
+    $('.cont').empty();
+  })
+  
+});
+/*팝업*/
+
+</script>
+
 
 		</script>
 
